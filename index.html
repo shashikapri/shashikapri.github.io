@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Website with Table of Contents</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#home" class="logo">ScrollSite</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#toc">Table of Contents</a></li>
+                <li><a href="#content">Content</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="section-content">
+                <h1>Welcome to ScrollSite</h1>
+                <p>A demonstration of a scrolling website with a dynamic table of contents that links to content sections.</p>
+                <p>Scroll down to view the table of contents on the second page, where each item links to a specific content section.</p>
+                <div class="content-highlight">
+                    <p><strong>How to use:</strong> Click on any item in the table of contents to jump directly to that section. Use the navigation menu at the top to move between main pages.</p>
+                </div>
+                <p>Each section contains unique content with different topics for demonstration purposes.</p>
+                <a href="#toc" class="btn">
+                    <span>Go to Table of Contents</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Table of Contents Section -->
+    <section id="toc">
+        <div class="container">
+            <div class="section-content">
+                <h2>Table of Contents</h2>
+                <p>Click on any item below to navigate directly to that section.</p>
+                
+                <div class="toc-container">
+                    <!-- Technology Topics -->
+                    <div class="toc-card">
+                        <h3><i class="fas fa-laptop-code"></i> Technology</h3>
+                        <ul class="toc-list">
+                            <li><a href="#web-development">Web Development Trends</a></li>
+                            <li><a href="#ai">Artificial Intelligence</a></li>
+                            <li><a href="#cybersecurity">Cybersecurity Basics</a></li>
+                            <li><a href="#cloud-computing">Cloud Computing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Science Topics -->
+                    <div class="toc-card">
+                        <h3><i class="fas fa-flask"></i> Science</h3>
+                        <ul class="toc-list">
+                            <li><a href="#space-exploration">Space Exploration</a></li>
+                            <li><a href="#climate-change">Climate Change</a></li>
+                            <li><a href="#biotechnology">Biotechnology Advances</a></li>
+                            <li><a href="#quantum-physics">Quantum Physics</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Health & Wellness Topics -->
+                    <div class="toc-card">
+                        <h3><i class="fas fa-heartbeat"></i> Health & Wellness</h3>
+                        <ul class="toc-list">
+                            <li><a href="#mental-health">Mental Health Awareness</a></li>
+                            <li><a href="#nutrition">Nutrition Fundamentals</a></li>
+                            <li><a href="#exercise">Exercise Science</a></li>
+                            <li><a href="#sleep">Sleep Importance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="toc-note">Each section contains detailed information about the topic. Use the table of contents above to navigate quickly.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Content Sections -->
+    <section id="content">
+        <div class="container">
+            <div class="section-content">
+                <h2>Content Sections</h2>
+                <p>Below are all the content sections linked from the table of contents.</p>
+                
+                <!-- Technology Sections -->
+                <div class="content-section" id="web-development">
+                    <h3>Web Development Trends</h3>
+                    <p>Modern web development is rapidly evolving with new frameworks and methodologies. Progressive Web Apps (PWAs) are becoming standard for mobile experiences, offering native app-like functionality in the browser.</p>
+                    <div class="content-highlight">
+                        <p>JavaScript frameworks like React, Vue, and Angular continue to dominate frontend development, while server-side rendering and static site generation are gaining popularity for performance optimization.</p>
+                    </div>
+                    <p>The rise of WebAssembly allows developers to run code written in multiple languages on the web at near-native speed, opening new possibilities for web applications.</p>
+                </div>
+                
+                <div class="content-section" id="ai">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Artificial Intelligence is transforming industries from healthcare to finance. Machine learning algorithms can now detect diseases earlier, predict market trends, and automate complex tasks.</p>
+                    <p>Natural Language Processing (NLP) has advanced significantly, enabling more natural interactions with virtual assistants and improved translation services.</p>
+                </div>
+                
+                <div class="content-section" id="cybersecurity">
+                    <h3>Cybersecurity Basics</h3>
+                    <p>With increasing digital threats, cybersecurity fundamentals are essential for everyone. Basic practices include using strong, unique passwords, enabling two-factor authentication, and keeping software updated.</p>
+                    <div class="content-highlight">
+                        <p>Phishing attacks remain one of the most common security threats. Always verify sender information and avoid clicking on suspicious links in emails or messages.</p>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="cloud-computing">
+                    <h3>Cloud Computing</h3>
+                    <p>Cloud computing has revolutionized how businesses store data and run applications. Services like AWS, Azure, and Google Cloud offer scalable infrastructure without upfront hardware costs.</p>
+                    <p>Serverless architecture is a growing trend, allowing developers to build applications without managing servers, focusing solely on code.</p>
+                </div>
+                
+                <!-- Science Sections -->
+                <div class="content-section" id="space-exploration">
+                    <h3>Space Exploration</h3>
+                    <p>Recent advancements in space technology have renewed interest in exploring our solar system and beyond. Private companies are now working alongside government agencies to push the boundaries of space travel.</p>
+                    <p>The James Webb Space Telescope has provided unprecedented views of distant galaxies, potentially rewriting our understanding of the early universe.</p>
+                </div>
+                
+                <div class="content-section" id="climate-change">
+                    <h3>Climate Change</h3>
+                    <p>Climate change is one of the most pressing challenges of our time. Rising global temperatures are leading to more extreme weather events, sea level rise, and ecosystem disruption.</p>
+                    <div class="content-highlight">
+                        <p>Transitioning to renewable energy sources like solar, wind, and hydroelectric power is critical for reducing greenhouse gas emissions and mitigating climate change effects.</p>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="biotechnology">
+                    <h3>Biotechnology Advances</h3>
+                    <p>Biotechnology is revolutionizing medicine with breakthroughs in gene editing, personalized medicine, and regenerative therapies. CRISPR technology allows precise editing of DNA sequences.</p>
+                    <p>Synthetic biology enables the design and construction of new biological parts, devices, and systems for useful purposes.</p>
+                </div>
+                
+                <div class="content-section" id="quantum-physics">
+                    <h3>Quantum Physics</h3>
+                    <p>Quantum physics explores the behavior of matter and energy at the smallest scales. Quantum mechanics has led to technologies like transistors, lasers, and MRI machines.</p>
+                    <p>Quantum computing promises to solve problems that are currently intractable for classical computers, potentially revolutionizing fields like cryptography and drug discovery.</p>
+                </div>
+                
+                <!-- Health Sections -->
+                <div class="content-section" id="mental-health">
+                    <h3>Mental Health Awareness</h3>
+                    <p>Mental health is as important as physical health. Conditions like depression, anxiety, and stress affect millions worldwide and can be managed with proper care and treatment.</p>
+                    <p>Mindfulness practices, therapy, and in some cases medication can significantly improve mental wellbeing and quality of life.</p>
+                </div>
+                
+                <div class="content-section" id="nutrition">
+                    <h3>Nutrition Fundamentals</h3>
+                    <p>A balanced diet provides essential nutrients for body function and disease prevention. Macronutrients (carbohydrates, proteins, fats) and micronutrients (vitamins, minerals) are both important.</p>
+                    <div class="content-highlight">
+                        <p>Whole foods like fruits, vegetables, whole grains, and lean proteins should form the basis of a healthy diet, while processed foods should be limited.</p>
+                    </div>
+                </div>
+                
+                <div class="content-section" id="exercise">
+                    <h3>Exercise Science</h3>
+                    <p>Regular physical activity provides numerous health benefits, including reduced risk of chronic diseases, improved mood, and better sleep. Both cardiovascular exercise and strength training are important.</p>
+                    <p>The World Health Organization recommends at least 150 minutes of moderate-intensity aerobic activity per week for adults.</p>
+                </div>
+                
+                <div class="content-section" id="sleep">
+                    <h3>Sleep Importance</h3>
+                    <p>Sleep is essential for physical and mental restoration. Adults typically need 7-9 hours of quality sleep per night for optimal health and cognitive function.</p>
+                    <p>Chronic sleep deprivation increases the risk of obesity, diabetes, cardiovascular disease, and impaired immune function.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Scrolling Website with Table of Contents</p>
+            <p>Created with HTML, CSS, and JavaScript | All content is for demonstration purposes</p>
+            <p>© 2023 ScrollSite. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
