@@ -5,24 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Essential Project Management Guidebook</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <div class="container nav-container">
-            <a href="#home" class="logo">
-                <i class="fas fa-book-open"></i> PM Guidebook
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#toc">Guide Contents</a></li>
-                <li><a href="#content">Chapters</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-            </ul>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid nav-container">
+            <!-- Left side: Logo and Menu button -->
+            <div class="nav-left">
+                <div class="nav-links">
+                <a href="#home" class="logo">
+                    <img src="images/logo.png" alt="PM Guidebook Logo" class="logo-image">
+                </a>
+                </div>
+                <div class="nav-links">
+                <button id="sidebar-toggle" class="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                </div>
+                
+            </div>
+            
+            <!-- Center: Search bar -->
+            <div class="nav-center">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" class="search-input" placeholder="Search chapters, topics...">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+            </div>
+            
+            <!-- Right side: Language selector and user menu -->
+            <div class="nav-right">
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <button id="language-btn" class="language-btn">
+                        <i class="fas fa-globe"></i> English <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="language-dropdown" class="language-dropdown">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="fi">Finnish</a>
+                        <a href="#" data-lang="sv">Swedish</a>
+                    </div>
+                    </div>
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link active">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        </div>
+                        <div class="nav-links">
+                        <a href="#toc" class="nav-link">
+                            <i class="fas fa-book-open"></i> Guide Contents
+                        </a>
+                    </div>
+                
+
+
+            </div>
         </div>
     </nav>
+    <!-- Borex-style Sidebar -->
+    <div id="main-sidebar" class="main-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <i class="fas fa-book-open"></i>
+                <span class="sidebar-title">Guidebook</span>
+            </div>
+            <button id="close-main-sidebar" class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="sidebar-content">
+            
+            <!-- Chapters Section -->
+            <div class="sidebar-section">
+                <h5 class="section-title">CHAPTERS</h5>
+                
+                <!-- Chapter 1 -->
+                <div class="chapter-group">
+                    <div class="chapter-header" data-chapter="1">
+                        <div class="chapter-title">
+                            <i class="fas fa-folder"></i>
+                            <span>Chapter 1</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="chapter-topics" id="chapter-1-topics">
+                        <a href="#waterfall" class="sidebar-topic">
+                            <i class="fas fa-water"></i>
+                            <span>Waterfall Methodology</span>
+                        </a>
+                        <a href="#agile" class="sidebar-topic">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Agile & Lean Management</span>
+                        </a>
+                        <a href="#scrum" class="sidebar-topic">
+                            <i class="fas fa-users"></i>
+                            <span>Introduction to Scrum</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Chapter 2 -->
+                <div class="chapter-group">
+                    <div class="chapter-header" data-chapter="2">
+                        <div class="chapter-title">
+                            <i class="fas fa-folder"></i>
+                            <span>Chapter 2</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="chapter-topics" id="chapter-2-topics">
+                        <a href="#wbs-gantt" class="sidebar-topic">
+                            <i class="fas fa-sitemap"></i>
+                            <span>WBS & Gantt Charts</span>
+                        </a>
+                        <a href="#scope-management" class="sidebar-topic">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Scope Management</span>
+                        </a>
+                        <a href="#quality-tools" class="sidebar-topic">
+                            <i class="fas fa-check-square"></i>
+                            <span>Quality Tools & Techniques</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Chapter 3 -->
+                <div class="chapter-group">
+                    <div class="chapter-header" data-chapter="3">
+                        <div class="chapter-title">
+                            <i class="fas fa-folder"></i>
+                            <span>Chapter 3</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="chapter-topics" id="chapter-3-topics">
+                        <a href="#risk-management" class="sidebar-topic">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Risk Management</span>
+                        </a>
+                        <a href="#quality-management" class="sidebar-topic">
+                            <i class="fas fa-award"></i>
+                            <span>Quality Management</span>
+                        </a>
+                        <a href="#pm-software" class="sidebar-topic">
+                            <i class="fas fa-laptop"></i>
+                            <span>Project Management Software</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <!-- Overlay for sidebar -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
     <!-- Home Section -->
     <section id="home">
         <div class="container">
@@ -388,57 +531,6 @@
         </div>
     </section>
     
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <div class="container">
-            <div class="section-content">
-                <h2><i class="fas fa-graduation-cap"></i> Professional Development & Certifications</h2>
-                <p>Continuous learning is vital for project managers. Engaging with professional associations and pursuing certifications can significantly boost your career and expertise.</p>
-                
-                <div class="certifications-container">
-                    <div class="cert-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <h3>PMI</h3>
-                        <p class="cert-org">Project Management Institute</p>
-                        <p class="cert-desc">Offers the PMP (Project Management Professional) certification, globally recognized as the gold standard in project management.</p>
-                    </div>
-                    
-                    <div class="cert-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-sync-alt"></i>
-                        </div>
-                        <h3>Scrum Alliance</h3>
-                        <p class="cert-org">Global Scrum Community</p>
-                        <p class="cert-desc">Offers Certified Scrum Master (CSM) and Certified Scrum Product Owner (CSPO) certifications for agile practitioners.</p>
-                    </div>
-                    
-                    <div class="cert-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-crown"></i>
-                        </div>
-                        <h3>PRINCE2</h3>
-                        <p class="cert-org">Projects IN Controlled Environments</p>
-                        <p class="cert-desc">Globally recognized for structured project management with a process-based approach.</p>
-                    </div>
-                    
-                    <div class="cert-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3>AgilePM</h3>
-                        <p class="cert-org">Agile Project Management</p>
-                        <p class="cert-desc">Focuses on an agile approach within a project framework, blending agile with project management rigor.</p>
-                    </div>
-                </div>
-                
-                <div class="content-highlight">
-                    <p><strong>Career Impact:</strong> These certifications validate your skills and open doors to advanced roles and opportunities within the project management landscape. They demonstrate commitment to professional development and mastery of industry standards.</p>
-                </div>
-            </div>
-        </div>
-    </section>
     
     <!-- Footer -->
     <footer>
@@ -453,6 +545,7 @@
             </div>
         </div>
     </footer>
+    </div>
     
     <!-- Back to Top Button -->
     <a href="#home" class="back-to-top">
