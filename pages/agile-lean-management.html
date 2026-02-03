@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Beyond Scrum – User Stories</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: #f5f7fb;
+    color: #222;
+  }
+
+  /* MAIN CONTENT */
+  .content {
+    flex: 1;
+    padding: 24px;
+    max-width: 900px;
+  }
+
+  h2, h3, h4 { color: #1f4f7b; }
+
+  section {
+    background: #fff;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 18px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  th { background: #f0f4ff; }
+
+  code {
+    display: block;
+    background: #1e293b;
+    color: #e5e7eb;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: pre;
+    margin-top: 10px;
+  }
+
+  .us-item {
+    background: #f8fafc;
+    border-left: 4px solid #f0b429;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+
+  /* Highlight current user story */
+  .current-story {
+    background: #fff7d6;
+    border-left-color: #ffb300;
+  }
+
+  /* RIGHT SIDEBAR */
+  .sidebar {
+    width: 240px;
+    background: #ffffff;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  .sidebar h3 {
+    margin-top: 0;
+    color: #1f4f7b;
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 6px 4px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: #1f4f7b;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+
+  .nav-link:hover {
+    background: #e8eefc;
+  }
+
+  .nav-link.active {
+    background: #dce7ff;
+    font-weight: bold;
+  }
+
+  @media (max-width: 900px) {
+    body { flex-direction: column; }
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      border-left: none;
+      border-top: 1px solid #ddd;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+  <section id="why">
+    <h3>Why This Matters</h3>
+    <p>Scrum Masters often work in hybrid agile environments. Knowing other frameworks helps you collaborate, scale, and guide teams more effectively.</p>
+  </section>
+
+  <section id="overview">
+    <h3>Agile Framework Overview</h3>
+    <p>Scrum is lightweight, but XP, SAFe, and FDD offer complementary strengths.</p>
+
+    <table>
+      <tr>
+        <th>Framework</th><th>Focus</th><th>Team Structure</th><th>Key Points</th>
+      </tr>
+      <tr>
+        <td>Scrum</td><td>Empirical, iterative</td><td>Single cross‑functional team</td><td>Sprints, PO, SM roles</td>
+      </tr>
+      <tr>
+        <td>XP</td><td>Technical excellence</td><td>Small teams</td><td>TDD, pair programming</td>
+      </tr>
+      <tr>
+        <td>SAFe</td><td>Enterprise scaling</td><td>Teams of teams</td><td>PI Planning, ARTs</td>
+      </tr>
+      <tr>
+        <td>FDD</td><td>Feature delivery</td><td>Domain feature teams</td><td>Domain modeling, milestones</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="integration">
+    <h3>Practical Integration</h3>
+
+    <h4>XP</h4>
+    <ul>
+      <li>Introduce pair programming</li>
+      <li>Run TDD workshops</li>
+      <li>Add continuous integration to DoD</li>
+    </ul>
+
+    <h4>SAFe</h4>
+    <ul>
+      <li>Support PI Planning</li>
+      <li>Work with RTEs</li>
+      <li>Facilitate ART syncs</li>
+    </ul>
+
+    <h4>FDD</h4>
+    <ul>
+      <li>Use domain modeling</li>
+      <li>Apply feature decomposition</li>
+      <li>Use milestone tracking</li>
+    </ul>
+  </section>
+
+  <section id="decision">
+    <h3>Decision Guide</h3>
+    <code>
+Start
+ ↓
+Single team? → Yes → Scrum
+ ↓ No
+Weak technical practices? → XP
+ ↓ No
+Need enterprise coordination? → SAFe
+ ↓ No
+Complex domain modeling? → FDD
+ ↓ No
+Use Scrum + tailored practices
+    </code>
+  </section>
+
+  <section id="competencies">
+    <h3>Scrum Master Competencies</h3>
+    <ul>
+      <li>Framework literacy</li>
+      <li>Context assessment</li>
+      <li>Hybrid implementation</li>
+      <li>Scaling awareness</li>
+    </ul>
+  </section>
+
+  
+</div>
+
+<!-- RIGHT SIDEBAR NAVIGATION -->
+<div class="sidebar">
+  <h3>Navigation</h3>
+
+
+  <a class="nav-link" href="">Introduction to Scrum roles, events, and artifacts.</a>
+  <a class="nav-link" href=""> Learn to create a product backlog.</a>
+  <a class="nav-link" href="">Learn to update the sprint backlog.</a>
+  <a class="nav-link" href="#why">Overview of XP, SAFe, and FDD</a>
+  <a class="nav-link" href="">Break down requirements into user stories.</a>
+  <a class="nav-link" href="">Understand user stories & Scrum boards.</a>
+
+ 
+</div>
+
+</body>
+</html>
