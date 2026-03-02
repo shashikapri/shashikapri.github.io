@@ -1,0 +1,420 @@
+/* style.css - Scrum Roles, Events & Artifacts (US-7 & US-11) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    background: #f4f7fc;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    padding: 2rem 1rem;
+}
+
+.scrum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    overflow: hidden;
+    padding: 2rem 2.5rem;
+}
+
+/* Hero Section */
+.scrum-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #1a4a7a 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.scrum-hero-content {
+    max-width: 800px;
+}
+
+.scrum-chapter-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.scrum-chapter-badge i {
+    margin-right: 0.5rem;
+}
+
+.scrum-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.scrum-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.scrum-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.scrum-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.scrum-code-badge i {
+    margin-right: 0.4rem;
+}
+
+/* Section Title */
+.scrum-section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 1rem;
+    color: #0b2b4e;
+}
+
+.scrum-section-title i {
+    background: #0b2b4e;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.scrum-section-title h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.scrum-intro-text {
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    border-left: 4px solid #0b5e8a;
+    padding-left: 1rem;
+}
+
+/* Roles Grid */
+.scrum-roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.scrum-role-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px -8px rgba(0,0,0,0.1);
+    border: 1px solid #e2edff;
+    transition: transform 0.2s;
+    border-top: 6px solid;
+}
+
+.scrum-role-card:hover {
+    transform: translateY(-5px);
+}
+
+.po-card { border-top-color: #f39c12; }
+.sm-card { border-top-color: #3498db; }
+.dev-card { border-top-color: #2ecc71; }
+
+.scrum-role-icon {
+    width: 4rem;
+    height: 4rem;
+    background: #f8faff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.po-card .scrum-role-icon i { color: #f39c12; font-size: 2rem; }
+.sm-card .scrum-role-icon i { color: #3498db; font-size: 2rem; }
+.dev-card .scrum-role-icon i { color: #2ecc71; font-size: 2rem; }
+
+.scrum-role-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0b2b4e;
+}
+
+.role-nickname {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #666;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+.scrum-role-content p {
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Events Table */
+.scrum-table-container {
+    overflow-x: auto;
+    margin: 2rem 0 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid #cfddee;
+}
+
+.scrum-events-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.scrum-events-table th {
+    background: #f0f6ff;
+    color: #104079;
+    font-weight: 600;
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #9bb6d4;
+}
+
+.scrum-events-table td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #d8e3f0;
+    vertical-align: top;
+}
+
+.scrum-events-table tr:last-child td {
+    border-bottom: none;
+}
+
+.event-name {
+    font-weight: 700;
+    color: #0b5e8a;
+}
+
+.scrum-events-table td strong {
+    color: #b6582c;
+    background: #fff0e6;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+}
+
+/* Highlight Note */
+.scrum-highlight-note {
+    background: #fff3cd;
+    border-left: 6px solid #ffb347;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scrum-highlight-note i {
+    font-size: 1.8rem;
+    color: #b6582c;
+}
+
+.scrum-highlight-note p {
+    font-size: 1.1rem;
+    color: #856404;
+}
+
+/* Artifacts Grid */
+.scrum-artifacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.scrum-artifact-card {
+    background: linear-gradient(145deg, #f8fbff, #f0f5ff);
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid #c9ddf5;
+    transition: all 0.2s;
+}
+
+.scrum-artifact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px -10px rgba(0,80,150,0.2);
+}
+
+.artifact-icon {
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+
+.artifact-icon i {
+    font-size: 2.5rem;
+    color: #0b5e8a;
+}
+
+.artifact-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0b2b4e;
+}
+
+.artifact-description {
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.artifact-description strong {
+    color: #b6582c;
+    background: #fff0e6;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+}
+
+/* Summary Card */
+.scrum-summary {
+    background: #0a2942;
+    color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-image: radial-gradient(circle at 80% 30%, #1f4b74, #082135);
+}
+
+.scrum-summary h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.scrum-summary h3 i {
+    color: #ffb347;
+}
+
+.summary-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.summary-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 3rem;
+}
+
+.summary-label {
+    font-weight: 700;
+    color: #ffb347;
+    min-width: 80px;
+}
+
+/* Navigation */
+.scrum-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2edff;
+}
+
+.scrum-nav-btn {
+    background: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: #0b2b4e;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid #cbd5e1;
+    transition: all 0.2s;
+}
+
+.scrum-nav-btn:hover {
+    background: #f0f9ff;
+    border-color: #0b5e8a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .scrum-container {
+        padding: 1.5rem;
+    }
+    
+    .scrum-title {
+        font-size: 2rem;
+    }
+    
+    .scrum-section-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    .scrum-roles-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .scrum-artifacts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .scrum-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .summary-item {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .scrum-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .scrum-title {
+        font-size: 1.8rem;
+    }
+}

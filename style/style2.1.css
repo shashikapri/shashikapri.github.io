@@ -1,0 +1,373 @@
+/* style.css - Phases of the Waterfall Framework (US-4) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fc;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    padding: 2rem 1rem;
+}
+
+.us4-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    overflow: hidden;
+    padding: 2rem 2.5rem;
+}
+
+/* Hero Section */
+.us4-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us4-hero-content {
+    max-width: 800px;
+}
+
+.us4-chapter-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.us4-chapter-badge i {
+    margin-right: 0.5rem;
+}
+
+.us4-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.us4-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us4-meta {
+    display: flex;
+    gap: 1rem;
+}
+
+.us4-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.us4-code-badge i {
+    margin-right: 0.4rem;
+}
+
+/* Intro Card */
+.us4-intro-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-left: 6px solid #0a58ca;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 14px rgba(0,80,120,0.08);
+}
+
+.us4-intro-icon i {
+    font-size: 2.8rem;
+    color: #0a58ca;
+}
+
+.us4-intro-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #0b2b4e;
+}
+
+.us4-intro-content p {
+    font-size: 1rem;
+    color: #1e3a5f;
+    margin-bottom: 0.8rem;
+}
+
+/* Section Title */
+.us4-section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    margin: 2.5rem 0 1.5rem;
+    color: #0b2b4e;
+}
+
+.us4-section-title i {
+    background: #0b2b4e;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.us4-section-title h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* IMAGE SECTION - STYLED FOR 824x751 DIMENSIONS */
+.us4-image-section {
+    margin: 2rem 0 3rem;
+}
+
+.us4-image-container {
+    background: linear-gradient(145deg, #f0f5ff, #e6edf9);
+    border-radius: 2rem;
+    padding: 2rem;
+    border: 2px dashed #3b7fbd;
+}
+
+.us4-image-wrapper {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Actual image styling - maintains aspect ratio */
+.us4-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+/* Placeholder styling (only shows if image is missing) */
+.us4-image-placeholder {
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.wf-flow-diagram {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.wf-flow-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf-box {
+    width: 100%;
+    padding: 1.2rem;
+    background: #0b2b4e;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+
+.wf-box.req { background: #2b6e4f; }
+.wf-box.design { background: #0b5e8a; }
+.wf-box.impl { background: #b6582c; }
+.wf-box.test { background: #8e44ad; }
+.wf-box.deploy { background: #c07a2b; }
+.wf-box.maint { background: #4a6fa5; }
+
+.wf-arrow {
+    color: #3b7fbd;
+    font-size: 1.5rem;
+}
+
+.wf-image-caption {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #e3f0ff;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: #0b2b4e;
+}
+
+.wf-image-caption strong {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.us4-image-description {
+    background: rgba(255,255,255,0.8);
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    border-left: 4px solid #0b5e8a;
+    font-style: italic;
+    color: #1e3a5f;
+}
+
+/* Phases Grid */
+.us4-phases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.us4-phase-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.8rem;
+    box-shadow: 0 10px 20px -8px rgba(0,0,0,0.1);
+    border: 1px solid #e2edff;
+    transition: transform 0.2s;
+    border-top: 6px solid;
+}
+
+.us4-phase-card:hover {
+    transform: translateY(-4px);
+}
+
+.phase-1 { border-top-color: #2b6e4f; }
+.phase-2 { border-top-color: #0b5e8a; }
+.phase-3 { border-top-color: #b6582c; }
+.phase-4 { border-top-color: #8e44ad; }
+.phase-5 { border-top-color: #c07a2b; }
+.phase-6 { border-top-color: #4a6fa5; }
+
+.us4-phase-number {
+    display: inline-block;
+    background: #0b2b4e;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.us4-phase-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0b2b4e;
+}
+
+.phase-subtitle {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+.us4-phase-content p {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.us4-purpose {
+    background: #f8fbff;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-left: 4px solid;
+    font-size: 0.95rem;
+}
+
+.phase-1 .us4-purpose { border-left-color: #2b6e4f; }
+.phase-2 .us4-purpose { border-left-color: #0b5e8a; }
+.phase-3 .us4-purpose { border-left-color: #b6582c; }
+.phase-4 .us4-purpose { border-left-color: #8e44ad; }
+.phase-5 .us4-purpose { border-left-color: #c07a2b; }
+.phase-6 .us4-purpose { border-left-color: #4a6fa5; }
+
+/* Navigation */
+.us4-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2edff;
+}
+
+.us4-nav-btn {
+    background: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: #0b2b4e;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid #cbd5e1;
+    transition: all 0.2s;
+}
+
+.us4-nav-btn:hover {
+    background: #f0f9ff;
+    border-color: #0b5e8a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .us4-container {
+        padding: 1.5rem;
+    }
+    
+    .us4-title {
+        font-size: 2rem;
+    }
+    
+    .us4-intro-card {
+        flex-direction: column;
+    }
+    
+    .us4-phases-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .us4-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .us4-image-wrapper {
+        max-width: 100%;
+    }
+}
+
+/* For very large screens, limit image size to PDF dimensions */
+@media (min-width: 1400px) {
+    .us4-image-wrapper {
+        max-width: 824px;
+    }
+}

@@ -1,0 +1,603 @@
+/* style10.css – external stylesheet for Beyond Scrum page (US-10) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fc;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+}
+
+.us10-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    overflow: hidden;
+    padding: 2rem 2.5rem;
+}
+
+/* Hero Section */
+.us10-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us10-hero-content {
+    max-width: 800px;
+}
+
+.us10-chapter-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+.us10-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.us10-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us10-meta {
+    display: flex;
+    gap: 1rem;
+}
+
+.us10-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Why Matters Card */
+.us10-matter-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-left: 6px solid #0a58ca;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 14px rgba(0,80,120,0.08);
+}
+
+.us10-matter-icon i {
+    font-size: 2.8rem;
+    color: #0a58ca;
+}
+
+.us10-matter-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.us10-matter-content p {
+    font-size: 1.1rem;
+    color: #1e3a5f;
+}
+
+/* Framework visual (replaces first image) */
+.us10-visual-container {
+    margin: 2.5rem 0;
+}
+
+.us10-visual {
+    background: linear-gradient(145deg, #f0f5ff, #e6edf9);
+    border-radius: 3rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border: 2px dashed #3b7fbd;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.us10-visual-icon {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3.2rem;
+    color: #1e4a7a;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.us10-visual-icon i {
+    background: white;
+    padding: 1rem;
+    border-radius: 60px;
+    box-shadow: 0 8px 18px rgba(0,40,80,0.1);
+}
+
+.us10-visual-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0f2c4e;
+    letter-spacing: -0.02em;
+}
+
+.us10-visual-caption {
+    font-size: 1.2rem;
+    color: #2b4f73;
+    background: rgba(255,255,255,0.6);
+    display: inline-block;
+    padding: 0.4rem 2rem;
+    border-radius: 40px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.us10-badge-light {
+    background: #cfe3ff;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.us10-badge-full {
+    background: #d9d2ff;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.us10-visual-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #1f3a57;
+}
+
+.us10-tag-light, .us10-tag-full {
+    background: white;
+    padding: 0.5rem 1.8rem;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.us10-tag-light i {
+    color: #2e7d32;
+}
+
+.us10-tag-full i {
+    color: #8e44ad;
+}
+
+/* Section titles */
+.us10-section {
+    margin: 2.8rem 0;
+}
+
+.us10-section-title {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.8rem;
+    color: #0b2b4e;
+}
+
+/* Comparison Table */
+.us10-table-wrapper {
+    overflow-x: auto;
+    border-radius: 1.5rem;
+    border: 1px solid #cfddee;
+}
+
+.us10-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.us10-comparison-table th {
+    background: #f0f6ff;
+    color: #104079;
+    font-weight: 600;
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #9bb6d4;
+}
+
+.us10-comparison-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #d8e3f0;
+    vertical-align: top;
+}
+
+.us10-framework-tag {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    min-width: 80px;
+}
+
+.scrum { background: #0b5e8a; }
+.xp { background: #2b6e4f; }
+.safe { background: #b6582c; }
+.fdd { background: #8e44ad; }
+
+/* Framework Deep Dive (replaces second image) */
+.us10-deepdive {
+    background: #f2f8ff;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid #b9d4f0;
+}
+
+.us10-deepdive-title {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #0b2b4e;
+}
+
+.us10-deepdive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.us10-deepdive-card {
+    background: white;
+    border-radius: 1.8rem;
+    padding: 1.5rem;
+    border-top: 6px solid;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.us10-deepdive-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.us10-deepdive-header i {
+    font-size: 2rem;
+}
+
+.us10-deepdive-name {
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.us10-deepdive-sub {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+}
+
+.us10-deepdive-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.8rem;
+}
+
+.us10-deepdive-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.us10-deepdive-list i {
+    width: 1.8rem;
+    color: #3a6792;
+}
+
+/* Framework cards (XP, SAFe, FDD) */
+.us10-framework-card {
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    border-left: 6px solid;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+}
+
+.xp-card { background: #f6ffee; border-color: #2b6e4f; }
+.safe-card { background: #fff4e8; border-color: #b6582c; }
+.fdd-card { background: #f4ecfa; border-color: #8e44ad; }
+
+.us10-framework-header {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.us10-framework-icon i {
+    font-size: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: white;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+.us10-framework-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.us10-framework-subtitle {
+    color: #4b5563;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+.us10-situation {
+    display: flex;
+    gap: 1rem;
+    background: rgba(255,255,255,0.5);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+    align-items: center;
+}
+
+.us10-situation i {
+    font-size: 1.6rem;
+    color: #a41717;
+}
+
+.us10-practices h4,
+.us10-role-evolution h4,
+.us10-complementary h4,
+.us10-preparation h4,
+.us10-integration h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.us10-practice-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.us10-practice-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.us10-practice-list i {
+    width: 1.8rem;
+    color: #1f5e8e;
+}
+
+.us10-watchout {
+    background: #fff3cd;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.us10-role-path {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    background: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 40px;
+    margin: 1rem 0;
+}
+
+.us10-role-start, .us10-role-end {
+    background: #eef2f6;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+}
+
+.us10-role-end {
+    background: #d0e0ff;
+}
+
+.us10-responsibilities {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.us10-responsibilities li {
+    margin-bottom: 0.5rem;
+}
+
+/* Framework selection visual */
+.us10-selection-visual {
+    background: #0a2942;
+    color: white;
+    border-radius: 2.5rem;
+    padding: 2rem 2rem;
+    margin: 3rem 0;
+}
+
+.us10-selection-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.us10-selection-header i {
+    font-size: 2.5rem;
+    background: #1e4a7a;
+    padding: 0.8rem;
+    border-radius: 60px;
+}
+
+.us10-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.us10-selection-item {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(4px);
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.us10-selection-icon {
+    font-size: 2.2rem;
+    min-width: 3rem;
+    text-align: center;
+}
+
+.us10-selection-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.us10-selection-content strong {
+    font-size: 1.4rem;
+}
+
+.us10-selection-content span {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* Competencies */
+.us10-competencies {
+    margin: 3rem 0 2rem;
+}
+
+.us10-competencies-title {
+    font-size: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.us10-competencies-intro {
+    margin-bottom: 1.5rem;
+}
+
+.us10-competencies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.us10-competency-card {
+    background: #fafeff;
+    border: 1px solid #bed9f0;
+    border-radius: 1.8rem;
+    padding: 1.8rem 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px #deecf9;
+}
+
+.us10-competency-icon i {
+    font-size: 2.5rem;
+    color: #1f5e8e;
+    margin-bottom: 1rem;
+    background: #e1effb;
+    padding: 0.8rem;
+    border-radius: 60px;
+}
+
+.us10-competency-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Resources */
+.us10-resources {
+    background: #ebf3fa;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+}
+
+.us10-resources-title {
+    font-size: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.us10-resources-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.us10-resource-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    font-size: 1.1rem;
+}
+
+.us10-resource-number {
+    background: #0b2b4e;
+    color: white;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/*

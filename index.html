@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Project Manager's Compass: Navigating Your Way to Success</title>
+    <!-- Font Awesome, Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Header-only styles - Navy Blue & White theme -->
+    <style>
+        /* Navy Blue & White Header - Clean and Professional - ENLARGED DOUBLE SIZE */
+        .navbar {
+            background: #0a1929 !important;
+            border-bottom: 2px solid #1e3a5f !important;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.2) !important;
+            padding: 1.2rem 3rem !important; /* Doubled from 0.6rem to 1.2rem */
+        }
+        
+        .sidebar-toggle {
+            color: #ffffff !important;
+            font-size: 2rem !important; /* Doubled from 1.5rem to 2rem */
+        }
+        
+        .sidebar-toggle:hover {
+            color: #90caf9 !important;
+        }
+        
+        .search-input {
+            background: #132f4f !important;
+            border: 2px solid #2b4b73 !important; /* Thicker border */
+            color: #ffffff !important;
+            padding: 1rem 1rem 1rem 3rem !important; /* Doubled padding */
+            font-size: 1.2rem !important; /* Larger font */
+            border-radius: 50px !important;
+        }
+        
+        .search-input::placeholder {
+            color: #9bb9da !important;
+            opacity: 1;
+            font-size: 1.2rem !important;
+        }
+        
+        .search-icon {
+            color: #9bb9da !important;
+            font-size: 1.3rem !important; /* Larger icon */
+            left: 1.2rem !important;
+            top: 1rem !important;
+        }
+        
+        .nav-link {
+            color: #ffffff !important;
+            font-size: 1.2rem !important; /* Doubled from 0.95rem */
+            padding: 0.8rem 1.2rem !important; /* Larger padding */
+        }
+        
+        .nav-link:hover {
+            background: #1e3a5f !important;
+            color: #ffffff !important;
+        }
+        
+        .language-btn {
+            background: #132f4f !important;
+            border: 2px solid #2b4b73 !important;
+            color: #ffffff !important;
+            padding: 0.8rem 1.5rem !important; /* Larger padding */
+            font-size: 1.2rem !important; /* Larger font */
+            border-radius: 40px !important;
+        }
+        
+        .language-btn:hover {
+            background: #1e3a5f !important;
+        }
+        
+        .language-dropdown {
+            background: #0a1929 !important;
+            border: 2px solid #2b4b73 !important;
+        }
+        
+        .language-dropdown a {
+            color: #ffffff !important;
+            padding: 0.8rem 1.5rem !important;
+            font-size: 1.1rem !important;
+        }
+        
+        .language-dropdown a:hover {
+            background: #1e3a5f !important;
+            color: #ffffff !important;
+        }
+        
+        /* New styles for logo and title - ENLARGED */
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem; /* Larger gap */
+        }
+        
+        .brand-logo-img {
+            height: 70px !important; /* Doubled from 45px to 70px */
+            width: auto;
+            border-radius: 12px;
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+        
+        .brand-title {
+            color: #ffffff;
+            font-size: 2rem !important; /* Doubled from 1.2rem to 2rem */
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+        
+        .brand-slogan {
+            color: #9bb9da;
+            font-size: 1.2rem !important; /* Doubled from 0.8rem to 1.2rem */
+            font-style: italic;
+        }
+        
+        /* Fallback compass icon - ENLARGED */
+        .brand-logo {
+            width: 70px !important;
+            height: 70px !important;
+            background: #ffffff !important;
+            border-radius: 12px !important;
+            font-size: 2.5rem !important; /* Larger icon */
+        }
+        
+        /* Adjust nav container spacing */
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .nav-left, .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem; /* Larger gap */
+        }
+        
+        .nav-center {
+            flex: 1;
+            max-width: 600px; /* Wider search */
+            margin: 0 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem 1.5rem !important;
+            }
+            
+            .brand-title {
+                font-size: 1.4rem !important;
+            }
+            
+            .brand-slogan {
+                font-size: 0.9rem !important;
+            }
+            
+            .brand-logo-img {
+                height: 50px !important;
+            }
+            
+            .nav-link {
+                font-size: 1rem !important;
+                padding: 0.6rem 0.8rem !important;
+            }
+            
+            .language-btn {
+                padding: 0.6rem 1rem !important;
+                font-size: 1rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="app-wrapper">
+    <!-- HEADER - Navy Blue Theme with Logo and Slogan - ENLARGED DOUBLE SIZE -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="brand-container">
+                    <a href="#home" class="logo">
+                        <img src="images/PMLogo.png" alt="Project Manager's Compass Logo" 
+                             class="brand-logo-img"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="brand-logo" style="display: none;">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                    </a>
+                    <div class="brand-text">
+                        <span class="brand-title">The Project Manager's Compass</span>
+                        <span class="brand-slogan">Navigating Your Way to Success</span>
+                    </div>
+                </div>
+                <button id="sidebar-toggle" class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-center">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" class="search-input" placeholder="Search chapters, topics...">
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button id="language-btn" class="language-btn"><i class="fas fa-globe"></i> English <i class="fas fa-chevron-down"></i></button>
+                    <div id="language-dropdown" class="language-dropdown">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="fi">Finnish</a>
+                        <a href="#" data-lang="sv">Swedish</a>
+                    </div>
+                </div>
+                <div class="nav-links"><a href="#" class="nav-link" data-nav="home"><i class="fas fa-home"></i> Home</a></div>
+                <div class="nav-links"><a href="#" class="nav-link" data-nav="toc"><i class="fas fa-book-open"></i> Guide Contents</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MIDDLE: left sidebar + dynamic main -->
+    <div class="middle-row">
+        <!-- LEFT SIDEBAR - UPDATED WITH ALL 10 CHAPTERS -->
+        <div id="main-sidebar" class="main-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo"><i class="fas fa-compass"></i><span class="sidebar-title">The PM's Compass</span></div>
+                <button id="close-main-sidebar" class="close-sidebar"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="sidebar-content">
+                <div class="sidebar-section">
+                    <h5 class="section-title">CHAPTERS</h5>
+                    
+                    <!-- Chapter 1: Introduction & How to Use This Guidebook -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="1">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 1: Introduction</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-1-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter1.1.html"><i class="fas fa-info-circle"></i><span>1.1 Purpose of this Guidebook (US-1)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter1.2.html"><i class="fas fa-users"></i><span>1.2 Who Should Read This Guidebook? (US-2)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter1.3.html"><i class="fas fa-compass"></i><span>1.3 How to Navigate the Chapters (US-1)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter1.4.html"><i class="fas fa-clipboard-check"></i><span>1.4 Using this Guidebook for Self-Assessment (US-3)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 2: Waterfall Project Management -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="2">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 2: Waterfall</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-2-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter2.1.html"><i class="fas fa-water"></i><span>2.1 Introduction to the Waterfall Model (US-4)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter2.2.html"><i class="fas fa-layer-group"></i><span>2.2 The Stages of a Waterfall Project (US-4)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter2.3.html"><i class="fas fa-balance-scale"></i><span>2.3 When to Use Waterfall: Benefits/Disadvantages (US-5)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter2.4.html"><i class="fas fa-exchange-alt"></i><span>2.4 Waterfall vs. Agile: Choosing the Right Approach (US-6)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 3: Agile and Lean Project Management -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="3">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 3: Agile & Lean</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-3-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter3.1.html"><i class="fas fa-sync-alt"></i><span>3.1 Introduction to Agile: Core Values (US-6)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter3.2.html"><i class="fas fa-users-cog"></i><span>3.2 Scrum: Roles, Events, and Artifacts (US-7)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter3.3.html"><i class="fas fa-list"></i><span>3.3 Creating and Managing a Product Backlog (US-8, US-11)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter3.4.html"><i class="fas fa-tasks"></i><span>3.4 Managing the Sprint Backlog (US-9)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter3.5.html"><i class="fas fa-columns"></i><span>3.5 Working with User Stories and Scrum Boards (US-12)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter3.6.html"><i class="fas fa-code-branch"></i><span>3.6 Overview of Other Agile Frameworks (US-10)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter3.7.html"><i class="fas fa-chart-line"></i><span>3.7 Introduction to Lean Principles (US-7)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 4: Project Planning Tools: WBS and Gantt Charts -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="4">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 4: WBS & Gantt</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-4-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter4.1.html"><i class="fas fa-sitemap"></i><span>4.1 What is a Work Breakdown Structure? (US-13)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter4.2.html"><i class="fas fa-question-circle"></i><span>4.2 Why Use a WBS? Benefits (US-13)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter4.3.html"><i class="fas fa-code"></i><span>4.3 Example: WBS for Software Development (US-14)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter4.4.html"><i class="fas fa-chart-bar"></i><span>4.4 What is a Gantt Chart? (US-15)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter4.5.html"><i class="fas fa-clock"></i><span>4.5 How Gantt Charts Are Used (US-15)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter4.6.html"><i class="fas fa-chart-line"></i><span>4.6 Example: Gantt Chart for Software Project (US-16)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 5: Scope Management -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="5">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 5: Scope Management</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-5-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter5.1.html"><i class="fas fa-bullseye"></i><span>5.1 What is Project Scope? (US-17)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter5.2.html"><i class="fas fa-exclamation-triangle"></i><span>5.2 Preventing Scope Creep (US-18)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter5.3.html"><i class="fas fa-cogs"></i><span>5.3 Key Processes in Scope Management (US-19)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter5.4.html"><i class="fas fa-file-alt"></i><span>5.4 How to Write a Scope Management Plan (US-20)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter5.5.html"><i class="fas fa-users"></i><span>5.5 Implementing the Scope Plan (US-21)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 6: Risk Management -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="6">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 6: Risk Management</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-6-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter6.1.html"><i class="fas fa-exclamation-circle"></i><span>6.1 Introduction to Risk Management (US-22)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter6.2.html"><i class="fas fa-tag"></i><span>6.2 Types of Project Risks (US-23)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter6.3.html"><i class="fas fa-process"></i><span>6.3 Systematic Risk Management Process (US-24)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter6.4.html"><i class="fas fa-table"></i><span>6.4 Creating and Using a Risk Register (US-25)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 7: Quality Management -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="7">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 7: Quality Management</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-7-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter7.1.html"><i class="fas fa-check-circle"></i><span>7.1 Defining "Quality" in PM (US-26)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter7.2.html"><i class="fas fa-star"></i><span>7.2 Why Quality Management Matters (US-27)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter7.3.html"><i class="fas fa-layer-group"></i><span>7.3 Three Key Quality Processes (US-28)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter7.4.html"><i class="fas fa-tools"></i><span>7.4 Common Quality Tools & Techniques (US-29)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 8: Project Management Software -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="8">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 8: PM Software</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-8-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter8.1.html"><i class="fas fa-laptop"></i><span>8.1 Common Features of PM Tools (US-30)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter8.2.html"><i class="fas fa-crown"></i><span>8.2 Popular Software Overview (US-31)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 9: Professional Development -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="9">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 9: Professional Development</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-9-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter9.1.html"><i class="fas fa-building"></i><span>9.1 Project Management Associations (US-32)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter9.2.html"><i class="fas fa-certificate"></i><span>9.2 Useful PM Certifications (PMP) (US-33)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter9.3.html"><i class="fas fa-award"></i><span>9.3 Agile Certifications (PSM, CSM) (US-34)</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 10: References & Ethical Guidelines -->
+                    <div class="chapter-group">
+                        <div class="chapter-header" data-chapter="10">
+                            <div class="chapter-title"><i class="fas fa-folder"></i><span>Chapter 10: References</span></div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="chapter-topics" id="chapter-10-topics">
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter10.1.html"><i class="fas fa-book"></i><span>10.1 References and Citations (US-35)</span></a>
+                            <a href="#" class="sidebar-topic load-page" data-page="chapter10.2.html"><i class="fas fa-robot"></i><span>10.2 Ethical Use of AI in Creating This Guidebook (US-36)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN BODY AREA (loads external HTML files) -->
+        <main class="main-content" id="dynamic-body">
+            <!-- Initially load home page -->
+            <div class="section-card" id="loading-placeholder">
+                <div class="text-center">
+                    <i class="fas fa-spinner fa-spin fa-3x"></i>
+                    <p>Loading content...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER - Updated with new title -->
+    <footer>
+        <div class="footer-content" style="display:flex; justify-content:space-between; align-items:center;">
+            <div><i class="fas fa-compass"></i> The Project Manager's Compass: Navigating Your Way to Success</div>
+            <div>© 2023 – best practices</div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+</div>
+
+<!-- JavaScript -->
+<script src="script/script.js"></script>
+</body>
+</html>

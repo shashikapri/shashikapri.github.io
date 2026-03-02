@@ -1,0 +1,709 @@
+/* style3.3.css – Create a Product Backlog (US-8) - Premium version matching US-10 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fc;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    padding: 2rem 1rem;
+}
+
+.us8-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    overflow: hidden;
+    padding: 2.5rem;
+}
+
+/* ===== HERO SECTION - Exact match with US-10 ===== */
+.us8-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us8-hero-content {
+    max-width: 800px;
+}
+
+.us8-chapter-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+.us8-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.us8-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us8-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.us8-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.us8-hero-description {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    margin-top: 1rem;
+}
+
+/* ===== WHY MATTERS CARD - Exact match US-10 ===== */
+.us8-matter-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-left: 6px solid #0a58ca;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 14px rgba(0,80,120,0.08);
+}
+
+.us8-matter-icon i {
+    font-size: 2.8rem;
+    color: #0a58ca;
+}
+
+.us8-matter-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #0b2b4e;
+}
+
+.us8-matter-content p {
+    font-size: 1.1rem;
+    color: #1e3a5f;
+}
+
+/* ===== SECTION TITLES - Match US-10 ===== */
+.us8-section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0b2b4e;
+    margin: 2rem 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.us8-section-title i {
+    color: #1f5f99;
+    font-size: 2rem;
+    background: #f0f9ff;
+    padding: 0.8rem;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0,40,80,0.1);
+}
+
+/* ===== CONTENT CARDS - Premium styling ===== */
+.us8-content-card {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+/* ===== GRID LAYOUT - Match US-10 deepdive grid ===== */
+.us8-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+    margin: 2rem 0;
+}
+
+.us8-premium-card {
+    background: white;
+    border-radius: 1.8rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.us8-premium-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px -10px rgba(0,60,120,0.2);
+}
+
+.us8-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.us8-card-header i {
+    font-size: 2rem;
+    color: #2266a8;
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.us8-card-header h3 {
+    font-size: 1.6rem;
+    color: #124072;
+}
+
+/* ===== BULLET LIST - Premium ===== */
+.us8-bullet-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.us8-bullet-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 2rem;
+    position: relative;
+    color: #2c3e50;
+}
+
+.us8-bullet-list li::before {
+    content: "•";
+    color: #0a58ca;
+    font-weight: bold;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0.2rem;
+    top: -0.4rem;
+}
+
+/* ===== STEPS GRID - Match US-10 deepdive cards ===== */
+.us8-steps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.us8-step-premium {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.8rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 15px -8px rgba(0,60,120,0.1);
+    display: flex;
+    gap: 1.2rem;
+    transition: all 0.2s;
+}
+
+.us8-step-premium:hover {
+    border-color: #b9d4f0;
+    box-shadow: 0 12px 25px -10px rgba(0,60,120,0.15);
+}
+
+.us8-step-premium-number {
+    background: linear-gradient(135deg, #0b2b4e 0%, #1e4a7a 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 6px 12px rgba(0,40,80,0.2);
+}
+
+.us8-step-premium-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #123e64;
+}
+
+.us8-step-premium-content p {
+    color: #33475b;
+    line-height: 1.6;
+}
+
+/* ===== FULL WIDTH STEP ===== */
+.us8-step-premium-full {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.us8-step-premium-number-large {
+    background: linear-gradient(135deg, #0b2b4e 0%, #1e4a7a 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 2.2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 15px rgba(0,40,80,0.25);
+}
+
+.us8-step-premium-content-full {
+    flex: 1;
+}
+
+.us8-step-premium-content-full h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #123e64;
+}
+
+/* ===== FORMAT BOX ===== */
+.us8-format-box {
+    background: #f0f9ff;
+    border-left: 5px solid #2a73b3;
+    padding: 1.2rem 2rem;
+    border-radius: 1.2rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    color: #04396c;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,60,120,0.08);
+}
+
+/* ===== VISUAL CONTAINER - Match US-10 exactly ===== */
+.us8-visual-container {
+    margin: 2rem 0;
+}
+
+.us8-visual {
+    background: linear-gradient(145deg, #f0f9ff, #e6f0fa);
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    border: 2px dashed #3f7eb0;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.us8-visual-icon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+    color: #1e4a7a;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.us8-visual-icon i {
+    background: white;
+    padding: 0.8rem;
+    border-radius: 60px;
+    box-shadow: 0 8px 18px rgba(0,40,80,0.1);
+}
+
+.us8-visual-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0f2c4e;
+    margin-bottom: 0.8rem;
+}
+
+.us8-visual-caption {
+    font-size: 1.1rem;
+    color: #2b4f73;
+    background: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 40px;
+    margin: 0.8rem 0;
+    backdrop-filter: blur(4px);
+}
+
+.us8-visual-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.us8-badge-light, .us8-badge-full {
+    padding: 0.3rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.us8-badge-light {
+    background: #cfe3ff;
+}
+
+.us8-badge-full {
+    background: #d9d2ff;
+}
+
+/* ===== SELECTION VISUAL - Match US-10 exactly ===== */
+.us8-selection-visual {
+    background: #0a2942;
+    color: white;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+}
+
+.us8-selection-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.us8-selection-header i {
+    font-size: 2.5rem;
+    background: #1e4a7a;
+    padding: 0.8rem;
+    border-radius: 60px;
+}
+
+.us8-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.us8-selection-item {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(4px);
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.us8-selection-icon {
+    font-size: 2.2rem;
+    min-width: 3rem;
+    text-align: center;
+}
+
+.us8-selection-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.us8-selection-content strong {
+    font-size: 1.3rem;
+}
+
+.us8-selection-content span {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* ===== TOOLS SECTION - Match US-10 resources ===== */
+.us8-resources {
+    background: #ebf3fa;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+}
+
+.us8-resources-title {
+    font-size: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    color: #0b2b4e;
+}
+
+.us8-resources-intro {
+    margin-bottom: 1.5rem;
+    color: #1e3a5f;
+}
+
+.us8-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.us8-tool-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border: 1px solid #c5dcf2;
+    box-shadow: 0 4px 10px rgba(0,40,80,0.05);
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.us8-tool-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px -10px rgba(0,60,120,0.2);
+    border-color: #2a73b3;
+}
+
+.us8-tool-card i {
+    font-size: 2.5rem;
+    color: #1f5f99;
+    margin-bottom: 0.5rem;
+}
+
+.us8-tool-card strong {
+    font-size: 1.2rem;
+    color: #0b2b4e;
+}
+
+.us8-tool-card span {
+    font-size: 0.9rem;
+    color: #4a6a85;
+}
+
+/* ===== ROLE SECTION - Match US-10 framework cards ===== */
+.us8-role-container {
+    margin: 1.5rem 0;
+}
+
+.us8-role-content {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+.us8-framework-card {
+    border-radius: 2rem;
+    padding: 2rem;
+    border-left: 6px solid;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+}
+
+.us8-framework-header {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.us8-framework-icon i {
+    font-size: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: white;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+.us8-framework-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0b2b4e;
+}
+
+.us8-framework-subtitle {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.us8-situation {
+    display: flex;
+    gap: 1rem;
+    background: rgba(255,255,255,0.7);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin: 1.2rem 0;
+    align-items: center;
+}
+
+.us8-situation i {
+    font-size: 1.5rem;
+    color: #0a58ca;
+}
+
+.us8-practices h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #0b2b4e;
+}
+
+.us8-practice-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.us8-practice-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.us8-practice-list i {
+    width: 1.5rem;
+    color: #1f5e8e;
+}
+
+/* ===== SUMMARY PREMIUM ===== */
+.us8-summary-premium {
+    background: linear-gradient(135deg, #e2f0e8 0%, #d0e8dd 100%);
+    border-radius: 2rem;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-left: 8px solid #2e7d5e;
+    box-shadow: 0 10px 25px -10px #1b7553;
+}
+
+.us8-summary-premium i {
+    font-size: 3.5rem;
+    color: #1b7553;
+    background: white;
+    padding: 1rem;
+    border-radius: 60px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+
+.us8-summary-premium div {
+    font-size: 1.2rem;
+    color: #0b3527;
+    line-height: 1.6;
+}
+
+.us8-summary-premium strong {
+    font-weight: 700;
+}
+
+/* ===== NAVIGATION - Exact match US-10 ===== */
+.us8-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 2rem;
+}
+
+.us8-nav-btn {
+    background: white;
+    border: 2px solid #1b4e79;
+    color: #1b4e79;
+    border-radius: 40px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.2s;
+}
+
+.us8-nav-btn:hover {
+    background: #1b4e79;
+    color: white;
+    transform: translateX(-2px);
+    box-shadow: 0 4px 12px rgba(27,78,121,0.3);
+}
+
+.us8-nav-btn.next:hover {
+    transform: translateX(2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .us8-container {
+        padding: 1.5rem;
+    }
+    
+    .us8-title {
+        font-size: 2.2rem;
+    }
+    
+    .us8-grid-2,
+    .us8-steps-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .us8-step-premium-full {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .us8-matter-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .us8-summary-premium {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .us8-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .us8-nav-btn {
+        justify-content: center;
+    }
+}
