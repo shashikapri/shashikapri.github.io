@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gantt Charts | US-15</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style/style4.3.css">
+</head>
+<body>
+<div class="gantt-container">
+
+    <!-- Hero Section -->
+    <div class="gantt-hero">
+        <div class="gantt-hero-content">
+            <span class="gantt-chapter-badge"><i class="fas fa-book-open"></i> Chapter 4.3 · Project Scheduling</span>
+            <h1 class="gantt-title">Gantt <span class="gantt-title-highlight">Charts</span></h1>
+            <div class="gantt-meta">
+                <span class="gantt-code-badge"><i class="fas fa-clipboard-list"></i> US-15</span>
+                <span class="gantt-code-badge"><i class="fas fa-chart-bar"></i> Timeline · Dependencies · Critical Path</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4.4.1 Definition -->
+    <div class="gantt-section">
+        <div class="gantt-section-title">
+            <i class="fas fa-bookmark"></i>
+            <h2>4.4.1 Definition</h2>
+        </div>
+        <div class="gantt-definition-card">
+            <p>A Gantt chart is a visual project management tool that illustrates a project schedule over time. It displays tasks, durations, dependencies, and progress in a horizontal bar chart format, allowing project managers to see the complete timeline of their project at a glance.</p>
+            <p class="gantt-historical-note">Named after Henry Gantt who pioneered this technique in the 1910s, the Gantt chart has evolved from hand-drawn paper charts to sophisticated digital tools, yet remains one of the most widely used and valuable project management techniques over a century later.</p>
+        </div>
+    </div>
+
+    <!-- 4.4.2 Purpose of a Gantt Chart -->
+    <div class="gantt-section">
+        <div class="gantt-section-title">
+            <i class="fas fa-question-circle"></i>
+            <h2>4.4.2 Purpose of a Gantt Chart</h2>
+        </div>
+        <p class="gantt-purpose-intro">A Gantt chart answers five critical questions for every project manager:</p>
+        
+        <div class="gantt-purpose-grid">
+            <div class="gantt-purpose-card">
+                <div class="purpose-question">WHAT needs to be done?</div>
+                <div class="purpose-answer">Tasks and work packages listed vertically</div>
+            </div>
+            <div class="gantt-purpose-card">
+                <div class="purpose-question">WHO is responsible?</div>
+                <div class="purpose-answer">Resources assigned to each task</div>
+            </div>
+            <div class="gantt-purpose-card">
+                <div class="purpose-question">WHEN does it start and end?</div>
+                <div class="purpose-answer">Bar positions on the timeline</div>
+            </div>
+            <div class="gantt-purpose-card">
+                <div class="purpose-question">HOW do tasks relate?</div>
+                <div class="purpose-answer">Arrows showing dependencies between bars</div>
+            </div>
+            <div class="gantt-purpose-card">
+                <div class="purpose-question">HOW MUCH is complete?</div>
+                <div class="purpose-answer">Shading or percentage on each bar</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGE SECTION 1: Basic Gantt Chart Structure (from page 2) -->
+    <div class="gantt-image-section">
+        <div class="gantt-image-container">
+            <div class="gantt-image-header">
+                <i class="fas fa-chart-bar"></i>
+                <i class="fas fa-arrow-right"></i>
+                <i class="fas fa-tasks"></i>
+            </div>
+            <h3 class="gantt-image-title">Basic Gantt Chart Structure</h3>
+            
+            <!-- IMAGE PLACEHOLDER - Replace src with your image file -->
+            <div class="gantt-image-wrapper">
+                <img src="images/chapter4.3/4.4.png" alt="Basic Gantt Chart Structure" class="gantt-image" style="width: 100%; height: auto; display: block;">
+                <!-- Visual fallback if image doesn't exist -->
+                <div class="gantt-image-fallback" style="display: none;">
+                    <!-- Fallback content only shows if image fails -->
+                </div>
+            </div>
+            
+            <div class="gantt-image-caption">
+                <i class="fas fa-info-circle"></i> Figure 4.4: Basic Gantt chart showing tasks, timeline, and dependencies
+            </div>
+        </div>
+    </div>
+
+    <!-- 4.4.3 Key Components of a Gantt Chart -->
+    <div class="gantt-section">
+        <div class="gantt-section-title">
+            <i class="fas fa-puzzle-piece"></i>
+            <h2>4.4.3 Key Components of a Gantt Chart</h2>
+        </div>
+        
+        <div class="gantt-table-container">
+            <table class="gantt-components-table">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Description</th>
+                        <th>Visual Representation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Tasks / Work Packages</strong></td><td>Individual activities derived from the WBS</td><td>Listed vertically on the left</td></tr>
+                    <tr><td><strong>Timeline</strong></td><td>Calendar scale (days, weeks, months)</td><td>Horizontal axis across the top</td></tr>
+                    <tr><td><strong>Bars</strong></td><td>Duration of each task</td><td>Horizontal colored bars</td></tr>
+                    <tr><td><strong>Milestones</strong></td><td>Key events or deliverables (zero duration)</td><td>Diamond symbols (◆)</td></tr>
+                    <tr><td><strong>Dependencies</strong></td><td>Relationships between tasks</td><td>Arrows connecting bars</td></tr>
+                    <tr><td><strong>Progress</strong></td><td>Completion percentage tracked over time</td><td>Shading or fill within bar</td></tr>
+                    <tr><td><strong>Resources</strong></td><td>Team members assigned to each task</td><td>Labels or color-coding</td></tr>
+                    <tr><td><strong>Critical Path</strong></td><td>Longest sequence of dependent tasks</td><td>Highlighted bars (often in red)</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 4.4.4 Visual Representation -->
+    <div class="gantt-section">
+        <div class="gantt-section-title">
+            <i class="fas fa-eye"></i>
+            <h2>4.4.4 Visual Representation</h2>
+        </div>
+        <p>A basic Gantt chart structure looks like this:</p>
+    </div>
+
+    <!-- IMAGE SECTION 2: Gantt Chart Example with Deployment and Milestones (from page 3) -->
+    <div class="gantt-image-section">
+        <div class="gantt-image-container">
+            <div class="gantt-image-header">
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-arrow-down"></i>
+                <i class="fas fa-diamond"></i>
+            </div>
+            <h3 class="gantt-image-title">Gantt Chart Example with Milestones</h3>
+            
+            <!-- IMAGE PLACEHOLDER - Replace src with your image file -->
+            <div class="gantt-image-wrapper">
+                <img src="images/chapter4.3/4.4.png" alt="Gantt Chart with Deployment and Milestones" class="gantt-image">
+            </div>
+
+            <!-- Legend from PDF page 3 -->
+            <div class="gantt-legend">
+                <div class="legend-item"><span class="legend-color" style="background: #4a90e2;"></span> ███████ = Task duration (length shows time)</div>
+                <div class="legend-item"><span class="legend-symbol">───────→</span> Dependency (arrow shows relationship)</div>
+                <div class="legend-item"><span class="legend-symbol">♦</span> Milestone (key event, zero duration)</div>
+            </div>
+            
+            <div class="gantt-image-caption">
+                <i class="fas fa-info-circle"></i> Example showing Deployment, Go-Live milestone, and Post-Launch Support
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4.5: How Gantt Charts Are Used -->
+    <div class="gantt-section">
+        <div class="gantt-section-title">
+            <i class="fas fa-tools"></i>
+            <h2>Section 4.5: How Gantt Charts Are Used</h2>
+        </div>
+        
+        <div class="gantt-subsection">
+            <h3>4.5.1 Primary Purposes</h3>
+            <div class="gantt-table-container">
+                <table class="gantt-purposes-table">
+                    <thead>
+                        <tr><th>Purpose</th><th>Description</th><th>Value to Project Manager</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Project Planning</strong></td><td>Map out all tasks and establish realistic timelines</td><td>Creates achievable, well-sequenced schedules</td></tr>
+                        <tr><td><strong>Progress Tracking</strong></td><td>Monitor actual vs. planned performance</td><td>Identifies delays early for corrective action</td></tr>
+                        <tr><td><strong>Team Communication</strong></td><td>Share visual timeline with team members</td><td>Aligns everyone on priorities and deadlines</td></tr>
+                        <tr><td><strong>Stakeholder Reporting</strong></td><td>Present progress to executives and clients</td><td>Builds trust and manages expectations</td></tr>
+                        <tr><td><strong>Resource Management</strong></td><td>Visualize who is working on what and when</td><td>Prevents overallocation and burnout</td></tr>
+                        <tr><td><strong>Critical Path Analysis</strong></td><td>Identify tasks that directly impact finish date</td><td>Focuses attention on what matters most</td></tr>
+                        <tr><td><strong>What-If Scenarios</strong></td><td>Model the impact of changes or delays</td><td>Enables informed decision-making</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4.5.2 The 8-Step Process -->
+    <div class="gantt-section">
+        <div class="gantt-section-title">
+            <i class="fas fa-list-ol"></i>
+            <h2>4.5.2 The 8-Step Process for Using Gantt Charts</h2>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="gantt-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h4>Define Tasks from Your WBS</h4>
+                <p>Start with your Work Breakdown Structure. Each work package at the appropriate level becomes a task in your Gantt chart. The WBS defines WHAT needs to be built; the Gantt chart defines WHEN it will be built.</p>
+                <div class="step-table">
+                    <table>
+                        <thead><tr><th>WBS Code</th><th>Task Name</th><th>Deliverable</th></tr></thead>
+                        <tbody>
+                            <tr><td>1.3.1</td><td>User Authentication Screens</td><td>Login and registration pages</td></tr>
+                            <tr><td>1.3.2</td><td>Dashboard Interface</td><td>Main landing page after login</td></tr>
+                            <tr><td>1.4.1</td><td>User Authentication API</td><td>Backend authentication endpoints</td></tr>
+                            <tr><td>1.4.2</td><td>Task CRUD API</td><td>Create, read, update, delete endpoints</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="gantt-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h4>Establish Task Dependencies</h4>
+                <p>No task exists in isolation. Dependencies define the logical relationships and sequence of work.</p>
+                <div class="step-table">
+                    <table>
+                        <thead><tr><th>Dependency Type</th><th>Symbol</th><th>Meaning</th><th>Real-World Example</th></tr></thead>
+                        <tbody>
+                            <tr><td>Finish-to-Start (FS)</td><td>→</td><td>Task B cannot start until Task A finishes</td><td>Cannot begin coding until design is approved</td></tr>
+                            <tr><td>Start-to-Start (SS)</td><td>→</td><td>Task B cannot start until Task A starts</td><td>Testing can begin when coding begins</td></tr>
+                            <tr><td>Finish-to-Finish (FF)</td><td>→</td><td>Task B cannot finish until Task A finishes</td><td>Documentation cannot finish until coding finishes</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="gantt-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h4>Estimate Task Durations</h4>
+                <p>Use reliable estimation techniques to determine how long each task will take.</p>
+                <div class="step-table">
+                    <table>
+                        <thead><tr><th>Estimation Technique</th><th>Description</th><th>Formula / Approach</th></tr></thead>
+                        <tbody>
+                            <tr><td>Expert Judgment</td><td>Consult experienced team members</td><td>Interviews or workshops</td></tr>
+                            <tr><td>Analogous Estimating</td><td>Compare to similar past projects</td><td>Historical data adjustment</td></tr>
+                            <tr><td>Parametric Estimating</td><td>Use statistical relationships</td><td>Hours per unit × number of units</td></tr>
+                            <tr><td>Three-Point (PERT)</td><td>Account for uncertainty</td><td>(O + 4M + P) / 6</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="gantt-example">
+                    <strong>Three-Point Estimation Example:</strong><br>
+                    Optimistic (O): 3 days (everything goes perfectly)<br>
+                    Most Likely (M): 5 days (typical scenario)<br>
+                    Pessimistic (P): 9 days (worst case)<br>
+                    PERT Estimate: (3 + 4×5 + 9) ÷ 6 = 5.3 days
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="gantt-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h4>Assign Resources</h4>
+                <p>Allocate specific team members to each task. Consider availability, skills, and workload.</p>
+                <div class="step-table">
+                    <table>
+                        <thead><tr><th>Task</th><th>Assigned Resource</th><th>Allocation</th><th>Skills Required</th></tr></thead>
+                        <tbody>
+                            <tr><td>API Development</td><td>Sarah (Backend Developer)</td><td>6 hours/day</td><td>Node.js, Database</td></tr>
+                            <tr><td>UI Design</td><td>Michael (UX Designer)</td><td>4 hours/day</td><td>Figma, User Research</td></tr>
+                            <tr><td>Database Setup</td><td>James (DBA)</td><td>Full-time</td><td>SQL, Data Modeling</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="gantt-tips">
+                    <strong>Resource Management Tips:</strong>
+                    <ul>
+                        <li>Avoid overallocating (assigning >100% of someone's time)</li>
+                        <li>Consider part-time resources for long tasks</li>
+                        <li>Build in buffer for reviews and feedback</li>
+                        <li>Check resource calendars for availability (vacations, other projects)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 5: Milestones -->
+        <div class="gantt-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <h4>Set Milestones</h4>
+                <p>A milestone is a significant event, achievement, or decision point in a project. Milestones have zero duration—they represent a moment in time, not a span of work.</p>
+                
+                <!-- IMAGE SECTION 3: Milestone Examples Visual -->
+                <div class="gantt-image-section" style="margin: 1.5rem 0;">
+                    <div class="gantt-image-container" style="padding: 1rem;">
+                        <div class="gantt-image-header">
+                            <i class="fas fa-diamond"></i>
+                            <i class="fas fa-arrow-right"></i>
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <h4 class="gantt-image-title">Milestone Examples</h4>
+                        
+                        <!-- IMAGE PLACEHOLDER for Milestones -->
+                        <div class="gantt-image-wrapper">
+                            <img src="images/chapter4.3/milestone.png" alt="Milestone Examples" class="gantt-image">
+                        </div>
+                        
+                        <div class="gantt-image-caption">
+                            <i class="fas fa-info-circle"></i> Milestones: Project Kickoff, Design Approved, Code Complete, Go-Live
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gantt-table-container">
+                    <table>
+                        <thead><tr><th>Aspect</th><th>Description</th></tr></thead>
+                        <tbody>
+                            <tr><td>Duration</td><td>Zero (0 days)</td></tr>
+                            <tr><td>Purpose</td><td>Marks key achievements, transitions, or decisions</td></tr>
+                            <tr><td>Visual</td><td>Diamond symbol (◆) on Gantt charts</td></tr>
+                            <tr><td>Dependencies</td><td>Can have predecessors and successors</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Milestone Types Table -->
+        <div class="gantt-subsection">
+            <h4>Types of Milestones:</h4>
+            <div class="gantt-table-container">
+                <table>
+                    <thead><tr><th>Milestone Type</th><th>Description</th><th>Examples</th></tr></thead>
+                    <tbody>
+                        <tr><td>Start Milestone</td><td>Marks project initiation</td><td>Project Kickoff, Charter Approved</td></tr>
+                        <tr><td>Completion Milestone</td><td>Marks deliverable completion</td><td>Design Approved, Code Complete</td></tr>
+                        <tr><td>Phase Transition</td><td>Marks end of one phase, start of next</td><td>Requirements Signed Off, UAT Begins</td></tr>
+                        <tr><td>Approval Milestone</td><td>Requires stakeholder sign-off</td><td>Budget Approved, Scope Frozen</td></tr>
+                        <tr><td>External Milestone</td><td>Outside project control</td><td>Vendor Delivery, Regulatory Review</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Step 6: Critical Path -->
+        <div class="gantt-step">
+            <div class="step-number">6</div>
+            <div class="step-content">
+                <h4>Identify the Critical Path</h4>
+                <p>The critical path is the longest sequence of dependent tasks that determines the project's minimum completion time.</p>
+                
+                <!-- IMAGE SECTION 4: Critical Path Example -->
+                <div class="gantt-image-section" style="margin: 1.5rem 0;">
+                    <div class="gantt-image-container" style="padding: 1rem;">
+                        <div class="gantt-image-header">
+                            <i class="fas fa-link"></i>
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="gantt-image-title">Critical Path Example</h4>
+                        
+                        <!-- IMAGE PLACEHOLDER for Critical Path -->
+                        <div class="gantt-image-wrapper">
+                            <img src="images/chapter4.3/critical.png" alt="Critical Path Example" class="gantt-image">
+                        </div>
+                        
+                        <div class="gantt-image-caption">
+                            <i class="fas fa-info-circle"></i> Critical path: Task A (3d) → Task C (4d) → Task E (5d) = 12 days
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gantt-critical-example">
+                    <p><strong>Critical Path Example:</strong><br>
+                    Task A (3 days) → Task C (4 days) → Task E (5 days) = 12 days (CRITICAL PATH)<br>
+                    Task B (2 days) → Task D (3 days) = 5 days (FLOAT = 7 days)</p>
+                </div>
+
+                <div class="gantt-table-container">
+                    <table>
+                        <thead><tr><th>Term</th><th>Definition</th><th>Importance</th></tr></thead>
+                        <tbody>
+                            <tr><td>Critical Path</td><td>Longest path through the network</td><td>Determines project duration</td></tr>
+                            <tr><td>Critical Tasks</td><td>Tasks on the critical path</td><td>Must finish on time or project delays</td></tr>
+                            <tr><td>Float (Slack)</td><td>Amount a task can delay without affecting finish</td><td>Non-critical tasks have flexibility</td></tr>
+                            <tr><td>Near-Critical Path</td><td>Path with little float</td><td>Can become critical if delayed</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Steps 7 & 8 -->
+        <div class="gantt-step">
+            <div class="step-number">7</div>
+            <div class="step-content">
+                <h4>Baseline the Schedule</h4>
+                <p>A baseline is the original approved plan against which performance is measured. It serves as a fixed reference point for tracking progress.</p>
+            </div>
+        </div>
+
+        <div class="gantt-step">
+            <div class="step-number">8</div>
+            <div class="step-content">
+                <h4>Monitor, Update, and Adjust</h4>
+                <p>A Gantt chart is a living document that requires regular maintenance to remain valuable.</p>
+            </div>
+        </div>
+
+        <!-- Progress Tracking Table -->
+        <div class="gantt-table-container">
+            <table>
+                <thead><tr><th>Frequency</th><th>Actions</th><th>Outputs</th></tr></thead>
+                <tbody>
+                    <tr><td>Daily</td><td>Team reports progress; identify blockers</td><td>Status updates</td></tr>
+                    <tr><td>Weekly</td><td>Update Gantt; review variances; adjust forecasts</td><td>Progress report; updated chart</td></tr>
+                    <tr><td>Monthly</td><td>Re-forecast; communicate to stakeholders</td><td>Status presentation; revised timeline</td></tr>
+                    <tr><td>As Needed</td><td>Respond to major changes or delays</td><td>Change requests; recovery plans</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 4.5.9 Gantt Chart vs. Other Project Tools -->
+    <div class="gantt-section">
+        <div class="gantt-section-title">
+            <i class="fas fa-balance-scale"></i>
+            <h2>4.5.9 Gantt Chart vs. Other Project Tools</h2>
+        </div>
+        <div class="gantt-table-container">
+            <table>
+                <thead><tr><th>Tool</th><th>Purpose</th><th>When to Use</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>WBS</strong></td><td>Defines WHAT needs to be done</td><td>Before scheduling; decomposition</td></tr>
+                    <tr><td><strong>Gantt Chart</strong></td><td>Defines WHEN work happens</td><td>During planning and execution</td></tr>
+                    <tr><td><strong>Network Diagram</strong></td><td>Shows logical relationships</td><td>For dependency analysis</td></tr>
+                    <tr><td><strong>Kanban Board</strong></td><td>Manages workflow</td><td>For ongoing, iterative work</td></tr>
+                    <tr><td><strong>Burndown Chart</strong></td><td>Tracks remaining work</td><td>In Agile sprints</td></tr>
+                    <tr><td><strong>Resource Histogram</strong></td><td>Shows resource allocation</td><td>For workload balancing</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Section 4.6: Key Takeaways -->
+    <div class="gantt-section">
+        <div class="gantt-section-title">
+            <i class="fas fa-key"></i>
+            <h2>Section 4.6: Key Takeaways</h2>
+        </div>
+
+        <div class="gantt-takeaway-card">
+            <p class="gantt-one-sentence">A Gantt chart transforms your WBS into a visual timeline, showing you exactly what needs to happen, when, and by whom—so you can plan confidently, track effectively, and communicate clearly throughout your project.</p>
+        </div>
+
+        <!-- 4.6.1 Summary Table -->
+        <div class="gantt-table-container">
+            <table>
+                <thead><tr><th>Aspect</th><th>Description</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>What It Is</strong></td><td>A horizontal bar chart showing project schedule over time</td></tr>
+                    <tr><td><strong>Primary Purpose</strong></td><td>Plan, track, and communicate project timelines</td></tr>
+                    <tr><td><strong>Key Elements</strong></td><td>Tasks, duration, dependencies, milestones, resources, progress</td></tr>
+                    <tr><td><strong>When to Use</strong></td><td>Projects with defined tasks, sequential work, need for visual tracking</td></tr>
+                    <tr><td><strong>Best Paired With</strong></td><td>WBS (for tasks) and Risk Register (for issues)</td></tr>
+                    <tr><td><strong>Frequency of Update</strong></td><td>Weekly for active projects</td></tr>
+                    <tr><td><strong>Audience</strong></td><td>Project team, stakeholders, executives (summary view)</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="gantt-navigation">
+        <a href="#" class="gantt-nav-btn prev">
+            <i class="fas fa-arrow-left"></i>
+            <span>Previous: Work Breakdown Structure</span>
+        </a>
+        <a href="#" class="gantt-nav-btn next">
+            <span>Next: Network Diagrams</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+</div>
+</body>
+</html>
