@@ -1,0 +1,565 @@
+/* style5.4.css – How to Write a Scope Management Plan (US-20) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fc;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    padding: 2rem 1rem;
+}
+
+.us20-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    padding: 2.5rem;
+}
+
+/* ===== HERO SECTION ===== */
+.us20-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us20-chapter-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.us20-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.us20-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us20-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.us20-code-badge {
+    background: #1e4a7a;
+    padding: 0.4rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.us20-hero-description {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    margin-top: 1rem;
+}
+
+/* ===== MATTER CARD ===== */
+.us20-matter-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-left: 6px solid #0a58ca;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+}
+
+.us20-matter-icon i {
+    font-size: 2.8rem;
+    color: #0a58ca;
+}
+
+.us20-matter-content h2 {
+    font-size: 1.8rem;
+    color: #0b2b4e;
+    margin-bottom: 0.5rem;
+}
+
+.us20-matter-content p {
+    font-size: 1.1rem;
+    color: #1e3a5f;
+}
+
+/* ===== SECTION SUBTITLE ===== */
+.us20-section-subtitle {
+    font-size: 1.8rem;
+    color: #0b2b4e;
+    margin: 2rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* ===== CONTENT CARD ===== */
+.us20-content-card {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    line-height: 1.7;
+}
+
+.us20-plan-role {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.role-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+
+.role-item i {
+    font-size: 1.5rem;
+    color: #0a58ca;
+    min-width: 2rem;
+}
+
+.role-arrow {
+    color: #4a6a85;
+    margin: 0 0.5rem;
+}
+
+.role-desc {
+    background: #e9f0f9;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    color: #1e4a7a;
+}
+
+/* ===== TEMPLATE SHOWCASE ===== */
+.us20-template-showcase {
+    background: #f8fafd;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.us20-template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.us20-template-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #e2edf7;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.us20-template-card:hover {
+    transform: translateY(-3px);
+}
+
+.template-number {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: #0a58ca;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.template-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.template-icon i {
+    font-size: 2.5rem;
+    color: #0a58ca;
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.us20-template-card h4 {
+    font-size: 1.2rem;
+    color: #0b2b4e;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.us20-template-card p {
+    font-size: 0.9rem;
+    color: #4a6a85;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.template-example {
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    color: #1e3a5f;
+}
+
+.template-example strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #0b2b4e;
+}
+
+/* ===== STEP CARDS ===== */
+.us20-step-card {
+    display: flex;
+    gap: 2rem;
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.8rem;
+    margin: 1.5rem 0;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.us20-step-left {
+    flex: 1;
+}
+
+.us20-step-badge {
+    background: #0b2b4e;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.us20-step-left h4 {
+    font-size: 1.3rem;
+    color: #0b2b4e;
+    margin-bottom: 0.8rem;
+}
+
+.us20-step-left p {
+    color: #4a6a85;
+}
+
+.us20-step-right {
+    flex: 1;
+}
+
+.us20-sample-box {
+    background: #f0f9ff;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    border-left: 4px solid #0a58ca;
+}
+
+.us20-sample-box i {
+    color: #0a58ca;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* ===== CHANGE PROCESS ===== */
+.us20-change-process {
+    background: #0b2b4e;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    color: white;
+}
+
+.us20-change-process h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.us20-change-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.flow-node {
+    background: rgba(255,255,255,0.1);
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+    min-width: 140px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.flow-node.decision {
+    background: #ffb347;
+    color: #0b2b4e;
+}
+
+.node-icon i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.node-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.flow-arrow i {
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.5);
+}
+
+/* ===== COMPLETE TEMPLATE ===== */
+.us20-complete-template {
+    margin: 2.5rem 0;
+}
+
+.us20-template-document {
+    background: white;
+    border-radius: 1.5rem;
+    border: 2px solid #e2edf7;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -10px rgba(0,0,0,0.1);
+}
+
+.doc-header {
+    background: #0b2b4e;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.doc-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.doc-meta {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.doc-section {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e2edf7;
+}
+
+.doc-section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0b2b4e;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.doc-section-title::before {
+    content: "•";
+    color: #0a58ca;
+    font-size: 1.5rem;
+}
+
+.doc-section-content p {
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.decision-tree {
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.tree-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.tree-item i {
+    color: #0a58ca;
+    margin: 0.3rem 0;
+}
+
+.tree-branches {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.tree-branches .yes {
+    color: #2e7d32;
+    background: #e8f5e8;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+}
+
+.tree-branches .no {
+    color: #d32f2f;
+    background: #ffebee;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+}
+
+.doc-footer {
+    padding: 1.5rem;
+    background: #f8fafd;
+    font-size: 0.9rem;
+}
+
+/* ===== TIPS SECTION ===== */
+.us20-tips {
+    background: #f0f9ff;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+}
+
+.us20-tips h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+    color: #0b2b4e;
+    margin-bottom: 1.5rem;
+}
+
+.us20-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.tip-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.tip-item i {
+    color: #2e7d32;
+    font-size: 1.2rem;
+}
+
+/* ===== SUMMARY ===== */
+.us20-summary {
+    background: linear-gradient(135deg, #e2f0e8, #d0e8dd);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-left: 8px solid #2e7d5e;
+}
+
+.us20-summary i {
+    font-size: 3rem;
+    color: #1b7553;
+    background: white;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.us20-summary div {
+    font-size: 1.1rem;
+    color: #0b3527;
+    line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+.us20-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 2rem;
+}
+
+.us20-nav-btn {
+    background: white;
+    border: 2px solid #1b4e79;
+    color: #1b4e79;
+    border-radius: 40px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.2s;
+}
+
+.us20-nav-btn:hover {
+    background: #1b4e79;
+    color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .us20-container { padding: 1.5rem; }
+    .us20-title { font-size: 2rem; }
+    .us20-step-card { flex-direction: column; }
+    .us20-change-flow { flex-direction: column; }
+    .us20-change-flow .flow-arrow i { transform: rotate(90deg); }
+    .us20-template-grid { grid-template-columns: 1fr; }
+    .us20-navigation { flex-direction: column; gap: 1rem; }
+}
+
+@media (max-width: 480px) {
+    .us20-matter-card { flex-direction: column; text-align: center; }
+    .us20-summary { flex-direction: column; text-align: center; }
+    .role-item { flex-direction: column; text-align: center; }
+    .tree-branches { flex-direction: column; gap: 0.5rem; }
+}
