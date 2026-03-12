@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBS & Gantt Chart Integration | US-16</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style/style4.4.css">
+</head>
+<body>
+<div class="wbs-container">
+
+    <!-- Hero Section -->
+    <div class="wbs-hero">
+        <div class="wbs-hero-content">
+            <span class="wbs-chapter-badge"><i class="fas fa-book-open"></i> Project Planning & Scheduling</span>
+            <h1 class="wbs-title">Work Breakdown Structure <span class="wbs-title-highlight">& Gantt Chart</span></h1>
+            <div class="wbs-meta">
+                <span class="wbs-code-badge"><i class="fas fa-clipboard-list"></i> US-16</span>
+                <span class="wbs-code-badge"><i class="fas fa-diagram-project"></i> WBS · Timeline · Dependencies</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Breakdown Structure Section -->
+    <div class="wbs-section">
+        <div class="wbs-section-title">
+            <i class="fas fa-sitemap"></i>
+            <h2>Work Breakdown Structure (WBS)</h2>
+        </div>
+        
+        <div class="wbs-definition-card">
+            <p>Before diving into timelines and dependencies, it is essential to understand how the project's work is organized. The Work Breakdown Structure (WBS) provides a hierarchical decomposition of all deliverables and tasks required to complete the project. It serves as the foundation for planning, assigning responsibilities, and tracking progress.</p>
+        </div>
+
+        <!-- IMAGE SECTION 1: WBS Diagram -->
+        <div class="wbs-image-section">
+            <div class="wbs-image-container">
+                <div class="wbs-image-header">
+                    <i class="fas fa-sitemap"></i>
+                    <i class="fas fa-arrow-down"></i>
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3 class="wbs-image-title">Work Breakdown Structure</h3>
+                
+                <!-- IMAGE PLACEHOLDER - Replace src with your WBS image file -->
+                <div class="wbs-image-wrapper">
+                    <img src="images/chapter4.2/wbs.png" alt="Work Breakdown Structure for Task Management Web Application" class="wbs-image">
+                </div>
+                
+                <div class="wbs-image-caption">
+                    <i class="fas fa-info-circle"></i> Figure 1: Work Breakdown Structure for the Task Management Web Application
+                </div>
+            </div>
+        </div>
+
+        <!-- WBS Work Packages -->
+        <div class="wbs-packages">
+            <p class="wbs-packages-intro">The WBS breaks the project into major work packages, including:</p>
+            
+            <div class="wbs-packages-grid">
+                <div class="wbs-package-card">
+                    <i class="fas fa-search"></i>
+                    <h4>Discovery & Prerequisites</h4>
+                </div>
+                <div class="wbs-package-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h4>UI/UX Design & Prototyping</h4>
+                </div>
+                <div class="wbs-package-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Frontend Development</h4>
+                </div>
+                <div class="wbs-package-card">
+                    <i class="fas fa-server"></i>
+                    <h4>Backend Development</h4>
+                </div>
+                <div class="wbs-package-card">
+                    <i class="fas fa-link"></i>
+                    <h4>Integration</h4>
+                </div>
+                <div class="wbs-package-card">
+                    <i class="fas fa-vial"></i>
+                    <h4>Testing & Quality Assurance</h4>
+                </div>
+                <div class="wbs-package-card">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Finalization & Release</h4>
+                </div>
+            </div>
+            
+            <p class="wbs-packages-note">Each of these packages is further broken down into detailed, manageable tasks, ensuring the full project scope is captured before scheduling begins.</p>
+        </div>
+    </div>
+
+    <!-- Why WBS Matters Section -->
+    <div class="wbs-section">
+        <div class="wbs-section-title">
+            <i class="fas fa-exclamation-circle"></i>
+            <h2>Why the WBS Matters</h2>
+        </div>
+        
+        <div class="wbs-importance-card">
+            <div class="wbs-importance-content">
+                <p>The WBS is the cornerstone of the project schedule. According to the Project Management Institute (PMI), the WBS must include <strong>100% of the work defined by the project scope</strong>—a principle known as the <strong>100% Rule</strong>. Every activity in the Gantt chart originates from a WBS element. This structure ensures that:</p>
+                
+                <ul class="wbs-importance-list">
+                    <li><i class="fas fa-check-circle"></i> No tasks are overlooked</li>
+                    <li><i class="fas fa-check-circle"></i> Dependencies between tasks are easier to identify</li>
+                    <li><i class="fas fa-check-circle"></i> The schedule remains aligned with the defined project scope</li>
+                </ul>
+                
+                <p class="wbs-transition">With the WBS established, the next step is to translate these work packages into a time-phased project plan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gantt Chart Section -->
+    <div class="wbs-section">
+        <div class="wbs-section-title">
+            <i class="fas fa-chart-bar"></i>
+            <h2>Gantt Chart: Visualizing Timelines and Dependencies</h2>
+        </div>
+        
+        <div class="wbs-definition-card">
+            <p>The Gantt chart builds on the WBS by providing a visual timeline of how the work unfolds. It illustrates:</p>
+        </div>
+        
+        <div class="wbs-gantt-features">
+            <div class="wbs-feature-grid">
+                <div class="wbs-feature-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Start and end dates for each phase</span>
+                </div>
+                <div class="wbs-feature-item">
+                    <i class="fas fa-link"></i>
+                    <span>Dependencies between tasks</span>
+                </div>
+                <div class="wbs-feature-item">
+                    <i class="fas fa-diamond"></i>
+                    <span>Milestones marking key achievements</span>
+                </div>
+                <div class="wbs-feature-item">
+                    <i class="fas fa-route"></i>
+                    <span>The critical path</span>
+                </div>
+                <div class="wbs-feature-item">
+                    <i class="fas fa-users"></i>
+                    <span>Resource assignments (where applicable)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE SECTION 2: Gantt Chart -->
+        <div class="wbs-image-section">
+            <div class="wbs-image-container">
+                <div class="wbs-image-header">
+                    <i class="fas fa-chart-bar"></i>
+                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3 class="wbs-image-title">Gantt Chart - Project Timeline</h3>
+                
+                <!-- IMAGE PLACEHOLDER - Replace src with your Gantt chart image file -->
+                <div class="wbs-image-wrapper">
+                    <img src="images/chapter4.4/gannt chart.png" alt="Gantt Chart for Task Management Web Application" class="wbs-image">
+                </div>
+                
+                <div class="wbs-image-caption">
+                    <i class="fas fa-info-circle"></i> Figure 2: Gantt Chart for the Task Management Web Application
+                </div>
+            </div>
+        </div>
+
+        <div class="wbs-gantt-description">
+            <p>This chart maps the project lifecycle—from discovery through design, development, integration, testing, and final release. By reviewing the Gantt chart, team members can clearly see:</p>
+            
+            <ul class="wbs-gantt-list">
+                <li><i class="fas fa-arrow-right"></i> How their tasks fit into the broader timeline</li>
+                <li><i class="fas fa-arrow-right"></i> Which activities depend on others</li>
+                <li><i class="fas fa-arrow-right"></i> Where the critical path lies</li>
+                <li><i class="fas fa-arrow-right"></i> When major milestones are expected</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Interpreting the Gantt Chart Section -->
+    <div class="wbs-section">
+        <div class="wbs-section-title">
+            <i class="fas fa-eye"></i>
+            <h2>Interpreting the Gantt Chart</h2>
+        </div>
+        
+        <p class="wbs-interpret-intro">To help team members navigate the schedule effectively, the Gantt chart highlights the following key elements:</p>
+        
+        <div class="wbs-interpret-grid">
+            <!-- Timelines -->
+            <div class="wbs-interpret-card">
+                <div class="interpret-icon"><i class="fas fa-clock"></i></div>
+                <h4>Timelines</h4>
+                <p>Each horizontal bar represents the planned duration of a task or phase.</p>
+            </div>
+            
+            <!-- Dependencies -->
+            <div class="wbs-interpret-card">
+                <div class="interpret-icon"><i class="fas fa-link"></i></div>
+                <h4>Dependencies</h4>
+                <p>Linked bars show task relationships—e.g., a task cannot begin until a predecessor is complete.</p>
+            </div>
+            
+            <!-- Milestones -->
+            <div class="wbs-interpret-card">
+                <div class="interpret-icon"><i class="fas fa-diamond"></i></div>
+                <h4>Milestones</h4>
+                <p>Diamond markers indicate major checkpoints, such as:</p>
+                <ul class="milestone-list">
+                    <li>Requirements Finalized</li>
+                    <li>UI/UX Design Approved</li>
+                    <li>Frontend MVP Complete</li>
+                    <li>Backend APIs Complete</li>
+                    <li>System Integration Complete</li>
+                    <li>Testing Complete</li>
+                    <li>Final Release Ready</li>
+                </ul>
+            </div>
+            
+            <!-- Critical Path -->
+            <div class="wbs-interpret-card">
+                <div class="interpret-icon"><i class="fas fa-route"></i></div>
+                <h4>Critical Path</h4>
+                <p>Highlighted tasks represent the sequence of activities that determine the project's minimum duration. Any delay in these tasks will directly delay the overall project.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="wbs-section">
+        <div class="wbs-section-title">
+            <i class="fas fa-clipboard-check"></i>
+            <h2>Summary</h2>
+        </div>
+        
+        <div class="wbs-summary-card">
+            <p>Together, the WBS and Gantt chart provide a complete and integrated view of the project's scope and schedule. By reviewing both artifacts, team members gain a clear understanding of:</p>
+            
+            <div class="wbs-summary-grid">
+                <div class="summary-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>What work needs to be done</span>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>How the work is structured</span>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>When each activity occurs</span>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>How tasks depend on one another</span>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Which tasks are critical to meeting the project deadline</span>
+                </div>
+            </div>
+            
+            <p class="summary-conclusion">This combination supports better planning, coordination, and execution—empowering the team to deliver successfully.</p>
+        </div>
+    </div>
+
+    <!-- References Section -->
+    <div class="wbs-section">
+        <div class="wbs-section-title">
+            <i class="fas fa-book"></i>
+            <h2>References</h2>
+        </div>
+        
+        <div class="wbs-references">
+            <ol class="references-list">
+                <li>ONES.com (2025). Work Breakdown Structure (WBS) - Gantt Chart Glossary. Retrieved from https://ones.com/gantt-chart/glossary/wbs.</li>
+                <li>Project Management Institute. (2013). A Guide to the Project Management Body of Knowledge (PMBOK® Guide) (5th ed.).</li>
+                <li>Kim, S. D. (n.d.). Project Management and Practice. Kendall Hunt Higher Education.</li>
+                <li>University of Tasmania. (2018). Project Management (2nd ed.).</li>
+                <li>Doing-projects.org. (2015). Integrated Cost and Schedule Control. Retrieved from http://wiki.doing-projects.org.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="wbs-navigation">
+        <a href="#" class="wbs-nav-btn prev">
+            <i class="fas fa-arrow-left"></i>
+            <span>Previous: Gantt Charts (US-15)</span>
+        </a>
+        <a href="#" class="wbs-nav-btn next">
+            <span>Next: Project Schedule</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+</div>
+</body>
+</html>
