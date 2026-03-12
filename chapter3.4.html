@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.4: Managing the Sprint Backlog</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style/style3.4.css">
+</head>
+<body>
+<script>
+function scrollToRef(refId) {
+    const element = document.getElementById(refId);
+    if (element) {
+        element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'center'
+        });
+        // Add highlight effect
+        element.style.background = 'linear-gradient(90deg, #ffd966 0%, transparent 100%)';
+        element.style.padding = '1rem';
+        element.style.borderLeft = '3px solid #0a58ca';
+        element.style.borderRadius = '0.5rem';
+        element.style.transition = 'all 0.3s ease';
+        
+        // Remove highlight after 3 seconds
+        setTimeout(() => {
+            element.style.background = '';
+            element.style.padding = '';
+            element.style.borderLeft = '';
+            element.style.borderRadius = '';
+        }, 3000);
+    }
+}
+</script>
+<div class="sb34-container">
+    <!-- Hero Section -->
+    <div class="sb34-hero">
+        <div class="sb34-hero-content">
+            <span class="sb34-chapter-badge">Chapter 3.4</span>
+            <h1 class="sb34-title">Managing the <span class="sb34-title-highlight">Sprint Backlog</span></h1>
+            <div class="sb34-meta">
+                <span class="sb34-code-badge">Sprint Management</span>
+                <span class="sb34-code-badge">Agile Framework</span>
+            </div>
+            <p class="sb34-hero-description">Master the art of sprint execution through effective backlog management and team coordination.</p>
+        </div>
+    </div>
+
+    <!-- Why This Matters Card -->
+    <div class="sb34-matter-card">
+        <div class="sb34-matter-icon"><i class="fas fa-tasks"></i></div>
+        <div class="sb34-matter-content">
+            <h2>Why This Matters for Scrum Masters</h2>
+            <p>The Sprint Backlog is your team's commitment for the sprint. As a Scrum Master, you ensure the team maintains focus, adapts to changes, and delivers the sprint goal through effective sprint backlog management.</p>
+        </div>
+    </div>
+
+    <!-- What is Sprint Backlog Management? -->
+    <div class="sb34-section">
+        <h2 class="sb34-section-title"><i class="fas fa-info-circle"></i> What is Sprint Backlog Management?</h2>
+        <div class="sb34-content-card">
+            <p>In Scrum, the Sprint Backlog is not a static document created once at the start of the sprint. It is a <strong>living artifact</strong> that must be updated daily to reflect the team's current progress and any new insights gained during development <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>.</p>
+            <p>The Sprint Backlog consists of selected Product Backlog items for the sprint, plus a plan for delivering them. As a dynamic tool, it enables the Development Team to track progress, adapt to changes, and maintain transparency throughout the sprint <sup><a href="javascript:void(0)" onclick="scrollToRef('ref2')">[2]</a></sup>.</p>
+        </div>
+    </div>
+
+    <!-- Core Management Activities -->
+    <div class="sb34-grid-2">
+        <div class="sb34-premium-card">
+            <div class="sb34-card-header">
+                <i class="fas fa-tasks"></i>
+                <h3>Sprint Backlog Elements</h3>
+            </div>
+            <p>The Sprint Backlog contains three main components <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>:</p>
+            <ul class="sb34-bullet-list">
+                <li>Selected Product Backlog Items (PBIs)</li>
+                <li>Sprint Goal</li>
+                <li>Plan for delivering the increment</li>
+            </ul>
+        </div>
+        
+        <div class="sb34-premium-card">
+            <div class="sb34-card-header">
+                <i class="fas fa-users"></i>
+                <h3>Ownership & Accountability</h3>
+            </div>
+            <p>Clear roles in Sprint Backlog management <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>:</p>
+            <ul class="sb34-bullet-list">
+                <li><strong>Development Team</strong> owns the Sprint Backlog</li>
+                <li><strong>Scrum Master</strong> facilitates the process</li>
+                <li><strong>Product Owner</strong> clarifies requirements</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Management Process Steps -->
+    <h2 class="sb34-section-title" style="margin-top: 2rem;"><i class="fas fa-cogs"></i> Daily Sprint Backlog Management Process</h2>
+
+    <!-- Step 1 & 2 -->
+    <div class="sb34-steps-grid">
+        <!-- Step 1 -->
+        <div class="sb34-step-premium">
+            <div class="sb34-step-premium-number">1</div>
+            <div class="sb34-step-premium-content">
+                <h3>Updating Task Status</h3>
+                <p>The most basic form of management is moving tasks across the board. In project tracking tools like Jira <sup><a href="javascript:void(0)" onclick="scrollToRef('ref3')">[3]</a></sup>, we use three primary states:</p>
+                <ul class="sb34-bullet-list">
+                    <li><strong>To Do:</strong> Work planned for the sprint but not yet started</li>
+                    <li><strong>In Progress:</strong> Work currently being handled by a team member</li>
+                    <li><strong>Done:</strong> Work that meets the "Definition of Done"</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="sb34-step-premium">
+            <div class="sb34-step-premium-number">2</div>
+            <div class="sb34-step-premium-content">
+                <h3>Handling New Insights and Tasks</h3>
+                <p>As development progresses, teams often discover that User Stories require more work than originally thought:</p>
+                <ul class="sb34-bullet-list">
+                    <li><strong>Adding Sub-tasks:</strong> Break complex stories into smaller, manageable sub-tasks</li>
+                    <li><strong>Removing Work:</strong> Eliminate unnecessary tasks after discussion with Product Owner</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 3 with visual -->
+    <div class="sb34-step-premium-full">
+        <div class="sb34-step-premium-number-large">3</div>
+        <div class="sb34-step-premium-content-full">
+            <h3>Tracking Progress: The Sprint Burndown Chart</h3>
+            <p>To "contribute to tracking progress effectively," the team uses a <strong>Burndown Chart</strong>. This chart shows the total effort remaining in the sprint versus the time remaining <sup><a href="javascript:void(0)" onclick="scrollToRef('ref2')">[2]</a></sup>:</p>
+            
+            <!-- Visual representation -->
+            <div class="sb34-visual-container">
+                <div class="sb34-visual">
+                    <div class="sb34-visual-icon">
+                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <div class="sb34-visual-text">Burndown Chart Analysis</div>
+                    <div class="sb34-visual-caption">
+                        "Ideal Trend: Diagonal line from top-left to bottom-right. Actual Trend: Above ideal = behind schedule, Below ideal = ahead of schedule"
+                    </div>
+                    <div class="sb34-visual-tags">
+                        <span class="sb34-badge-light">Progress Tracking</span>
+                        <span class="sb34-badge-full">Sprint Visibility</span>
+                        <span class="sb34-badge-light">Team Performance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 4 & 5 -->
+    <div class="sb34-steps-grid">
+        <!-- Step 4 -->
+        <div class="sb34-step-premium">
+            <div class="sb34-step-premium-number">4</div>
+            <div class="sb34-step-premium-content">
+                <h3>Daily Management Routine</h3>
+                <p>Effective management happens during the <strong>Daily Scrum</strong> <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>. The team asks:</p>
+                <ul class="sb34-bullet-list">
+                    <li>What did I move to "Done" yesterday?</li>
+                    <li>What am I moving to "In Progress" today?</li>
+                    <li>Are there any "Impediments" stopping me from finishing a task?</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="sb34-step-premium">
+            <div class="sb34-step-premium-number">5</div>
+            <div class="sb34-step-premium-content">
+                <h3>Continuous Adaptation</h3>
+                <p>When new information emerges or impediments arise, the team adapts the Sprint Backlog accordingly. This may involve re-estimating tasks, adding new tasks, or discussing scope changes with the Product Owner <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Practices Section -->
+    <div class="sb34-section">
+        <h2 class="sb34-section-title"><i class="fas fa-star"></i> Sprint Backlog Best Practices</h2>
+        
+        <!-- Summary Table -->
+        <div class="sb34-content-card">
+            <h3 style="color: #1e40af; margin-bottom: 1rem;">Daily Management Summary</h3>
+            <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <thead>
+                    <tr style="background: #0a58ca; color: white;">
+                        <th style="padding: 1rem; text-align: left; font-weight: 600;">Action</th>
+                        <th style="padding: 1rem; text-align: left; font-weight: 600;">Frequency</th>
+                        <th style="padding: 1rem; text-align: left; font-weight: 600;">Responsibility</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 1rem;"><strong>Status Update</strong></td>
+                        <td style="padding: 1rem;">Daily (Real-time)</td>
+                        <td style="padding: 1rem;">Team Member</td>
+                    </tr>
+                    <tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 1rem;"><strong>Breaking down tasks</strong></td>
+                        <td style="padding: 1rem;">As needed</td>
+                        <td style="padding: 1rem;">Team Member</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 1rem;"><strong>Monitoring Burndown</strong></td>
+                        <td style="padding: 1rem;">Daily</td>
+                        <td style="padding: 1rem;">Scrum Master</td>
+                    </tr>
+                    <tr style="background: #f8fafc;">
+                        <td style="padding: 1rem;"><strong>Removing Blockers</strong></td>
+                        <td style="padding: 1rem;">Immediate</td>
+                        <td style="padding: 1rem;">Scrum Master</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Key Principles Grid -->
+        <div class="sb34-grid-2" style="margin-top: 2rem;">
+            <div class="sb34-premium-card">
+                <div class="sb34-card-header">
+                    <i class="fas fa-eye"></i>
+                    <h3>Transparency & Visibility</h3>
+                </div>
+                <ul class="sb34-bullet-list">
+                    <li>Keep the Sprint Backlog visible to all team members</li>
+                    <li>Update progress regularly throughout the day</li>
+                    <li>Use clear task descriptions and acceptance criteria</li>
+                    <li>Share impediments openly and quickly</li>
+                </ul>
+            </div>
+            
+            <div class="sb34-premium-card">
+                <div class="sb34-card-header">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Continuous Adaptation</h3>
+                </div>
+                <ul class="sb34-bullet-list">
+                    <li>Break down large tasks as you learn more</li>
+                    <li>Adjust estimates based on actual progress</li>
+                    <li>Add newly discovered tasks promptly</li>
+                    <li>Communicate scope changes immediately</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Common Challenges -->
+    <div class="sb34-section">
+        <h2 class="sb34-section-title"><i class="fas fa-exclamation-triangle"></i> Common Challenges & Solutions</h2>
+        
+        <div class="sb34-content-card">
+            <p><strong>Challenge:</strong> Team members not updating the Sprint Backlog regularly</p>
+            <p><strong>Solution:</strong> Establish clear expectations during Sprint Planning and reinforce during Daily Standups. Make updates part of the daily routine and emphasize the importance of transparency <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>.</p>
+        </div>
+        
+        <div class="sb34-content-card">
+            <p><strong>Challenge:</strong> Discovering tasks require more work than originally estimated</p>
+            <p><strong>Solution:</strong> Break complex User Stories into smaller sub-tasks within the Sprint Backlog. For example, "Create Risk Register" can be divided into "Research templates," "Drafting table," and "Adding citations" <sup><a href="javascript:void(0)" onclick="scrollToRef('ref3')">[3]</a></sup>.</p>
+        </div>
+        
+        <div class="sb34-content-card">
+            <p><strong>Challenge:</strong> Scope creep during the sprint</p>
+            <p><strong>Solution:</strong> Focus on the Sprint Goal and involve the Product Owner in scope change discussions. Remove unnecessary work only after consultation to maintain sprint commitment <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>.</p>
+        </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="sb34-summary-premium">
+        <i class="fas fa-check-circle"></i>
+        <div>
+            <strong>Summary:</strong> Effective Sprint Backlog management requires daily attention, transparency, and adaptation to changes. As a living artifact, it serves as the team's commitment tracker and enables continuous delivery of value while maintaining focus on the Sprint Goal.
+        </div>
+    </div>
+
+    <!-- References Section -->
+    <div class="sb34-section">
+        <h2 class="sb34-section-title"><i class="fas fa-book"></i> References</h2>
+        <div class="sb34-content-card">
+            <div style="line-height: 1.8;">
+                <p id="ref1" style="margin-bottom: 1rem;"><strong>[1]</strong> Schwaber, K., & Sutherland, J. (2020). <em>The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game</em>. [Online]. Available: <a href="https://scrumguides.org/scrum-guide.html" style="color: #0a58ca;">https://scrumguides.org/scrum-guide.html</a></p>
+                
+                <p id="ref2" style="margin-bottom: 1rem;"><strong>[2]</strong> Project Management Institute (PMI). (2021). <em>A Guide to the Project Management Body of Knowledge (PMBOK Guide)</em> (7th ed.). Newtown Square, PA: Project Management Institute.</p>
+                
+                <p id="ref3" style="margin-bottom: 0;"><strong>[3]</strong> Atlassian. (n.d.). <em>Using the Sprint Backlog in Jira Software</em>. [Online]. Available: <a href="https://www.atlassian.com/agile/scrum/sprint-backlog" style="color: #0a58ca;">https://www.atlassian.com/agile/scrum/sprint-backlog</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="sb34-navigation">
+        <a href="chapter3.3.html" class="sb34-nav-btn prev">
+            <i class="fas fa-arrow-left"></i>
+            <span>Previous: Create Product Backlog</span>
+        </a>
+        <a href="chapter3.6.html" class="sb34-nav-btn next">
+            <span>Next: Chapter 3.6</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+</body>
+</html>
