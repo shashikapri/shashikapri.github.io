@@ -1,0 +1,636 @@
+/* style5.1.css – What is Project Scope? (US-17) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fc;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    padding: 2rem 1rem;
+}
+
+.us17-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    overflow: hidden;
+    padding: 2.5rem;
+}
+
+/* ===== HERO SECTION ===== */
+.us17-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us17-hero-content {
+    max-width: 800px;
+}
+
+.us17-chapter-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+.us17-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.us17-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us17-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.us17-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.us17-hero-description {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    margin-top: 1rem;
+}
+
+/* ===== WHY MATTERS CARD ===== */
+.us17-matter-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-left: 6px solid #0a58ca;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 14px rgba(0,80,120,0.08);
+}
+
+.us17-matter-icon i {
+    font-size: 2.8rem;
+    color: #0a58ca;
+}
+
+.us17-matter-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #0b2b4e;
+}
+
+.us17-matter-content p {
+    font-size: 1.1rem;
+    color: #1e3a5f;
+}
+
+/* ===== SECTION TITLES ===== */
+.us17-section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0b2b4e;
+    margin: 2.5rem 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.us17-section-title i {
+    color: #1f5f99;
+    font-size: 2rem;
+    background: #f0f9ff;
+    padding: 0.8rem;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0,40,80,0.1);
+}
+
+/* ===== CONTENT CARD ===== */
+.us17-content-card {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+/* ===== DEFINITION VISUAL ===== */
+.us17-definition-visual {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1.5rem;
+    border: 1px solid #c5dcf2;
+}
+
+.us17-scope-box {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.us17-scope-included, .us17-scope-excluded {
+    flex: 1;
+    min-width: 200px;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.us17-scope-included {
+    background: #e8f5e8;
+    border-left: 6px solid #2e7d32;
+}
+
+.us17-scope-excluded {
+    background: #ffebee;
+    border-left: 6px solid #d32f2f;
+}
+
+.us17-scope-included i, .us17-scope-excluded i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.us17-scope-included i { color: #2e7d32; }
+.us17-scope-excluded i { color: #d32f2f; }
+
+.us17-scope-included h4, .us17-scope-excluded h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.us17-scope-included ul, .us17-scope-excluded ul {
+    list-style: none;
+}
+
+.us17-scope-included li, .us17-scope-excluded li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.us17-scope-included li::before {
+    content: "✓";
+    color: #2e7d32;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.us17-scope-excluded li::before {
+    content: "✗";
+    color: #d32f2f;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.us17-scope-note {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background: #f0f9ff;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: #1e4a7a;
+}
+
+/* ===== IMAGE CONTAINER ===== */
+.us17-image-container {
+    margin: 2.5rem 0;
+    text-align: center;
+    background: linear-gradient(145deg, #f0f9ff, #e6f0fa);
+    border-radius: 2rem;
+    padding: 2rem;
+    border: 2px dashed #3f7eb0;
+}
+
+.us17-image-header {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.us17-image-header i {
+    font-size: 2.5rem;
+    color: #1e4a7a;
+    background: white;
+    padding: 0.8rem;
+    border-radius: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.us17-image-title {
+    font-size: 1.5rem;
+    color: #0b2b4e;
+    margin-bottom: 1.5rem;
+}
+
+.us17-image-wrapper {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.us17-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.us17-image-caption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #1d5881;
+    background: rgba(255,255,255,0.9);
+    padding: 0.5rem 1.8rem;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+/* ===== GRID 2 ===== */
+.us17-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+    margin: 2rem 0;
+}
+
+.us17-premium-card {
+    background: white;
+    border-radius: 1.8rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.15);
+    transition: transform 0.2s;
+}
+
+.us17-premium-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px -10px rgba(0,60,120,0.2);
+}
+
+.us17-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.us17-card-header i {
+    font-size: 2rem;
+    color: #2266a8;
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 60px;
+}
+
+.us17-card-header h3 {
+    font-size: 1.6rem;
+    color: #124072;
+}
+
+.us17-bullet-list {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.us17-bullet-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.us17-bullet-list li::before {
+    content: "•";
+    color: #0a58ca;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+}
+
+.us17-example-box {
+    background: #f0f9ff;
+    border-left: 4px solid #0a58ca;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+}
+
+/* ===== COMPARISON TABLE ===== */
+.us17-comparison-table {
+    overflow-x: auto;
+    border-radius: 1.5rem;
+    border: 1px solid #cfddee;
+    margin: 1.5rem 0;
+}
+
+.us17-scope-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.us17-scope-table th {
+    background: #f0f6ff;
+    color: #104079;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #9bb6d4;
+}
+
+.us17-scope-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #d8e3f0;
+}
+
+.us17-scope-table td i {
+    margin-right: 0.5rem;
+}
+
+/* ===== BENEFITS GRID ===== */
+.us17-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.us17-benefit-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.8rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 15px -8px rgba(0,60,120,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.us17-benefit-card:hover {
+    transform: translateY(-4px);
+}
+
+.us17-benefit-card i {
+    font-size: 2.5rem;
+    color: #1f5f99;
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 60px;
+    margin-bottom: 1rem;
+}
+
+.us17-benefit-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0b2b4e;
+}
+
+/* ===== AGILE VS WATERFALL SCOPE ===== */
+.us17-scope-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.us17-scope-item {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.8rem;
+    border: 1px solid #e2edf7;
+}
+
+.waterfall-scope {
+    border-left: 6px solid #3498db;
+}
+
+.agile-scope {
+    border-left: 6px solid #2ecc71;
+}
+
+.us17-scope-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.us17-scope-item h4 i {
+    margin-right: 0.5rem;
+}
+
+.us17-scope-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    padding: 1rem;
+    background: #f8fafd;
+    border-radius: 1rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.us17-fixed {
+    background: #2e7d32;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+}
+
+.us17-variable {
+    background: #f39c12;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+}
+
+/* ===== REAL WORLD EXAMPLE ===== */
+.us17-example-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    border: 1px solid #c5dcf2;
+}
+
+.us17-example-icon i {
+    font-size: 3rem;
+    color: #0a58ca;
+    background: white;
+    padding: 1rem;
+    border-radius: 60px;
+}
+
+.us17-example-content h3 {
+    font-size: 1.5rem;
+    color: #0b2b4e;
+    margin-bottom: 1rem;
+}
+
+.us17-example-content p {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.us17-example-note {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #c5dcf2;
+}
+
+.us17-in-example {
+    background: #2e7d32;
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.us17-out-example {
+    background: #d32f2f;
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* ===== SUMMARY ===== */
+.us17-summary-premium {
+    background: linear-gradient(135deg, #e2f0e8 0%, #d0e8dd 100%);
+    border-radius: 2rem;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-left: 8px solid #2e7d5e;
+    box-shadow: 0 10px 25px -10px #1b7553;
+}
+
+.us17-summary-premium i {
+    font-size: 3.5rem;
+    color: #1b7553;
+    background: white;
+    padding: 1rem;
+    border-radius: 60px;
+}
+
+.us17-summary-premium div {
+    font-size: 1.2rem;
+    color: #0b3527;
+    line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+.us17-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 2rem;
+}
+
+.us17-nav-btn {
+    background: white;
+    border: 2px solid #1b4e79;
+    color: #1b4e79;
+    border-radius: 40px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.2s;
+}
+
+.us17-nav-btn:hover {
+    background: #1b4e79;
+    color: white;
+    transform: translateX(-2px);
+    box-shadow: 0 4px 12px rgba(27,78,121,0.3);
+}
+
+.us17-nav-btn.next:hover {
+    transform: translateX(2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .us17-container {
+        padding: 1.5rem;
+    }
+    
+    .us17-title {
+        font-size: 2.2rem;
+    }
+    
+    .us17-grid-2, .us17-scope-comparison {
+        grid-template-columns: 1fr;
+    }
+    
+    .us17-matter-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .us17-summary-premium {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .us17-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .us17-nav-btn {
+        justify-content: center;
+    }
+    
+    .us17-example-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
