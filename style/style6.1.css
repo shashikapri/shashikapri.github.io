@@ -1,0 +1,749 @@
+/* style6.1.css – Introduction to Risk Management (US-22) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fc;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    padding: 2rem 1rem;
+}
+
+.us22-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    overflow: hidden;
+    padding: 2.5rem;
+}
+
+/* ===== HERO SECTION ===== */
+.us22-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us22-hero-content {
+    max-width: 800px;
+}
+
+.us22-chapter-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+.us22-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.us22-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us22-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.us22-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.us22-hero-description {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    margin-top: 1rem;
+}
+
+/* ===== WHY MATTERS CARD ===== */
+.us22-matter-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-left: 6px solid #e67e22;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 14px rgba(0,80,120,0.08);
+}
+
+.us22-matter-icon i {
+    font-size: 2.8rem;
+    color: #e67e22;
+}
+
+.us22-matter-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #0b2b4e;
+}
+
+.us22-matter-content p {
+    font-size: 1.1rem;
+    color: #1e3a5f;
+}
+
+/* ===== SECTION TITLES ===== */
+.us22-section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0b2b4e;
+    margin: 2.5rem 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.us22-section-title i {
+    color: #1f5f99;
+    font-size: 2rem;
+    background: #f0f9ff;
+    padding: 0.8rem;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0,40,80,0.1);
+}
+
+/* ===== CONTENT CARD ===== */
+.us22-content-card {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+/* ===== DEFINITION VISUAL ===== */
+.us22-definition-visual {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1.5rem;
+    border: 1px solid #c5dcf2;
+}
+
+.us22-risk-box {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.us22-risk-threat, .us22-risk-opportunity {
+    flex: 1;
+    min-width: 200px;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.us22-risk-threat {
+    background: #ffebee;
+    border-left: 6px solid #d32f2f;
+}
+
+.us22-risk-opportunity {
+    background: #e8f5e9;
+    border-left: 6px solid #2e7d32;
+}
+
+.us22-risk-threat i, .us22-risk-opportunity i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.us22-risk-threat i { color: #d32f2f; }
+.us22-risk-opportunity i { color: #2e7d32; }
+
+.us22-risk-threat h4, .us22-risk-opportunity h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.us22-risk-threat ul, .us22-risk-opportunity ul {
+    list-style: none;
+}
+
+.us22-risk-threat li, .us22-risk-opportunity li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.us22-risk-threat li::before {
+    content: "⚠";
+    color: #d32f2f;
+    position: absolute;
+    left: 0;
+}
+
+.us22-risk-opportunity li::before {
+    content: "✓";
+    color: #2e7d32;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.us22-risk-note {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background: #f0f9ff;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: #1e4a7a;
+}
+
+/* ===== IMAGE CONTAINER ===== */
+.us22-image-container {
+    margin: 2.5rem 0;
+    text-align: center;
+    background: linear-gradient(145deg, #f0f9ff, #e6f0fa);
+    border-radius: 2rem;
+    padding: 2rem;
+    border: 2px dashed #3f7eb0;
+}
+
+.us22-image-header {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.us22-image-header i {
+    font-size: 2.5rem;
+    color: #1e4a7a;
+    background: white;
+    padding: 0.8rem;
+    border-radius: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.us22-image-title {
+    font-size: 1.5rem;
+    color: #0b2b4e;
+    margin-bottom: 1.5rem;
+}
+
+.us22-image-wrapper {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.us22-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.us22-image-caption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #1d5881;
+    background: rgba(255,255,255,0.9);
+    padding: 0.5rem 1.8rem;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+/* Risk Cycle Fallback */
+.us22-risk-cycle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.us22-cycle-item {
+    background: #f8fafd;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    min-width: 90px;
+}
+
+.us22-cycle-item i {
+    font-size: 1.8rem;
+    color: #1f5f99;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.us22-cycle-item span {
+    font-weight: 700;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.us22-cycle-item small {
+    font-size: 0.7rem;
+    color: #5a6e8a;
+}
+
+/* ===== STRATEGIES GRID ===== */
+.us22-strategies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.us22-strategy-card {
+    background: white;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    border: 1px solid #e2edf7;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.us22-strategy-card:hover {
+    transform: translateY(-4px);
+}
+
+.us22-strategy-card i {
+    font-size: 2rem;
+    color: #e67e22;
+    background: #fff4e5;
+    padding: 0.8rem;
+    border-radius: 60px;
+    margin-bottom: 1rem;
+}
+
+.us22-strategy-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0b2b4e;
+}
+
+.us22-strategy-card p {
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 0.8rem;
+}
+
+.us22-strategy-example {
+    font-size: 0.75rem;
+    color: #1f5f99;
+    background: #f0f9ff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* ===== RISK MATRIX ===== */
+.us22-matrix-container {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.us22-matrix {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    border: 1px solid #e2edf7;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: white;
+}
+
+.us22-matrix-corner {
+    background: #f0f6ff;
+    padding: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #e2edf7;
+    border-right: 1px solid #e2edf7;
+}
+
+.us22-matrix-header {
+    background: #f0f6ff;
+    padding: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #e2edf7;
+}
+
+.us22-matrix-label {
+    background: #f0f6ff;
+    padding: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-right: 1px solid #e2edf7;
+    border-bottom: 1px solid #e2edf7;
+}
+
+.us22-matrix-cell {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e2edf7;
+    border-right: 1px solid #e2edf7;
+    font-weight: 500;
+}
+
+.us22-matrix-cell.critical {
+    background: #ffebee;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.us22-matrix-cell.high {
+    background: #fff3e0;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.us22-matrix-cell.medium {
+    background: #fff9c4;
+    color: #f1c40f;
+}
+
+.us22-matrix-cell.low {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.us22-matrix-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+/* ===== GRID 2 ===== */
+.us22-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+    margin: 2rem 0;
+}
+
+.us22-premium-card {
+    background: white;
+    border-radius: 1.8rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.15);
+    transition: transform 0.2s;
+}
+
+.us22-premium-card:hover {
+    transform: translateY(-4px);
+}
+
+.us22-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.us22-card-header i {
+    font-size: 2rem;
+    color: #2266a8;
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 60px;
+}
+
+.us22-card-header h3 {
+    font-size: 1.6rem;
+    color: #124072;
+}
+
+.us22-bullet-list {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.us22-bullet-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.us22-bullet-list li::before {
+    content: "•";
+    color: #0a58ca;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+}
+
+.us22-example-box {
+    background: #f0f9ff;
+    border-left: 4px solid #0a58ca;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+}
+
+/* ===== RISKS GRID ===== */
+.us22-risks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.us22-risk-category {
+    background: white;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    border: 1px solid #e2edf7;
+    transition: all 0.2s;
+}
+
+.us22-risk-category i {
+    font-size: 2rem;
+    color: #e67e22;
+    margin-bottom: 0.8rem;
+}
+
+.us22-risk-category h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0b2b4e;
+}
+
+.us22-risk-category p {
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ===== EXAMPLE CARD ===== */
+.us22-example-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    border: 1px solid #c5dcf2;
+}
+
+.us22-example-icon i {
+    font-size: 3rem;
+    color: #0a58ca;
+    background: white;
+    padding: 1rem;
+    border-radius: 60px;
+}
+
+.us22-example-content h3 {
+    font-size: 1.5rem;
+    color: #0b2b4e;
+    margin-bottom: 1rem;
+}
+
+.us22-example-content p {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.us22-example-note {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #c5dcf2;
+    color: #2e7d32;
+}
+
+/* ===== METHODOLOGY COMPARISON ===== */
+.us22-methodology-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.us22-method-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.8rem;
+    border: 1px solid #e2edf7;
+}
+
+.us22-method-card.waterfall {
+    border-left: 6px solid #3498db;
+}
+
+.us22-method-card.agile {
+    border-left: 6px solid #2ecc71;
+}
+
+.us22-method-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.us22-method-card h4 i {
+    margin-right: 0.5rem;
+}
+
+.us22-method-tag {
+    margin-top: 1rem;
+    padding: 0.3rem 0.8rem;
+    background: #f0f9ff;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-block;
+    color: #1f5f99;
+}
+
+/* ===== SUMMARY ===== */
+.us22-summary-premium {
+    background: linear-gradient(135deg, #e2f0e8 0%, #d0e8dd 100%);
+    border-radius: 2rem;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-left: 8px solid #e67e22;
+    box-shadow: 0 10px 25px -10px #b85e0a;
+}
+
+.us22-summary-premium i {
+    font-size: 3.5rem;
+    color: #e67e22;
+    background: white;
+    padding: 1rem;
+    border-radius: 60px;
+}
+
+.us22-summary-premium div {
+    font-size: 1.2rem;
+    color: #0b3527;
+    line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+.us22-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 2rem;
+}
+
+.us22-nav-btn {
+    background: white;
+    border: 2px solid #1b4e79;
+    color: #1b4e79;
+    border-radius: 40px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.2s;
+}
+
+.us22-nav-btn:hover {
+    background: #1b4e79;
+    color: white;
+    transform: translateX(-2px);
+}
+
+.us22-nav-btn.next:hover {
+    transform: translateX(2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .us22-container {
+        padding: 1.5rem;
+    }
+    
+    .us22-title {
+        font-size: 2.2rem;
+    }
+    
+    .us22-grid-2,
+    .us22-methodology-comparison {
+        grid-template-columns: 1fr;
+    }
+    
+    .us22-matter-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .us22-risk-box {
+        flex-direction: column;
+    }
+    
+    .us22-summary-premium {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .us22-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .us22-nav-btn {
+        justify-content: center;
+    }
+    
+    .us22-example-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .us22-matrix {
+        grid-template-columns: 80px 1fr 1fr 1fr;
+        font-size: 0.8rem;
+    }
+    
+    .us22-matrix-cell,
+    .us22-matrix-label,
+    .us22-matrix-header,
+    .us22-matrix-corner {
+        padding: 0.5rem;
+    }
+}

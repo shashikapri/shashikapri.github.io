@@ -1,6 +1,16 @@
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: #f4f7fc;
     font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    padding: 2rem 1rem;
 }
 
 .us18-container {
@@ -11,7 +21,7 @@ body {
     padding: 2rem;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .us18-hero {
     background: linear-gradient(135deg, #0b2b4e, #123b6e);
     color: white;
@@ -29,16 +39,17 @@ body {
 
 .us18-meta {
     margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .us18-code-badge {
     background: #1e4a7a;
     padding: 5px 12px;
     border-radius: 20px;
-    margin-right: 5px;
 }
 
-/* CARD */
+/* ===== MATTER CARD ===== */
 .us18-matter-card {
     background: #eef6ff;
     padding: 1.5rem;
@@ -48,15 +59,21 @@ body {
     gap: 1rem;
 }
 
-/* IMAGE */
+/* ===== IMAGE ===== */
 .us18-image-container {
     text-align: center;
     margin: 2rem 0;
 }
 
+.us18-image-wrapper {
+    border-radius: 15px;
+}
+
 .us18-image {
     max-width: 100%;
     border-radius: 15px;
+    display: block;
+    margin: 0 auto;
 }
 
 .us18-image-caption {
@@ -64,7 +81,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* GRID */
+/* ===== GRID ===== */
 .us18-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -78,10 +95,65 @@ body {
     text-align: center;
 }
 
-/* SUMMARY */
+/* ===== BULLET LIST ===== */
+.us18-bullet-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.us18-bullet-list li {
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+.us18-bullet-list li::before {
+    content: "•";
+    color: #0a58ca;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: -1.2rem;
+}
+
+/* ===== SUMMARY ===== */
 .us18-summary {
     margin-top: 2rem;
     padding: 1.5rem;
     background: #e6f0fa;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.us18-summary i {
+    font-size: 2rem;
+    color: #0a58ca;
+}
+
+.us18-summary div {
+    font-size: 1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .us18-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .us18-matter-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .us18-summary {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .us18-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
