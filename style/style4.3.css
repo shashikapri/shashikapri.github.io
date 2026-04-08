@@ -1,20 +1,6 @@
 /* style.css - Gantt Charts (US-15) */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-body {
-    background: #f4f7fc;
-    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.5;
-    color: #1e293b;
-    padding: 2rem 1rem;
-}
+@import url('./common-chapter-base.css');
 
 .gantt-container {
     max-width: 1200px;

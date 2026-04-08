@@ -1,17 +1,5 @@
 /* style5.1.css – What is Project Scope? (US-17) */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #f4f7fc;
-    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.5;
-    color: #1e293b;
-    padding: 2rem 1rem;
-}
+@import url('./common-chapter-base.css');
 
 .us17-container {
     max-width: 1200px;

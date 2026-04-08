@@ -1,16 +1,9 @@
 /* style10.css – external stylesheet for Beyond Scrum page (US-10) */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('./common-chapter-base.css');
 
 body {
-    background: #f4f7fc;
-    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.5;
-    color: #1e293b;
+    padding: 0;
 }
 
 .us10-container {

@@ -1,18 +1,6 @@
 /* style3.4.css – Managing the Sprint Backlog (Chapter 3.4) - Premium version */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #f4f7fc;
-    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.5;
-    color: #1e293b;
-    padding: 2rem 1rem;
-}
+@import url('./common-chapter-base.css');
 
 .sb34-container {
     max-width: 1000px;
