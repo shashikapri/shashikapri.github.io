@@ -7,6 +7,8 @@ const backBtn = document.getElementById('backToTop');
 const langBtn = document.getElementById('language-btn');
 const langDropdown = document.getElementById('language-dropdown');
 let backToTopInitialized = false;
+let searchResultItems = [];
+let selectedSearchIndex = -1;
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -235,27 +237,154 @@ function initializeLanguageSelector() {
 
 function initializeSearch() {
     const searchInput = document.getElementById('search-input');
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            if (searchTerm.length > 2) {
-                console.log('Searching for:', searchTerm);
-                // Implement search functionality here
-                // You could filter chapters, show results, etc.
-            }
-        });
-        
-        // Search on Enter key
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                const searchTerm = e.target.value.toLowerCase();
-                if (searchTerm.length > 0) {
-                    console.log('Executing search for:', searchTerm);
-                    alert(`Searching for: ${searchTerm}\nFull search functionality would be implemented here.`);
-                }
-            }
-        });
+    if (!searchInput) return;
+
+    const searchContainer = searchInput.closest('.search-container');
+    if (!searchContainer) return;
+
+    let searchResults = searchContainer.querySelector('.search-results');
+    if (!searchResults) {
+        searchResults = document.createElement('div');
+        searchResults.className = 'search-results';
+        searchContainer.appendChild(searchResults);
     }
+
+    const searchableItems = buildSearchIndex();
+
+    const closeResults = () => {
+        searchResults.classList.remove('active');
+        searchResults.innerHTML = '';
+        searchResultItems = [];
+        selectedSearchIndex = -1;
+    };
+
+    const renderResults = (query) => {
+        const normalizedQuery = query.trim().toLowerCase();
+        if (normalizedQuery.length < 2) {
+            closeResults();
+            return;
+        }
+
+        const matches = searchableItems
+            .filter(item => item.searchableText.includes(normalizedQuery))
+            .slice(0, 10);
+
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="search-result-empty">No matching topics found</div>';
+            searchResults.classList.add('active');
+            searchResultItems = [];
+            selectedSearchIndex = -1;
+            return;
+        }
+
+        searchResults.innerHTML = matches
+            .map((item, index) => `
+                <button type="button" class="search-result-item" data-index="${index}" data-page="${item.page}">
+                    <div class="search-result-title">${item.title}</div>
+                    <div class="search-result-meta">${item.chapter}</div>
+                </button>
+            `)
+            .join('');
+
+        searchResults.classList.add('active');
+        searchResultItems = Array.from(searchResults.querySelectorAll('.search-result-item'));
+        selectedSearchIndex = -1;
+
+        searchResultItems.forEach((button) => {
+            button.addEventListener('click', () => {
+                const page = button.dataset.page;
+                if (!page) return;
+
+                loadPage(page);
+                searchInput.value = '';
+                closeResults();
+            });
+        });
+    };
+
+    const updateSelectedResult = () => {
+        searchResultItems.forEach((item, index) => {
+            item.classList.toggle('active', index === selectedSearchIndex);
+        });
+
+        if (selectedSearchIndex >= 0 && searchResultItems[selectedSearchIndex]) {
+            searchResultItems[selectedSearchIndex].scrollIntoView({ block: 'nearest' });
+        }
+    };
+
+    searchInput.addEventListener('input', (e) => {
+        renderResults(e.target.value);
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+        if (!searchResults.classList.contains('active')) {
+            if (e.key === 'Enter') {
+                renderResults(searchInput.value);
+            }
+            return;
+        }
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (searchResultItems.length === 0) return;
+            selectedSearchIndex = (selectedSearchIndex + 1) % searchResultItems.length;
+            updateSelectedResult();
+        }
+
+        if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (searchResultItems.length === 0) return;
+            selectedSearchIndex = selectedSearchIndex <= 0 ? searchResultItems.length - 1 : selectedSearchIndex - 1;
+            updateSelectedResult();
+        }
+
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            if (selectedSearchIndex >= 0 && searchResultItems[selectedSearchIndex]) {
+                searchResultItems[selectedSearchIndex].click();
+                return;
+            }
+            if (searchResultItems.length > 0) {
+                searchResultItems[0].click();
+            }
+        }
+
+        if (e.key === 'Escape') {
+            closeResults();
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!searchContainer.contains(e.target)) {
+            closeResults();
+        }
+    });
+}
+
+function buildSearchIndex() {
+    const items = [];
+
+    document.querySelectorAll('.chapter-group').forEach((group) => {
+        const chapterHeader = group.querySelector('.chapter-header .chapter-title span');
+        const chapterText = chapterHeader ? chapterHeader.textContent.trim() : 'Chapter';
+
+        group.querySelectorAll('.sidebar-topic.load-page').forEach((topic) => {
+            const titleElement = topic.querySelector('span');
+            const title = titleElement ? titleElement.textContent.trim() : topic.textContent.trim();
+            const page = topic.dataset.page;
+
+            if (!title || !page) return;
+
+            items.push({
+                title,
+                chapter: chapterText,
+                page,
+                searchableText: `${title} ${chapterText} ${page}`.toLowerCase()
+            });
+        });
+    });
+
+    return items;
 }
 
 function initializeBackToTop() {
