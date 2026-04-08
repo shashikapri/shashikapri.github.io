@@ -6,6 +6,7 @@ const dynamicBody = document.getElementById('dynamic-body');
 const backBtn = document.getElementById('backToTop');
 const langBtn = document.getElementById('language-btn');
 const langDropdown = document.getElementById('language-dropdown');
+let backToTopInitialized = false;
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -97,22 +98,7 @@ function handleChapterClick(e) {
 }
 
 function initializeNavigation() {
-    // Sidebar links - load external pages
-    document.querySelectorAll('.load-page').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const page = this.dataset.page;
-            if (page) {
-                console.log('Loading page:', page);
-                loadPage(page);
-                
-                // Optional: close sidebar on mobile
-                if (window.innerWidth < 768) {
-                    sidebar.classList.add('collapsed');
-                }
-            }
-        });
-    });
+    bindLoadPageLinks();
 
     // Nav links (Home, Guide Contents)
     const homeLink = document.querySelector('[data-nav="home"]');
@@ -132,6 +118,28 @@ function initializeNavigation() {
     }
 
    
+}
+
+function handleLoadPageClick(e) {
+    e.preventDefault();
+    const page = this.dataset.page;
+    if (page) {
+        console.log('Loading page:', page);
+        loadPage(page);
+
+        // Optional: close sidebar on mobile
+        if (window.innerWidth < 768) {
+            sidebar.classList.add('collapsed');
+        }
+    }
+}
+
+function bindLoadPageLinks(scope = document) {
+    scope.querySelectorAll('.load-page').forEach(link => {
+        if (link.dataset.boundLoadPage === 'true') return;
+        link.addEventListener('click', handleLoadPageClick);
+        link.dataset.boundLoadPage = 'true';
+    });
 }
 
 // Function to load external HTML pages
@@ -187,13 +195,7 @@ function loadPage(pageUrl) {
 
 function initializeLoadedContent() {
     // Re-attach any event listeners to links inside the loaded content
-    document.querySelectorAll('.load-page').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const page = this.dataset.page;
-            if (page) loadPage(page);
-        });
-    });
+    bindLoadPageLinks(dynamicBody);
     
     // Re-initialize any other components
     initializeBackToTop();
@@ -257,21 +259,19 @@ function initializeSearch() {
 }
 
 function initializeBackToTop() {
-    if (backBtn) {
-        backBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            dynamicBody.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-        
-        // Show/hide back to top button based on scroll position
-        dynamicBody.addEventListener('scroll', () => {
-            if (dynamicBody.scrollTop > 300) {
-                backBtn.style.display = 'flex';
-            } else {
-                backBtn.style.display = 'flex'; // Always show, but you can change this
-            }
-        });
-    }
+    if (!backBtn || !dynamicBody || backToTopInitialized) return;
+
+    backBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        dynamicBody.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Keep the button visible, but avoid adding duplicate scroll listeners.
+    dynamicBody.addEventListener('scroll', () => {
+        backBtn.style.display = 'flex';
+    }, { passive: true });
+
+    backToTopInitialized = true;
 }
 
 // Handle browser back/forward buttons

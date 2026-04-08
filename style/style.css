@@ -357,6 +357,8 @@ body {
 .main-content {
     flex: 1;
     overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     padding: 2rem 2rem 1rem 2rem;
     background: #f4f7fb;
     transition: padding 0.2s;
