@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ===== GLOBAL RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fc;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    padding: 2rem 1rem;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.us38-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding: 2rem 2.5rem;
+}
+
+/* ===== HERO SECTION - BLUE THEME ===== */
+.us38-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us38-hero-content {
+    max-width: 800px;
+}
+
+.us38-chapter-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.us38-chapter-badge i {
+    margin-right: 0.5rem;
+}
+
+.us38-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.us38-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us38-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.us38-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ===== NOTE TO READER CARD ===== */
+.us38-note-card {
+    background: #f0f9ff;
+    border-left: 8px solid #0a58ca;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 80, 120, 0.06);
+}
+
+.us38-note-icon i {
+    font-size: 1.8rem;
+    color: #0a58ca;
+}
+
+.us38-note-content {
+    font-size: 0.95rem;
+    color: #1e3a5f;
+    line-height: 1.5;
+}
+
+.us38-note-content strong {
+    color: #0b2b4e;
+}
+
+.us38-note-content i {
+    margin-right: 0.3rem;
+    color: #0a58ca;
+}
+
+/* ===== SECTION TITLES ===== */
+.us38-section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 0.8rem;
+}
+
+.us38-section-title i {
+    background: #0b2b4e;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+.us38-section-title h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0b2b4e;
+}
+
+.us38-section-subtitle {
+    color: #4a627a;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+    margin-left: 0.5rem;
+}
+
+/* ===== RISKS TABLE ===== */
+.us38-risks-table-wrapper {
+    overflow-x: auto;
+    margin: 1rem 0 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #e2edff;
+    background: white;
+}
+
+.us38-risks-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.us38-risks-table thead tr {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    color: white;
+}
+
+.us38-risks-table th {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.us38-risks-table td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #e2edff;
+    color: #1e3a5f;
+}
+
+.us38-risks-table tr:last-child td {
+    border-bottom: none;
+}
+
+.us38-risks-table td i {
+    margin-right: 0.6rem;
+    color: #0a58ca;
+    width: 1.4rem;
+}
+
+.us38-risks-table tr:hover td {
+    background: #f8fbff;
+}
+
+/* ===== BENEFITS GRID ===== */
+.us38-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.us38-benefit-card {
+    background: #f8fbff;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e2edff;
+}
+
+.us38-benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.benefit-icon i {
+    font-size: 2.5rem;
+    color: #0a58ca;
+    margin-bottom: 1rem;
+}
+
+.us38-benefit-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0b2b4e;
+    margin-bottom: 0.5rem;
+}
+
+.us38-benefit-card p {
+    font-size: 0.9rem;
+    color: #4a627a;
+    line-height: 1.4;
+}
+
+/* ===== SCRUM MASTER SECTION ===== */
+.us38-scrum-section {
+    background: #f0f5ff;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    border: 1px solid #e2edff;
+}
+
+.us38-scrum-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.us38-scrum-header i {
+    font-size: 2rem;
+    color: #0a58ca;
+}
+
+.us38-scrum-header h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0b2b4e;
+}
+
+.us38-scrum-subtitle {
+    color: #4a627a;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.us38-scrum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.us38-scrum-item {
+    background: white;
+    padding: 1rem 1.2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.2s;
+    border: 1px solid #e2edff;
+}
+
+.us38-scrum-item:hover {
+    transform: translateX(5px);
+    border-color: #0a58ca;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.us38-scrum-item i {
+    font-size: 1.4rem;
+    color: #0a58ca;
+    min-width: 2rem;
+}
+
+.us38-scrum-item span {
+    font-size: 0.95rem;
+    color: #1e3a5f;
+    line-height: 1.4;
+}
+
+/* ===== DAILY WORK TABLE ===== */
+.us38-daily-table-wrapper {
+    overflow-x: auto;
+    margin: 1rem 0 2rem;
+    border-radius: 1rem;
+    border: 1px solid #e2edff;
+    background: white;
+}
+
+.us38-daily-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.us38-daily-table thead tr {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    color: white;
+}
+
+.us38-daily-table th {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.us38-daily-table td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #e2edff;
+    color: #1e3a5f;
+}
+
+.us38-daily-table tr:last-child td {
+    border-bottom: none;
+}
+
+.us38-daily-table td:first-child i {
+    margin-right: 0.6rem;
+    color: #0a58ca;
+}
+
+.us38-daily-table td:last-child i {
+    margin-right: 0.5rem;
+    color: #ffb347;
+    font-size: 0.85rem;
+}
+
+.us38-daily-table tr:hover td {
+    background: #f8fbff;
+}
+
+/* ===== KEY TAKEAWAYS ===== */
+.us38-key-takeaways {
+    background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 100%);
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    border: 1px solid #dce5f0;
+}
+
+.us38-key-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.us38-key-header i {
+    font-size: 1.6rem;
+    color: #0a58ca;
+}
+
+.us38-key-header h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0b2b4e;
+}
+
+.us38-key-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.us38-key-item {
+    background: white;
+    padding: 0.7rem 1.3rem;
+    border-radius: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #0b2b4e;
+    border: 1px solid #cbdde9;
+    transition: all 0.2s;
+}
+
+.us38-key-item:hover {
+    background: #0a58ca;
+    color: white;
+    border-color: #0a58ca;
+}
+
+.us38-key-item:hover i {
+    color: white;
+}
+
+.us38-key-item i {
+    font-size: 1rem;
+    color: #0a58ca;
+}
+
+/* ===== REFERENCES SECTION ===== */
+.us38-references {
+    margin: 2rem 0 1.5rem;
+    background: #f0f5ff;
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+}
+
+.us38-references h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #0b2b4e;
+}
+
+.us38-ref-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.us38-ref-list li a {
+    text-decoration: none;
+    background: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid #cbd5e1;
+    transition: all 0.2s;
+    color: #0b2b4e;
+    font-weight: 500;
+}
+
+.us38-ref-list li a:hover {
+    background: #0a58ca;
+    color: white;
+    border-color: #0a58ca;
+}
+
+.us38-ref-list li a:hover i {
+    color: white;
+}
+
+.us38-ref-list li a i {
+    color: #0a58ca;
+    font-size: 0.9rem;
+}
+
+/* ===== NAVIGATION ===== */
+.us38-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2edff;
+}
+
+.us38-nav-btn {
+    background: white;
+    padding: 0.7rem 1.8rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: #0b2b4e;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid #cbd5e1;
+    transition: all 0.2s;
+}
+
+.us38-nav-btn:hover {
+    background: #f0f9ff;
+    border-color: #0a58ca;
+    color: #0a58ca;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .us38-container {
+        padding: 1.5rem;
+    }
+    
+    .us38-title {
+        font-size: 2rem;
+    }
+    
+    .us38-section-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    .us38-scrum-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .us38-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .us38-scrum-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .us38-key-grid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .us38-key-item {
+        justify-content: center;
+    }
+    
+    .us38-navigation {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .us38-nav-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .us38-ref-list {
+        flex-direction: column;
+    }
+    
+    .us38-ref-list li a {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .us38-risks-table th,
+    .us38-risks-table td,
+    .us38-daily-table th,
+    .us38-daily-table td {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+    
+    .us38-container {
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .us38-navigation {
+        display: none;
+    }
+    
+    .us38-benefit-card {
+        break-inside: avoid;
+    }
+}

@@ -1252,6 +1252,11 @@ footer {
     background: linear-gradient(to right, #f5f7fa, white);
 }
 
+.change-management-theme {
+    border-left: 6px solid #2c7a7b;
+    background: linear-gradient(to right, #eef8f8, white);
+}
+
 .guild-theme {
     border-left: 6px solid #e67e22;
     background: linear-gradient(to right, #fff5f0, white);
