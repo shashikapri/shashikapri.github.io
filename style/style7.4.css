@@ -85,7 +85,7 @@ body {
     display: flex;
     gap: 1.5rem;
     background: #f0f9ff;
-    border-left: 6px solid #1abc9c;
+    border-left: 6px solid #1b4e79;
     border-radius: 1.5rem;
     padding: 1.8rem 2rem;
     margin: 2rem 0;
@@ -94,7 +94,7 @@ body {
 
 .us29-matter-icon i {
     font-size: 2.8rem;
-    color: #1abc9c;
+    color: #1b4e79;
 }
 
 .us29-matter-content h2 {
@@ -155,7 +155,7 @@ body {
 }
 
 .us29-tools-table th {
-    background: #1abc9c;
+    background: #1b4e79;
     color: white;
     padding: 1rem;
     text-align: left;
@@ -200,7 +200,7 @@ body {
 
 .us29-image-header i {
     font-size: 2.5rem;
-    color: #1abc9c;
+    color: #1b4e79;
     background: white;
     padding: 0.8rem;
     border-radius: 60px;
@@ -246,7 +246,7 @@ body {
 
 .us29-fallback-content i {
     font-size: 2rem;
-    color: #1abc9c;
+    color: #1b4e79;
     margin-bottom: 0.5rem;
 }
 
@@ -290,12 +290,12 @@ body {
 
 .us29-technique-card:hover {
     transform: translateY(-3px);
-    border-color: #1abc9c;
+    border-color: #1b4e79;
 }
 
 .us29-technique-card i {
     font-size: 1.8rem;
-    color: #1abc9c;
+    color: #1b4e79;
     margin-bottom: 0.5rem;
 }
 
@@ -310,40 +310,71 @@ body {
     color: #475569;
 }
 
-/* ===== APPLY GRID ===== */
+/* ===== APPLICATION IN REAL PROJECTS - CORRECTED ===== */
 .us29-apply-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
     margin: 1.5rem 0;
 }
 
 .us29-apply-item {
     background: white;
     border-radius: 0.8rem;
-    padding: 0.8rem 1rem;
+    padding: 1rem 1.2rem;
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
     border: 1px solid #e2edf7;
+    transition: all 0.2s ease;
 }
 
-.us29-apply-item i {
-    font-size: 1.1rem;
-    color: #1abc9c;
-    width: 24px;
+.us29-apply-item:hover {
+    transform: translateY(-2px);
+    border-color: #1b4e79;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.us29-apply-item strong {
+.us29-apply-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: #e8f8f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.us29-apply-icon i {
+    font-size: 1.2rem;
+    color: #1b4e79;
+}
+
+.us29-apply-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.us29-apply-text strong {
+    font-size: 1rem;
     color: #0b2b4e;
 }
 
+.us29-apply-text span {
+    font-size: 0.8rem;
+    color: #6f8cac;
+}
+
 .us29-apply-note {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding-top: 1rem;
     border-top: 1px solid #e2edf7;
     font-style: italic;
     color: #1e3a5f;
+    text-align: center;
 }
 
 /* ===== SUMMARY ===== */
@@ -355,13 +386,13 @@ body {
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    border-left: 8px solid #1abc9c;
-    box-shadow: 0 10px 25px -10px #1abc9c;
+    border-left: 8px solid #1b4e79;
+    box-shadow: 0 10px 25px -10px #1b4e79;
 }
 
 .us29-summary-premium i {
     font-size: 3rem;
-    color: #1abc9c;
+    color: #1b4e79;
     background: white;
     padding: 1rem;
     border-radius: 60px;
@@ -401,7 +432,7 @@ body {
 
 .us29-references-list li i {
     font-size: 1.2rem;
-    color: #1abc9c;
+    color: #1b4e79;
     margin-top: 0.2rem;
 }
 
@@ -416,14 +447,14 @@ body {
 }
 
 .us29-references-list li a:hover {
-    color: #1abc9c;
+    color: #1b4e79;
     text-decoration: underline;
 }
 
 .ref-note {
     display: block;
     font-size: 0.7rem;
-    color: #2e7d32;
+    color: #2e2f7d;
     margin-top: 0.3rem;
 }
 
