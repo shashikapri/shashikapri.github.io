@@ -1,0 +1,404 @@
+/* style6.4.css - Creating and Using a Risk Register (US-25) */
+@import url('./common-chapter-base.css');
+
+.us25-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    padding: 2.5rem;
+}
+
+.us25-hero {
+    background: linear-gradient(130deg, #0f304f 0%, #144e67 50%, #0f7b6c 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.us25-hero-content {
+    max-width: 900px;
+}
+
+.us25-chapter-badge {
+    background: rgba(255, 255, 255, 0.16);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.us25-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.us25-title-highlight {
+    color: #ffda8f;
+    border-bottom: 3px solid #ffc05a;
+}
+
+.us25-meta {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.us25-code-badge {
+    background: rgba(10, 33, 50, 0.45);
+    padding: 0.35rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.us25-hero-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.us25-story-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    background: #f1f9ff;
+    border: 1px solid #c9e7ff;
+    border-left: 6px solid #2b8ccf;
+    border-radius: 1.2rem;
+    padding: 1.4rem 1.6rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.us25-story-icon i {
+    font-size: 1.8rem;
+    color: #2b8ccf;
+    margin-top: 0.15rem;
+}
+
+.us25-story-content h2 {
+    color: #0f304f;
+    margin-bottom: 0.4rem;
+}
+
+.us25-section {
+    margin: 2rem 0;
+}
+
+.us25-section-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #12324f;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.us25-section-title i {
+    color: #1a7e9f;
+    background: #e9f7fc;
+    border-radius: 999px;
+    padding: 0.7rem;
+    box-shadow: 0 4px 10px rgba(19, 77, 98, 0.12);
+}
+
+.us25-content-card {
+    background: #fbfdff;
+    border: 1px solid #e4edf5;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    color: #2d3f50;
+    line-height: 1.75;
+}
+
+.us25-tip {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: 0.9rem;
+    background: #eefbf6;
+    border: 1px solid #c4ecd8;
+    color: #0b5942;
+}
+
+.us25-fields-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.us25-field-card {
+    background: #f7fbfe;
+    border: 1px solid #dceaf4;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 40, 80, 0.06);
+}
+
+.us25-field-card h4 {
+    color: #104563;
+    margin-bottom: 0.5rem;
+}
+
+.us25-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.us25-step-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #d8e4ef;
+    border-radius: 1rem;
+    padding: 1.2rem 1rem 1rem;
+    box-shadow: 0 8px 18px rgba(0, 38, 72, 0.07);
+}
+
+.step-number {
+    position: absolute;
+    top: -12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #146887;
+    color: #ffffff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.us25-step-card h4 {
+    color: #103b57;
+    margin-bottom: 0.4rem;
+}
+
+.us25-formula {
+    margin: 0.8rem 0 1.2rem;
+    background: #0f304f;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+}
+
+.us25-priority-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.8rem;
+}
+
+.us25-priority {
+    border-radius: 0.9rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+}
+
+.us25-priority.low {
+    background: #e8f6ec;
+    border-color: #bfe9c9;
+}
+
+.us25-priority.medium {
+    background: #fff6e8;
+    border-color: #ffe1ac;
+}
+
+.us25-priority.high {
+    background: #ffecec;
+    border-color: #ffc7c7;
+}
+
+.us25-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #dde8f1;
+    border-radius: 1rem;
+}
+
+.us25-risk-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 960px;
+    background: #ffffff;
+}
+
+.us25-risk-table th,
+.us25-risk-table td {
+    padding: 0.85rem;
+    border-bottom: 1px solid #e7eef5;
+    text-align: left;
+    vertical-align: top;
+    font-size: 0.95rem;
+}
+
+.us25-risk-table th {
+    background: #eaf4fb;
+    color: #0f3957;
+    font-weight: 700;
+}
+
+.tag-high,
+.tag-medium {
+    display: inline-block;
+    min-width: 42px;
+    text-align: center;
+    padding: 0.2rem 0.45rem;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.tag-high {
+    background: #ffe2e2;
+    color: #a12828;
+}
+
+.tag-medium {
+    background: #fff1d7;
+    color: #8a5a03;
+}
+
+.us25-use-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.us25-use-card {
+    background: linear-gradient(160deg, #f7fbff 0%, #edf6fb 100%);
+    border: 1px solid #d4e6f2;
+    border-radius: 1rem;
+    padding: 1.1rem;
+}
+
+.us25-use-card i {
+    font-size: 1.4rem;
+    color: #1b7393;
+    margin-bottom: 0.55rem;
+}
+
+.us25-use-card h4 {
+    color: #0f3e5b;
+    margin-bottom: 0.35rem;
+}
+
+.us25-references-card {
+    background: #f8fbff;
+    border: 1px solid #dbe8f3;
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+}
+
+.us25-references-list {
+    list-style: none;
+    display: grid;
+    gap: 0.9rem;
+}
+
+.us25-references-list li {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid #e3edf6;
+    border-radius: 0.8rem;
+    padding: 0.75rem 0.85rem;
+}
+
+.us25-references-list i {
+    color: #1a7e9f;
+    margin-top: 0.2rem;
+}
+
+.us25-references-list a {
+    color: #0f5475;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.us25-references-list a:hover {
+    text-decoration: underline;
+}
+
+.ref-desc {
+    display: block;
+    margin-top: 0.15rem;
+    color: #456277;
+    font-size: 0.92rem;
+}
+
+.us25-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.us25-nav-btn {
+    flex: 1;
+    min-width: 260px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.us25-nav-btn.prev {
+    background: #f0f5fa;
+    color: #0f3d5a;
+    border: 1px solid #d8e3ee;
+}
+
+.us25-nav-btn.next {
+    background: #0f304f;
+    color: #ffffff;
+    border: 1px solid #0f304f;
+}
+
+.us25-nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0, 30, 60, 0.12);
+}
+
+@media (max-width: 900px) {
+    .us25-container {
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .us25-hero {
+        padding: 1.5rem 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .us25-title {
+        font-size: 1.9rem;
+    }
+
+    .us25-section-title {
+        font-size: 1.45rem;
+    }
+
+    .us25-story-card {
+        flex-direction: column;
+    }
+}

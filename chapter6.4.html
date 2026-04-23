@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chapter 6.4 The Captain's Log | US-25</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="style/style6.4.css">
+</head>
+<body>
+<div class="us25-container">
+
+	<div class="us25-hero">
+		<div class="us25-hero-content">
+			<span class="us25-chapter-badge">Chapter 6.4</span>
+			<h1 class="us25-title">The Captain's Log: <span class="us25-title-highlight">Creating and Using a Risk Register</span></h1>
+			<div class="us25-meta">
+				<span class="us25-code-badge">US-25</span>
+				<span class="us25-code-badge">Risk Register</span>
+			</div>
+			<p class="us25-hero-description">Document risks clearly, assign ownership, and track responses so your project can act early instead of reacting late.</p>
+		</div>
+	</div>
+
+	<div class="us25-story-card">
+		<div class="us25-story-icon"><i class="fas fa-user-shield"></i></div>
+		<div class="us25-story-content">
+			<h2>User Story (US-25)</h2>
+			<p>As a project manager/Scrum master, I want clear instructions on how to create a risk register, so that I can document and track possible risks in my project effectively.</p>
+		</div>
+	</div>
+
+	<div class="us25-section">
+		<h2 class="us25-section-title"><i class="fas fa-book-open"></i> What Is a Risk Register?</h2>
+		<div class="us25-content-card">
+			<p>A <strong>risk register</strong> is a living document that lists possible risks, their likelihood and impact, who owns each risk, and what actions should be taken.</p>
+			<p>Think of it as your project's navigation log: it keeps the team aligned, improves transparency, and makes risk discussions practical in sprint planning and status reviews.</p>
+			<div class="us25-tip">
+				<i class="fas fa-lightbulb"></i>
+				<span>Use one shared register for the whole project to avoid duplicate or conflicting risk information.</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="us25-section">
+		<h2 class="us25-section-title"><i class="fas fa-table"></i> Essential Fields to Include</h2>
+		<div class="us25-fields-grid">
+			<div class="us25-field-card">
+				<h4>Risk ID</h4>
+				<p>Unique code (for example, R-001, R-002) to track and reference each risk.</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Risk Description</h4>
+				<p>Short statement of what might happen and how it could affect scope, time, cost, or quality.</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Category</h4>
+				<p>Technical, team, schedule, external, quality, or business risk.</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Probability</h4>
+				<p>How likely the risk is to happen (Low, Medium, High or 1-5 scale).</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Impact</h4>
+				<p>How serious the consequence is if the risk occurs (Low, Medium, High or 1-5 scale).</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Risk Score</h4>
+				<p>Priority score calculated with: <strong>Probability x Impact</strong>.</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Owner</h4>
+				<p>Person responsible for monitoring and driving risk response actions.</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Response Plan</h4>
+				<p>Chosen strategy: avoid, mitigate, transfer, or accept, with clear actions.</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Status</h4>
+				<p>Open, monitoring, escalated, or closed.</p>
+			</div>
+			<div class="us25-field-card">
+				<h4>Review Date</h4>
+				<p>Next check date so the team does not forget active risks.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="us25-section">
+		<h2 class="us25-section-title"><i class="fas fa-list-check"></i> Step-by-Step: Create Your Risk Register</h2>
+		<div class="us25-steps">
+			<div class="us25-step-card">
+				<span class="step-number">1</span>
+				<h4>Choose a format</h4>
+				<p>Start with a simple table in Excel, Google Sheets, Notion, Jira, or your PM tool.</p>
+			</div>
+			<div class="us25-step-card">
+				<span class="step-number">2</span>
+				<h4>Brainstorm risks with the team</h4>
+				<p>Use sprint planning, backlog refinement, and retrospectives to gather possible risks early.</p>
+			</div>
+			<div class="us25-step-card">
+				<span class="step-number">3</span>
+				<h4>Describe each risk clearly</h4>
+				<p>Write in cause-effect format: "If [cause], then [risk event], resulting in [impact]."</p>
+			</div>
+			<div class="us25-step-card">
+				<span class="step-number">4</span>
+				<h4>Rate probability and impact</h4>
+				<p>Use a shared scoring guide to keep ratings consistent between team members.</p>
+			</div>
+			<div class="us25-step-card">
+				<span class="step-number">5</span>
+				<h4>Assign an owner and response</h4>
+				<p>Every high-priority risk must have one clear owner and one concrete action plan.</p>
+			</div>
+			<div class="us25-step-card">
+				<span class="step-number">6</span>
+				<h4>Review and update regularly</h4>
+				<p>Update at least once per sprint and whenever major changes happen in scope or dependencies.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="us25-section">
+		<h2 class="us25-section-title"><i class="fas fa-calculator"></i> How to Prioritize Risks</h2>
+		<div class="us25-content-card">
+			<p>Use a simple numeric model:</p>
+			<div class="us25-formula">Risk Score = Probability x Impact</div>
+			<div class="us25-priority-grid">
+				<div class="us25-priority low">
+					<h4>1-4: Low</h4>
+					<p>Monitor during regular reviews.</p>
+				</div>
+				<div class="us25-priority medium">
+					<h4>5-9: Medium</h4>
+					<p>Plan mitigation and track in each sprint.</p>
+				</div>
+				<div class="us25-priority high">
+					<h4>10-25: High</h4>
+					<p>Act immediately and escalate if needed.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="us25-section">
+		<h2 class="us25-section-title"><i class="fas fa-file-lines"></i> Example Risk Register (Mini Sample)</h2>
+		<div class="us25-table-wrapper">
+			<table class="us25-risk-table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Risk</th>
+						<th>Category</th>
+						<th>Prob.</th>
+						<th>Impact</th>
+						<th>Score</th>
+						<th>Owner</th>
+						<th>Response</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>R-001</td>
+						<td>Key developer may be unavailable during integration sprint.</td>
+						<td>Team</td>
+						<td>4</td>
+						<td>4</td>
+						<td><span class="tag-high">16</span></td>
+						<td>Scrum Master</td>
+						<td>Cross-train 2 team members and document setup steps.</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>R-002</td>
+						<td>Third-party API changes could break data sync.</td>
+						<td>Technical</td>
+						<td>3</td>
+						<td>5</td>
+						<td><span class="tag-high">15</span></td>
+						<td>Tech Lead</td>
+						<td>Add adapter layer and run weekly contract tests.</td>
+						<td>Monitoring</td>
+					</tr>
+					<tr>
+						<td>R-003</td>
+						<td>Client feedback may be delayed before sprint review.</td>
+						<td>External</td>
+						<td>2</td>
+						<td>3</td>
+						<td><span class="tag-medium">6</span></td>
+						<td>Project Manager</td>
+						<td>Book review slots in advance and send reminders 48h prior.</td>
+						<td>Open</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="us25-section">
+		<h2 class="us25-section-title"><i class="fas fa-rotate"></i> Using the Register During the Project</h2>
+		<div class="us25-use-grid">
+			<div class="us25-use-card">
+				<i class="fas fa-people-group"></i>
+				<h4>In Daily/Weekly Meetings</h4>
+				<p>Review top 3 risks and confirm action progress.</p>
+			</div>
+			<div class="us25-use-card">
+				<i class="fas fa-sitemap"></i>
+				<h4>In Sprint Planning</h4>
+				<p>Add mitigation tasks into the sprint backlog where needed.</p>
+			</div>
+			<div class="us25-use-card">
+				<i class="fas fa-users-viewfinder"></i>
+				<h4>In Stakeholder Updates</h4>
+				<p>Share major risks, current status, and decisions required.</p>
+			</div>
+			<div class="us25-use-card">
+				<i class="fas fa-flag-checkered"></i>
+				<h4>In Retrospectives</h4>
+				<p>Close outdated risks and capture new risks from recent lessons learned.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="us25-section">
+		<h2 class="us25-section-title"><i class="fas fa-book"></i> References</h2>
+		<div class="us25-references-card">
+			<ul class="us25-references-list">
+				<li>
+					<i class="fas fa-link"></i>
+					<div>
+						<strong>Project Management Institute (PMI).</strong>
+						<a href="https://www.pmi.org/pmbok-guide-standards" target="_blank">A Guide to the Project Management Body of Knowledge (PMBOK Guide)</a>
+						<span class="ref-desc">- Standard concepts for identifying, analyzing, and monitoring project risks.</span>
+					</div>
+				</li>
+				<li>
+					<i class="fas fa-link"></i>
+					<div>
+						<strong>Association for Project Management (APM).</strong>
+						<a href="https://www.apm.org.uk/resources/find-a-resource/risk-management/" target="_blank">Risk Management</a>
+						<span class="ref-desc">- Practical guidance on risk governance, ownership, and response planning.</span>
+					</div>
+				</li>
+				<li>
+					<i class="fas fa-link"></i>
+					<div>
+						<strong>Atlassian.</strong>
+						<a href="https://www.atlassian.com/work-management/project-management/risk-register" target="_blank">What is a Risk Register?</a>
+						<span class="ref-desc">- Accessible example of risk register structure and common fields used in agile teams.</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="us25-navigation">
+		<a href="chapter6.2.html" class="us25-nav-btn prev">
+			<i class="fas fa-arrow-left"></i>
+			<span>Previous: Types of Storm Clouds (US-23)</span>
+		</a>
+		<a href="chapter7.2.html" class="us25-nav-btn next">
+			<span>Next: Why Quality Management Matters (US-27)</span>
+			<i class="fas fa-arrow-right"></i>
+		</a>
+	</div>
+
+</div>
+</body>
+</html>
