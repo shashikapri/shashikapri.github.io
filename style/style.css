@@ -430,22 +430,25 @@ body {
 }
 
 .header-container .guidebook-cover {
-    background: linear-gradient(135deg,#102a41,#1f4b74);
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
     color: white;
-    padding: 2.5rem;
-    border-radius: 30px;
+    padding: 2.5rem 2rem;
+    border-radius: 2rem 2rem 1rem 1rem;
     margin-bottom: 2rem;
+    box-shadow: 0 10px 26px rgba(11, 43, 78, 0.25);
 }
 
 .cover-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .cover-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     opacity: 0.9;
+    font-weight: 500;
 }
 
 .methodology-intro {
@@ -961,7 +964,7 @@ footer {
     }
     
     .cover-title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
     
     .cover-subtitle {
@@ -981,6 +984,10 @@ footer {
 @media (max-width: 480px) {
     .nav-center {
         display: none; /* Hide search on very small screens */
+    }
+
+    .cover-title {
+        font-size: 1.8rem;
     }
     
     .nav-right .nav-link span {
@@ -1025,96 +1032,67 @@ footer {
 
 /* Compass Cover */
 .compass-cover {
-    background: linear-gradient(135deg, #0a1c2f 0%, #1d4468 50%, #2a5f8a 100%);
-    border-radius: 30px;
-    padding: 3rem 2rem;
-    margin-bottom: 2.5rem;
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 26px rgba(11, 43, 78, 0.25);
 }
 
 .compass-cover::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -10%;
-    width: 300px;
-    height: 300px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 50%;
-    transform: rotate(45deg);
+    content: none;
 }
 
 .compass-cover::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 250px;
-    height: 250px;
-    background: rgba(255,255,255,0.03);
-    border-radius: 50%;
+    content: none;
 }
 
 .compass-cover-inner {
     position: relative;
     z-index: 2;
-    text-align: center;
+    text-align: left;
+    max-width: 800px;
     color: white;
 }
 
 .compass-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
     background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(10px);
-    padding: 0.6rem 1.5rem;
-    border-radius: 50px;
-    margin-bottom: 2rem;
-    border: 1px solid rgba(255,255,255,0.3);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .compass-badge i {
-    font-size: 1.5rem;
-    animation: spin 20s linear infinite;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    margin-right: 0.5rem;
 }
 
 .compass-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    letter-spacing: -0.02em;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .compass-subtitle {
-    font-size: 1.5rem;
+    font-size: 1rem;
     opacity: 0.9;
-    margin-bottom: 2rem;
-    font-weight: 300;
+    margin-bottom: 0;
+    font-weight: 500;
 }
 
 .compass-arrow {
-    animation: bounce 2s infinite;
+    display: none;
 }
 
 .compass-arrow i {
     font-size: 2rem;
     color: rgba(255,255,255,0.7);
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(20px); }
-    60% { transform: translateY(10px); }
 }
 
 /* Foreword Card */
