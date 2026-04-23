@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintaining a Change Log | US-43 | Change Log Template & Audit Trail</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style/style8.7.css">
+</head>
+<body>
+<div class="us43-container">
+
+    <!-- Hero Section -->
+    <div class="us43-hero">
+        <div class="us43-hero-content">
+            <span class="us43-chapter-badge"><i class="fas fa-clipboard-list"></i> Project Manager & Scrum Master Guide | US-43</span>
+            <h1 class="us43-title">Maintaining a <span class="us43-title-highlight">Change Log</span></h1>
+            <p class="us43-subhead">The Change Log is the project's single source of truth for every change that was proposed, approved, rejected, or implemented. A complete change log provides an audit trail for compliance, post-implementation reviews, and future planning.</p>
+            <div class="us43-meta">
+                <span class="us43-code-badge"><i class="fas fa-database"></i> Single Source of Truth</span>
+                <span class="us43-code-badge"><i class="fas fa-history"></i> Audit Trail</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- What to Record Section -->
+    <div class="us43-section-title">
+        <i class="fas fa-pen-alt"></i>
+        <h2>What to Record for Every Change Request</h2>
+    </div>
+    <p class="us43-section-subtitle">After a change request is closed (whether approved and implemented, or rejected), add an entry to the change log containing the following fields:</p>
+
+    <!-- Fields Table -->
+    <div class="us43-table-wrapper">
+        <table class="us43-fields-table">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="us43-field-col"><strong>Change ID</strong></td>
+                    <td>Unique identifier (e.g., CR-001)</td>
+                    <td>CR-042</td>
+                </tr>
+                <tr>
+                    <td class="us43-field-col"><strong>Date</strong></td>
+                    <td>When the request was submitted</td>
+                    <td>2026-04-23</td>
+                </tr>
+                <tr>
+                    <td class="us43-field-col"><strong>Requester</strong></td>
+                    <td>Name of the person who submitted it</td>
+                    <td>J. Doe</td>
+                </tr>
+                <tr>
+                    <td class="us43-field-col"><strong>Description</strong></td>
+                    <td>Brief summary of what was proposed</td>
+                    <td>Update authentication library</td>
+                </tr>
+                <tr>
+                    <td class="us43-field-col"><strong>Impact Assessment</strong></td>
+                    <td>Summary of timeline, budget, and risk analysis</td>
+                    <td>+2 days, no budget change, medium risk</td>
+                </tr>
+                <tr>
+                    <td class="us43-field-col"><strong>Decision</strong></td>
+                    <td>Approved, Rejected, or Deferred</td>
+                    <td>Approved</td>
+                </tr>
+                <tr>
+                    <td class="us43-field-col"><strong>Approver</strong></td>
+                    <td>Name of the Change Authority or CAB</td>
+                    <td>S. Smith (PM)</td>
+                </tr>
+                <tr>
+                    <td class="us43-field-col"><strong>Implementation Date</strong></td>
+                    <td>When the change was deployed (if approved)</td>
+                    <td>2026-04-25</td>
+                </tr>
+                <tr>
+                    <td class="us43-field-col"><strong>Test Results</strong></td>
+                    <td>Did QA pass? Any regressions?</td>
+                    <td>Passed all regression tests</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Image: Change Log Example Diagram -->
+    <div class="us43-image-section">
+        <div class="us43-image-container">
+            <div class="us43-image-wrapper">
+                <img src="images/chapter8.7/change log.png" 
+                     alt="Change Log Example Table showing Change ID, Type, Description, Status, Priority, etc." 
+                     class="us43-image"
+                     onerror="this.onerror=null; this.parentElement.innerHTML=this.parentElement.innerHTML + '<div class=\'us43-image-placeholder\'><div class=\'us43-placeholder-content\'><i class=\'fas fa-table\'></i><h4>Change Log Template - Example</h4><p>Fields: CHANGE NO. | CHANGE TYPE | DESCRIPTION | DATE IDENTIFIED | STATUS | PRIORITY | ASSIGNED TO | ACTUAL RESOLATION EXPECTED | AREA IMPACT | DATE RESOLVED</p><span class=\'us43-placeholder-note\'><i class=\'fas fa-info-circle\'></i> Image placeholder: Insert change log example table here</span></div></div>'; this.style.display='none';">
+                <div class="us43-image-caption">
+                    <strong><i class="fas fa-table"></i> CHANGE LOG TEMPLATE - EXAMPLE</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Log Format Section -->
+    <div class="us43-section-title">
+        <i class="fas fa-file-alt"></i>
+        <h2>Change Log Format (Example Table)</h2>
+    </div>
+
+    <!-- Change Log Template Table -->
+    <div class="us43-template-wrapper">
+        <div class="us43-template-header">
+            <div><i class="fas fa-clipboard-list"></i> PROJECT NAME: Project Beta</div>
+            <div><i class="fas fa-user-check"></i> PROJECT MANAGER: Emily Johnson</div>
+            <div><i class="fas fa-calendar-alt"></i> DATE OF LAST UPDATE: 00/00/0000</div>
+        </div>
+        <table class="us43-log-table">
+            <thead>
+                <tr>
+                    <th>CHANGE NO.</th>
+                    <th>CHANGE TYPE</th>
+                    <th>DESCRIPTION</th>
+                    <th>DATE IDENTIFIED</th>
+                    <th>STATUS</th>
+                    <th>PRIORITY</th>
+                    <th>ASSIGNED TO</th>
+                    <th>ACTUAL RESOLATION EXPECTED</th>
+                    <th>AREA IMPACT</th>
+                    <th>DATE RESOLVED</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Development</td>
+                    <td>Update authentication library</td>
+                    <td>2026-04-23</td>
+                    <td>Approved</td>
+                    <td>Medium</td>
+                    <td>J. Doe</td>
+                    <td>No budget change, medium risk</td>
+                    <td>Sched</td>
+                    <td>2026-05-20</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Improv</td>
+                    <td>Update authentication library</td>
+                    <td>2026-04-23</td>
+                    <td>Approved</td>
+                    <td>Medium</td>
+                    <td>J. Doe</td>
+                    <td>No budget change, medium risk</td>
+                    <td></td>
+                    <td>2026-04-25</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="us43-template-footer">
+            <i class="fas fa-edit"></i> CHANGE LOG TEMPLATE - EXAMPLE
+        </div>
+    </div>
+
+    <!-- References Section -->
+    <div class="us43-section-title">
+        <i class="fas fa-link"></i>
+        <h2>References</h2>
+    </div>
+
+    <div class="us43-references">
+        <p><strong>1. Change Management in Software Projects (TMS Outsource, 2025)</strong> - Section: "How is a Completed Change Documented and Closed"</p>
+        <p><a href="https://tms-outsource.com/blog/posts/what-is-change-management-in-software-projects/" target="_blank" rel="noopener noreferrer">https://tms-outsource.com/blog/posts/what-is-change-management-in-software-projects/</a></p>
+        <p class="us43-ref-note">Specifically, this section states documentation should include: "what was changed, who approved it, when it was deployed, and what the test results showed"</p>
+        
+        <p style="margin-top: 1.2rem;"><strong>2. Change Enablement in ITIL 4 (ITSM.tools, 2025)</strong> - Section: "Understanding Standard, Normal, and Emergency Changes" (subsection "Emergency changes")</p>
+        <p><a href="https://itsm.tools/change-enablement/" target="_blank" rel="noopener noreferrer">https://itsm.tools/change-enablement/</a></p>
+        <p class="us43-ref-note">Specifically, this section notes that emergency changes "typically require a post-implementation review"</p>
+        
+        <p style="margin-top: 1.2rem;"><strong>3. Change Management in Software Development Projects: A Comprehensive Guide (Teamhub, 2024)</strong> - Section: "Regular Monitoring and Evaluation"</p>
+        <p><a href="https://teamhub.com/blog/change-management-in-software-development-projects-a-comprehensive-guide/" target="_blank" rel="noopener noreferrer">https://teamhub.com/blog/change-management-in-software-development-projects-a-comprehensive-guide/</a></p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="us43-navigation">
+        <a href="us42.html" class="us43-nav-btn prev">
+            <i class="fas fa-arrow-left"></i>
+            <span>Previous: Evaluating Impact of a Change Request (US-42)</span>
+        </a>
+        <a href="us44.html" class="us43-nav-btn next">
+            <span>Next: Emergency Change Process (US-44)</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+</div>
+</body>
+</html>

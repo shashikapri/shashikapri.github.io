@@ -1,0 +1,341 @@
+/* style8.5.css - Creating and Submitting a Change Request (US-41) */
+@import url('./common-chapter-base.css');
+
+.us41-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding: 2rem 2.5rem;
+}
+
+/* ===== HERO SECTION ===== */
+.us41-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us41-hero-content {
+    max-width: 800px;
+}
+
+.us41-chapter-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.us41-chapter-badge i {
+    margin-right: 0.5rem;
+}
+
+.us41-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.us41-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us41-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.us41-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ===== SECTION TITLES ===== */
+.us41-section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 1rem;
+}
+
+.us41-section-title i {
+    background: #0b2b4e;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+.us41-section-title h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0b2b4e;
+}
+
+/* ===== CONTENT BOX ===== */
+.us41-content-box {
+    background: #f8fbff;
+    border: 1px solid #e2edff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.7;
+    color: #1e3a5f;
+}
+
+.us41-four-elements {
+    margin: 1rem 0;
+}
+
+.us41-element {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #d0e0f0;
+    font-weight: 500;
+}
+
+.us41-element:last-child {
+    border-bottom: none;
+}
+
+.us41-note {
+    background: #fef9e6;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    color: #6b5215;
+}
+
+/* ===== TEMPLATE BOX ===== */
+.us41-template-box {
+    background: #0d1117;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.us41-markdown {
+    background: #0d1117;
+    color: #e6edf5;
+    padding: 1.5rem;
+    margin: 0;
+    overflow-x: auto;
+    font-family: 'Courier New', 'SF Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* ===== IMAGE SECTION ===== */
+.us41-image-section {
+    margin: 1.5rem 0 2rem;
+}
+
+.us41-image-container {
+    background: linear-gradient(145deg, #f0f5ff, #e6edf9);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    border: 2px dashed #3b7fbd;
+}
+
+.us41-image-wrapper {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.us41-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.us41-image-placeholder {
+    background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 100%);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #c5d5e8;
+}
+
+.us41-placeholder-content i {
+    font-size: 3rem;
+    color: #0a58ca;
+    margin-bottom: 1rem;
+}
+
+.us41-placeholder-content h4 {
+    font-size: 1.3rem;
+    color: #0b2b4e;
+    margin-bottom: 0.5rem;
+}
+
+.us41-placeholder-content p {
+    color: #4a627a;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.us41-placeholder-note {
+    display: inline-block;
+    background: #e3f0ff;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    color: #0a58ca;
+}
+
+.us41-placeholder-note i {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+.us41-image-caption {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #e3f0ff;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    color: #0b2b4e;
+}
+
+.us41-image-caption strong {
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+
+/* ===== REFERENCES ===== */
+.us41-references {
+    background: #f0f5ff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.6;
+}
+
+.us41-references a {
+    color: #0a58ca;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.us41-references a:hover {
+    text-decoration: underline;
+}
+
+/* ===== NAVIGATION ===== */
+.us41-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2edff;
+}
+
+.us41-nav-btn {
+    flex: 1;
+    min-width: 260px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.us41-nav-btn.prev {
+    background: #f0f5fa;
+    color: #0f3d5a;
+    border: 1px solid #d8e3ee;
+}
+
+.us41-nav-btn.next {
+    background: #0b2b4e;
+    color: #ffffff;
+    border: 1px solid #0b2b4e;
+}
+
+.us41-nav-btn.prev:hover,
+.us41-nav-btn.next:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0, 30, 60, 0.12);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .us41-container {
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .us41-hero {
+        padding: 1.5rem 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .us41-title {
+        font-size: 1.9rem;
+    }
+
+    .us41-section-title h2 {
+        font-size: 1.45rem;
+    }
+
+    .us41-markdown {
+        font-size: 0.75rem;
+        padding: 1rem;
+    }
+
+    .us41-navigation {
+        flex-direction: column;
+    }
+
+    .us41-nav-btn {
+        width: 100%;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .us41-container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .us41-navigation {
+        display: none;
+    }
+}

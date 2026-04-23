@@ -1,0 +1,537 @@
+/* style7.1.css - Project Quality Management (US-26) */
+@import url('./common-chapter-base.css');
+
+.us26-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding: 2rem 2.5rem;
+}
+
+/* ===== HERO SECTION ===== */
+.us26-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us26-hero-content {
+    max-width: 800px;
+}
+
+.us26-chapter-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.us26-chapter-badge i {
+    margin-right: 0.5rem;
+}
+
+.us26-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.us26-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+.us26-subhead {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.us26-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.us26-code-badge {
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ===== VIDEO WRAPPER ===== */
+.us26-video-wrapper {
+    margin: 1.5rem 0 2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+    background: #000;
+}
+
+.us26-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.us26-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.us26-video-caption {
+    background: #1a1a2e;
+    padding: 0.6rem 1rem;
+    color: #ccc;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.us26-video-caption i {
+    color: #ff0000;
+    margin-right: 0.5rem;
+}
+
+/* ===== SECTION TITLES ===== */
+.us26-section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 0.8rem;
+}
+
+.us26-section-title i {
+    background: #0b2b4e;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+.us26-section-title h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0b2b4e;
+}
+
+.us26-section-subtitle {
+    color: #4a627a;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* ===== TABLES ===== */
+.us26-table-wrapper {
+    overflow-x: auto;
+    margin: 1rem 0 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #e2edff;
+    background: white;
+}
+
+.us26-pillars-table,
+.us26-practice-table,
+.us26-misconceptions-table,
+.us26-examples-table,
+.us26-rule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.us26-pillars-table thead tr,
+.us26-practice-table thead tr,
+.us26-misconceptions-table thead tr,
+.us26-examples-table thead tr,
+.us26-rule-table thead tr {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    color: white;
+}
+
+.us26-pillars-table th,
+.us26-practice-table th,
+.us26-misconceptions-table th,
+.us26-examples-table th,
+.us26-rule-table th {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.us26-pillars-table td,
+.us26-practice-table td,
+.us26-misconceptions-table td,
+.us26-examples-table td,
+.us26-rule-table td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #e2edff;
+    color: #1e3a5f;
+    vertical-align: top;
+}
+
+.us26-pillars-table tr:last-child td,
+.us26-practice-table tr:last-child td,
+.us26-misconceptions-table tr:last-child td,
+.us26-examples-table tr:last-child td,
+.us26-rule-table tr:last-child td {
+    border-bottom: none;
+}
+
+.us26-pillar-col,
+.us26-principle-col,
+.us26-misconception-col,
+.us26-type-col,
+.us26-answer-col {
+    font-weight: 700;
+    background: #f8fbff;
+    width: 25%;
+}
+
+.us26-practice-table .us26-principle-col {
+    width: 30%;
+}
+
+.us26-misconceptions-table .us26-misconception-col {
+    width: 30%;
+}
+
+.us26-examples-table .us26-type-col {
+    width: 20%;
+}
+
+.us26-rule-table .us26-answer-col {
+    width: 40%;
+}
+
+.us26-pillars-table tr:hover td,
+.us26-practice-table tr:hover td,
+.us26-misconceptions-table tr:hover td,
+.us26-examples-table tr:hover td,
+.us26-rule-table tr:hover td {
+    background: #fafcff;
+}
+
+/* ===== EXAMPLE BOX ===== */
+.us26-example-box {
+    background: #eef5ff;
+    border-left: 4px solid #0a58ca;
+    padding: 1rem 1.2rem;
+    border-radius: 0.8rem;
+    margin: 0.5rem 0 1.5rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+}
+
+.us26-example-box i {
+    color: #0a58ca;
+    font-size: 1.2rem;
+    margin-top: 0.1rem;
+}
+
+.us26-example-box p {
+    color: #1e3a5f;
+    line-height: 1.5;
+}
+
+/* ===== RULE TEXT ===== */
+.us26-rule-text {
+    background: #f8fbff;
+    padding: 1rem 1.5rem;
+    border-radius: 0.8rem;
+    margin: 0.5rem 0 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #0b2b4e;
+    border: 1px solid #cde0f0;
+}
+
+/* ===== SUMMARY BOX ===== */
+.us26-summary-box {
+    background: #f0f5ff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.us26-summary-box p {
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #0b2b4e;
+}
+
+.us26-summary-list {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.us26-summary-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #1e3a5f;
+}
+
+.us26-summary-list li i {
+    color: #0a58ca;
+    width: 1.3rem;
+}
+
+/* ===== FINAL QUOTE ===== */
+.us26-final-quote {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: white;
+}
+
+.us26-final-quote i {
+    font-size: 1.8rem;
+    opacity: 0.5;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.us26-final-quote p {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* ===== IMAGE SECTIONS ===== */
+.us26-image-section {
+    margin: 1.5rem 0 2rem;
+}
+
+.us26-image-container {
+    background: linear-gradient(145deg, #f0f5ff, #e6edf9);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    border: 2px dashed #3b7fbd;
+}
+
+.us26-image-wrapper {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.us26-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.us26-image-placeholder {
+    background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 100%);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #c5d5e8;
+}
+
+.us26-placeholder-content i {
+    font-size: 3rem;
+    color: #0a58ca;
+    margin-bottom: 1rem;
+}
+
+.us26-placeholder-content h4 {
+    font-size: 1.3rem;
+    color: #0b2b4e;
+    margin-bottom: 0.5rem;
+}
+
+.us26-placeholder-content p {
+    color: #4a627a;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.us26-placeholder-note {
+    display: inline-block;
+    background: #e3f0ff;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    color: #0a58ca;
+}
+
+.us26-placeholder-note i {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+.us26-image-caption {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #e3f0ff;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    color: #0b2b4e;
+}
+
+.us26-image-caption strong {
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+
+/* ===== REFERENCES ===== */
+.us26-references {
+    background: #f0f5ff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.6;
+}
+
+.us26-references a {
+    color: #0a58ca;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.us26-references a:hover {
+    text-decoration: underline;
+}
+
+/* ===== NAVIGATION ===== */
+.us26-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2edff;
+}
+
+.us26-nav-btn {
+    flex: 1;
+    min-width: 260px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.us26-nav-btn.prev {
+    background: #f0f5fa;
+    color: #0f3d5a;
+    border: 1px solid #d8e3ee;
+}
+
+.us26-nav-btn.next {
+    background: #0b2b4e;
+    color: #ffffff;
+    border: 1px solid #0b2b4e;
+}
+
+.us26-nav-btn.prev:hover,
+.us26-nav-btn.next:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0, 30, 60, 0.12);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .us26-container {
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .us26-hero {
+        padding: 1.5rem 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .us26-title {
+        font-size: 1.9rem;
+    }
+
+    .us26-section-title h2 {
+        font-size: 1.45rem;
+    }
+
+    .us26-pillars-table th,
+    .us26-pillars-table td,
+    .us26-practice-table th,
+    .us26-practice-table td,
+    .us26-misconceptions-table th,
+    .us26-misconceptions-table td,
+    .us26-examples-table th,
+    .us26-examples-table td,
+    .us26-rule-table th,
+    .us26-rule-table td {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .us26-final-quote p {
+        font-size: 1rem;
+    }
+
+    .us26-navigation {
+        flex-direction: column;
+    }
+
+    .us26-nav-btn {
+        width: 100%;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .us26-container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .us26-video-wrapper {
+        display: none;
+    }
+
+    .us26-navigation {
+        display: none;
+    }
+}
