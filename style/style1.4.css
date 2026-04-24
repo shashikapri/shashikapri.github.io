@@ -15,7 +15,7 @@ body {
     padding: 2rem 1rem;
 }
 
-.us2-container {
+.us3-container {
     max-width: 1200px;
     margin: 0 auto;
     background: white;
@@ -25,7 +25,7 @@ body {
     padding: 2rem 2.5rem;
 }
 
-.us2-hero {
+.us3-hero {
     background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
     border-radius: 2rem 2rem 1rem 1rem;
     padding: 2.5rem 2rem;
@@ -33,11 +33,11 @@ body {
     color: #ffffff;
 }
 
-.us2-hero-content {
+.us3-hero-content {
     max-width: 800px;
 }
 
-.us2-chapter-badge {
+.us3-chapter-badge {
     background: rgba(255, 255, 255, 0.15);
     padding: 0.3rem 1rem;
     border-radius: 40px;
@@ -48,28 +48,28 @@ body {
     margin-bottom: 1rem;
 }
 
-.us2-chapter-badge i {
+.us3-chapter-badge i {
     margin-right: 0.5rem;
 }
 
-.us2-title {
+.us3-title {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
 }
 
-.us2-title-highlight {
+.us3-title-highlight {
     color: #ffd966;
     border-bottom: 3px solid #ffb347;
 }
 
-.us2-meta {
+.us3-meta {
     display: flex;
     gap: 1rem;
 }
 
-.us2-code-badge {
+.us3-code-badge {
     background: #1e4a7a;
     padding: 0.3rem 1rem;
     border-radius: 30px;
@@ -79,11 +79,11 @@ body {
     align-items: center;
 }
 
-.us2-code-badge i {
+.us3-code-badge i {
     margin-right: 0.4rem;
 }
 
-.us2-intro-card {
+.us3-intro-card {
     background: #ffffff;
     border: 1px solid #dbe7f2;
     border-radius: 16px;
@@ -117,7 +117,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.us2-section-title {
+.us3-section-title {
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -126,23 +126,23 @@ body {
     margin: 1.25rem 0 0.9rem;
 }
 
-.us2-section-title i {
+.us3-section-title i {
     color: #1a8ec3;
 }
 
-.us2-section-title h2 {
+.us3-section-title h2 {
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
 }
 
-.us2-audience-grid {
+.us3-assessment-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.9rem;
     margin-bottom: 1.25rem;
 }
 
-.audience-card {
+.assessment-card {
     background: #ffffff;
     border: 1px solid #dbe7f2;
     border-radius: 14px;
@@ -150,38 +150,162 @@ body {
     box-shadow: 0 6px 16px rgba(18, 62, 96, 0.06);
 }
 
-.audience-icon {
+.assessment-icon {
     width: 42px;
     height: 42px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #e8f7ff, #d8eeff);
-    color: #1472a4;
     display: grid;
     place-items: center;
     margin-bottom: 0.55rem;
+    font-size: 1.2rem;
 }
 
-.audience-card h3 {
+.assessment-card:first-child .assessment-icon {
+    background: linear-gradient(135deg, #e8f7ff, #d8eeff);
+    color: #1472a4;
+}
+
+.assessment-card:last-child .assessment-icon {
+    background: linear-gradient(135deg, #ffe6e6, #ffd6d6);
+    color: #c23e3e;
+}
+
+.assessment-card h3 {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     color: #0e3f61;
     margin-bottom: 0.35rem;
 }
 
-.audience-card p {
+.assessment-card ul {
+    margin-left: 1.2rem;
+    display: grid;
+    gap: 0.35rem;
+}
+
+.assessment-card li {
     font-size: 0.95rem;
     color: #304a63;
 }
 
-.us2-two-columns {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 0.9rem;
+.us3-checklist-section {
     margin-bottom: 1.25rem;
 }
 
-.secondary-readers-card,
-.how-to-use-card {
+.us3-checklist-card {
+    background: #ffffff;
+    border: 1px solid #dbe7f2;
+    border-radius: 14px;
+    padding: 1.2rem;
+    box-shadow: 0 6px 16px rgba(18, 62, 96, 0.06);
+}
+
+.checklist-content p {
+    color: #0e3f61;
+}
+
+.checklist-instruction {
+    margin-bottom: 20px;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #304a63;
+}
+
+.checklist-item i {
+    color: #1472a4;
+    flex-shrink: 0;
+}
+
+.score-total {
+    margin-top: 25px;
+    font-weight: 700;
+    color: #1e4e73;
+}
+
+.us3-scoring-guide {
+    margin-bottom: 1.25rem;
+}
+
+.scoring-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.score-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(18, 62, 96, 0.06);
+}
+
+.score-card.high-score {
+    border: 2px solid #1a8ec3;
+    background: #f0f8ff;
+}
+
+.score-card.medium-score {
+    border: 2px solid #f59e0b;
+    background: #fffbf0;
+}
+
+.score-card.low-score {
+    border: 2px solid #ef4444;
+    background: #fef2f2;
+}
+
+.score-number {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.score-card.high-score .score-number {
+    color: #1e4e73;
+}
+
+.score-card.medium-score .score-number {
+    color: #f59e0b;
+}
+
+.score-card.low-score .score-number {
+    color: #ef4444;
+}
+
+.score-card h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.02rem;
+    color: #0e3f61;
+    margin-bottom: 0.3rem;
+}
+
+.score-card.medium-score h4 {
+    color: #9a6708;
+}
+
+.score-card.low-score h4 {
+    color: #b42318;
+}
+
+.score-card p {
+    font-size: 0.9rem;
+    color: #304a63;
+}
+
+.us3-reflection-section {
+    margin-bottom: 1.25rem;
+}
+
+.us3-reflection-card {
     background: #ffffff;
     border: 1px solid #dbe7f2;
     border-radius: 14px;
@@ -189,25 +313,69 @@ body {
     box-shadow: 0 6px 16px rgba(18, 62, 96, 0.06);
 }
 
-.secondary-readers-card h3,
-.how-to-use-card h3 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.02rem;
+.us3-reflection-card p:first-child {
     color: #0e3f61;
-    margin-bottom: 0.45rem;
-    display: flex;
-    align-items: center;
-    gap: 0.45rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
 }
 
-.secondary-readers-card ul,
-.how-to-use-card ol {
-    margin-left: 1.2rem;
+.reflection-area {
+    background: #f7fbff;
+    border: 1px dashed #dbe7f2;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 80px;
+    color: #5b6b7a;
+}
+
+.reflection-example {
+    font-style: italic;
+    color: #4b5563;
+}
+
+.us3-steps-grid {
     display: grid;
-    gap: 0.35rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
+    margin-bottom: 0.8rem;
 }
 
-.us2-closing-note {
+.step-card {
+    background: #ffffff;
+    border: 1px solid #dbe7f2;
+    border-radius: 14px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(18, 62, 96, 0.06);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1a8ec3, #0e3f61);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 auto 0.5rem;
+}
+
+.step-card h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: #0e3f61;
+    margin-bottom: 0.3rem;
+}
+
+.step-card p {
+    font-size: 0.9rem;
+    color: #304a63;
+}
+
+.us3-closing-note {
     background: linear-gradient(135deg, #f0fbff, #e9f3ff);
     border: 1px solid #cfe5f6;
     border-radius: 14px;
@@ -219,18 +387,19 @@ body {
     margin-bottom: 1.25rem;
 }
 
-.us2-closing-note i {
+.us3-closing-note i {
     margin-top: 0.1rem;
+    color: #1a8ec3;
 }
 
-.us2-navigation {
+.us3-navigation {
     display: flex;
     justify-content: space-between;
     gap: 0.8rem;
     margin-top: 0.6rem;
 }
 
-.us2-nav-btn {
+.us3-nav-btn {
     flex: 1;
     text-decoration: none;
     background: #ffffff;
@@ -247,40 +416,44 @@ body {
     box-shadow: 0 4px 12px rgba(18, 62, 96, 0.08);
 }
 
-.us2-nav-btn:hover {
+.us3-nav-btn:hover {
     background: #f0f8ff;
     border-color: #c3deef;
     color: #163f60;
     transform: translateY(-1px);
 }
 
-.us2-nav-btn.next {
+.us3-nav-btn.next {
     justify-content: flex-end;
 }
 
-.us2-nav-btn.prev {
+.us3-nav-btn.prev {
     justify-content: flex-start;
 }
 
 @media (max-width: 900px) {
-    .us2-audience-grid {
+    .us3-assessment-grid {
         grid-template-columns: 1fr;
     }
 
-    .us2-two-columns {
+    .scoring-row {
         grid-template-columns: 1fr;
     }
 
-    .us2-intro-card {
+    .us3-steps-grid {
         grid-template-columns: 1fr;
     }
 
-    .us2-navigation {
+    .us3-intro-card {
+        grid-template-columns: 1fr;
+    }
+
+    .us3-navigation {
         flex-direction: column;
     }
 
-    .us2-nav-btn.next,
-    .us2-nav-btn.prev {
+    .us3-nav-btn.next,
+    .us3-nav-btn.prev {
         justify-content: center;
     }
 }
@@ -290,22 +463,15 @@ body {
         padding: 1rem 0.65rem;
     }
 
-    .us2-container {
+    .us3-container {
         padding: 1.5rem;
     }
 
-    .us2-hero {
+    .us3-hero {
         padding: 2rem 1.25rem;
     }
 
-    .us2-title {
+    .us3-title {
         font-size: 2rem;
-    }
-
-    .audience-card,
-    .secondary-readers-card,
-    .how-to-use-card,
-    .us2-intro-card {
-        padding: 0.85rem;
     }
 }
