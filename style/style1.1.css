@@ -24,11 +24,15 @@ body {
     padding: 2rem 2.5rem;
 }
 
+.us1-container > * + * {
+    margin-top: 1.2rem;
+}
+
 .us1-hero {
     background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
     border-radius: 2rem 2rem 1rem 1rem;
     padding: 2.5rem 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     color: #ffffff;
 }
 
