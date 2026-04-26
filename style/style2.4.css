@@ -1,4 +1,4 @@
-/* style3.6.css – Choosing Between Waterfall and Agile (US-6) */
+/* style2.4.css – Choosing Between Waterfall and Agile (US-6) */
 @import url('./common-chapter-base.css');
 
 .us6-container {
@@ -118,7 +118,7 @@
     box-shadow: 0 4px 8px rgba(0,40,80,0.1);
 }
 
-/* ===== IMAGE CONTAINER AND SIZING ===== */
+/* ===== IMAGE CONTAINER ===== */
 .us6-image-container {
     margin: 2.5rem 0;
     text-align: center;
@@ -138,14 +138,13 @@
     margin: 0 auto;
 }
 
-/* Specific sizing for each image if needed */
 .us6-image-container:first-of-type .us6-image {
-    max-width: 749px; /* Based on PDF image dimensions [141,298,749,560] */
+    max-width: 749px;
     width: 100%;
 }
 
 .us6-image-container:last-of-type .us6-image {
-    max-width: 532px; /* Based on PDF image dimensions [147,225,532,493] */
+    max-width: 532px;
     width: 100%;
 }
 
@@ -161,7 +160,7 @@
     border: 1px solid #c5dcf2;
 }
 
-/* ===== COMPARISON GRID (Text fallback) ===== */
+/* ===== COMPARISON GRID ===== */
 .us6-comparison-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -367,6 +366,57 @@
     color: #1e3a5f;
 }
 
+/* ===== REFERENCES SECTION ===== */
+.us6-references-card {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+}
+
+.us6-references-list {
+    list-style: none;
+}
+
+.us6-references-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #e2edf7;
+}
+
+.us6-references-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.us6-references-list li i {
+    font-size: 1.3rem;
+    color: #1b4e79;
+    margin-top: 0.2rem;
+    width: 32px;
+    text-align: center;
+}
+
+.us6-references-list li div {
+    flex: 1;
+}
+
+.us6-references-list li a {
+    color: #1d4468;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.us6-references-list li a:hover {
+    color: #1b4e79;
+    text-decoration: underline;
+}
+
 /* ===== SUMMARY ===== */
 .us6-summary-premium {
     background: linear-gradient(135deg, #fdf6e3 0%, #faeac9 100%);
@@ -465,5 +515,14 @@
     
     .us6-questions-list li {
         font-size: 1rem;
+    }
+    
+    .us6-references-list li {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .us6-references-list li i {
+        align-self: center;
     }
 }

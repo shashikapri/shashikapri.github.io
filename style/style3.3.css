@@ -1,4 +1,4 @@
-/* style3.3.css – Create a Product Backlog (US-8) - Premium version matching US-10 */
+/* style3.3.css – Create a Product Backlog (US-8) */
 
 @import url('./common-chapter-base.css');
 
@@ -12,7 +12,7 @@
     padding: 2.5rem;
 }
 
-/* ===== HERO SECTION - Exact match with US-10 ===== */
+/* ===== HERO SECTION ===== */
 .us8-hero {
     background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
     border-radius: 2rem 2rem 1rem 1rem;
@@ -70,7 +70,7 @@
     margin-top: 1rem;
 }
 
-/* ===== WHY MATTERS CARD - Exact match US-10 ===== */
+/* ===== WHY MATTERS CARD ===== */
 .us8-matter-card {
     display: flex;
     gap: 1.5rem;
@@ -99,9 +99,9 @@
     color: #1e3a5f;
 }
 
-/* ===== SECTION TITLES - Match US-10 ===== */
+/* ===== SECTION TITLES ===== */
 .us8-section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #0b2b4e;
     margin: 2rem 0 1.5rem 0;
@@ -112,14 +112,14 @@
 
 .us8-section-title i {
     color: #1f5f99;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background: #f0f9ff;
     padding: 0.8rem;
     border-radius: 60px;
     box-shadow: 0 4px 8px rgba(0,40,80,0.1);
 }
 
-/* ===== CONTENT CARDS - Premium styling ===== */
+/* ===== CONTENT CARDS ===== */
 .us8-content-card {
     background: #f8fafd;
     border-radius: 1.5rem;
@@ -130,7 +130,7 @@
     color: #2c3e50;
 }
 
-/* ===== GRID LAYOUT - Match US-10 deepdive grid ===== */
+/* ===== GRID LAYOUT ===== */
 .us8-grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,7 +173,7 @@
     color: #124072;
 }
 
-/* ===== BULLET LIST - Premium ===== */
+/* ===== BULLET LIST ===== */
 .us8-bullet-list {
     list-style: none;
     margin-top: 1rem;
@@ -187,16 +187,16 @@
 }
 
 .us8-bullet-list li::before {
-    content: "•";
+    content: "●";
     color: #0a58ca;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1rem;
     position: absolute;
     left: 0.2rem;
-    top: -0.4rem;
+    top: 0;
 }
 
-/* ===== STEPS GRID - Match US-10 deepdive cards ===== */
+/* ===== STEPS GRID ===== */
 .us8-steps-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -297,7 +297,7 @@
     box-shadow: 0 4px 10px rgba(0,60,120,0.08);
 }
 
-/* ===== VISUAL CONTAINER - Match US-10 exactly ===== */
+/* ===== VISUAL CONTAINER ===== */
 .us8-visual-container {
     margin: 2rem 0;
 }
@@ -370,7 +370,7 @@
     background: #d9d2ff;
 }
 
-/* ===== SELECTION VISUAL - Match US-10 exactly ===== */
+/* ===== SELECTION VISUAL ===== */
 .us8-selection-visual {
     background: #0a2942;
     color: white;
@@ -432,7 +432,7 @@
     font-size: 0.9rem;
 }
 
-/* ===== TOOLS SECTION - Match US-10 resources ===== */
+/* ===== TOOLS SECTION ===== */
 .us8-resources {
     background: #ebf3fa;
     border-radius: 2rem;
@@ -441,7 +441,7 @@
 }
 
 .us8-resources-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: flex;
     gap: 0.8rem;
     margin-bottom: 1rem;
@@ -496,7 +496,7 @@
     color: #4a6a85;
 }
 
-/* ===== ROLE SECTION - Match US-10 framework cards ===== */
+/* ===== ROLE SECTION ===== */
 .us8-role-container {
     margin: 1.5rem 0;
 }
@@ -618,11 +618,68 @@
     line-height: 1.6;
 }
 
-.us8-summary-premium strong {
-    font-weight: 700;
+/* ===== REFERENCES SECTION (FIXED WITH BULLETS) ===== */
+.us8-references-wrapper {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    border: 1px solid #e2edf7;
 }
 
-/* ===== NAVIGATION - Exact match US-10 ===== */
+.us8-ref-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #e2edf7;
+}
+
+.us8-ref-header i {
+    font-size: 1.6rem;
+    color: #1b4e79;
+}
+
+.us8-ref-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0b2b4e;
+    margin: 0;
+}
+
+.us8-ref-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.us8-ref-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+}
+
+.us8-ref-bullet {
+    color: #1b4e79;
+    font-size: 0.9rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.us8-ref-item a {
+    color: #1d4468;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.us8-ref-item a:hover {
+    color: #1b4e79;
+    text-decoration: underline;
+}
+
+/* ===== NAVIGATION ===== */
 .us8-navigation {
     display: flex;
     justify-content: space-between;
@@ -654,6 +711,22 @@
 
 .us8-nav-btn.next:hover {
     transform: translateX(2px);
+}
+
+/* ===== IMAGE STYLES ===== */
+.us8-userstory-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.us8-step-premium-content-full img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -693,5 +766,13 @@
     
     .us8-nav-btn {
         justify-content: center;
+    }
+    
+    .us8-ref-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .us8-ref-item {
+        flex-wrap: wrap;
     }
 }

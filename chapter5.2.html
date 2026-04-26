@@ -3,138 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scope Management | US-18</title>
-
+    <title>US-18: Scope Management | Preventing Scope Creep</title>
+    <!-- Font Awesome 6 (free) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style/style5.1.css">
-    <link rel="stylesheet" href="style/us18.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style/style5.2.css">
 </head>
-
 <body>
-<div class="us17-container">
-
-    <!-- HERO -->
-    <div class="us17-hero">
-        <div class="us17-hero-content">
-            <span class="us17-chapter-badge">Chapter 5.2</span>
-            <h1 class="us17-title">Scope <span class="us17-title-highlight">Management</span></h1>
-
-            <div class="us17-meta">
-                <span class="us17-code-badge">US-18</span>
-                <span class="us17-code-badge">Scope Control</span>
+<div class="us18-container">
+    <!-- Hero Section - matching US-5 premium style -->
+    <div class="us18-hero">
+        <div class="us18-hero-content">
+            <span class="us18-chapter-badge">Chapter 5.2</span>
+            <h1 class="us18-title">Scope <span class="us18-title-highlight">Management</span></h1>
+            <div class="us18-meta">
+                <span class="us18-code-badge">US-18</span>
+                <span class="us18-code-badge">Scope Control</span>
             </div>
-
-            <p class="us17-hero-description">
-                Define, control, and monitor project work to ensure successful delivery.
-            </p>
+            <p class="us18-hero-description">Define, control, and monitor project work to ensure successful delivery.</p>
         </div>
     </div>
 
-    <!-- SECTION 1 -->
-    <div class="us17-section">
-        <h2 class="us17-section-title">
-            <i class="fas fa-diagram-project"></i> What is Scope Management
-        </h2>
-
-        <div class="us17-image-container">
-            <img src="images/chapter5.2/US18-pic1.png" class="us17-image">
-            <div class="us17-image-caption">
-                <i class="fas fa-info-circle"></i> Figure 5.1 – Scope Management Overview
-            </div>
-        </div>
-
-        <div class="us17-content-card">
-            <p>
-                Scope management refers to the process of defining, controlling, and monitoring the work
-                that must be completed in a project. It ensures that the project includes all the necessary
-                tasks required to achieve its objectives while preventing unnecessary work from being added.
-            </p>
-
-            <p>
-                Proper scope management helps project teams stay focused on the agreed project goals and
-                deliver the expected outcomes within the planned time and resources.
-            </p>
+    <!-- Why This Matters Card -->
+    <div class="us18-matter-card">
+        <div class="us18-matter-icon"><i class="fas fa-scale-balanced"></i></div>
+        <div class="us18-matter-content">
+            <h2>Why This Matters for Scrum Masters</h2>
+            <p>Even in Agile environments, understanding scope management helps you evaluate project boundaries, communicate with stakeholders, and prevent scope creep — ensuring your team delivers value without overcommitting.</p>
         </div>
     </div>
 
-    <!-- SECTION 2 -->
-    <div class="us17-section">
-        <h2 class="us17-section-title">
-            <i class="fas fa-star"></i> Importance of Scope Management
-        </h2>
+    <!-- IMAGE PLACEHOLDER 1 - Scope Management Overview -->
+    <div class="us18-visual-container">
+        <div class="us18-visual">
+            <div class="us18-visual-icon">
+                <i class="fas fa-draw-polygon"></i>
+                <i class="fas fa-arrow-right"></i>
+                <i class="fas fa-border-all"></i>
+            </div>
+            <div class="us18-visual-text">SCOPE MANAGEMENT</div>
+            
+            <div class="us18-visual-subtitle">
+                <span class="us18-badge-structure">In Scope</span>
+                <span class="us18-badge-flexibility">Out of Scope</span>
+            </div>
+            
+            <div class="us18-visual-comparison">
+                <!-- In Scope Side -->
+                <div class="us18-visual-benefits">
+                    <div class="us18-visual-side-header">
+                        <i class="fas fa-check-circle" style="color: #2e7d32;"></i>
+                        <span>In Scope</span>
+                    </div>
+                    <ul class="us18-visual-list">
+                        <li><i class="fas fa-check"></i> Core features & requirements</li>
+                        <li><i class="fas fa-check"></i> Approved deliverables</li>
+                        <li><i class="fas fa-check"></i> Agreed-upon functionality</li>
+                        <li><i class="fas fa-check"></i> Budgeted work packages</li>
+                    </ul>
+                </div>
+                
+                <!-- Out of Scope Side -->
+                <div class="us18-visual-disadvantages">
+                    <div class="us18-visual-side-header">
+                        <i class="fas fa-exclamation-triangle" style="color: #d32f2f;"></i>
+                        <span>Out of Scope</span>
+                    </div>
+                    <ul class="us18-visual-list">
+                        <li><i class="fas fa-times"></i> Nice-to-have features</li>
+                        <li><i class="fas fa-times"></i> Future enhancements</li>
+                        <li><i class="fas fa-times"></i> Unapproved requests</li>
+                        <li><i class="fas fa-times"></i> Phase 2 items</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="us18-visual-footer">
+                <p>Scope management defines the boundary between <strong>what you WILL do</strong> and <strong>what you WON'T do</strong>. This clarity prevents misunderstandings and keeps projects on track.</p>
+            </div>
+            
+            <div class="us18-image-container">
+                <img src="images/chapter5.2/US18-pic1.png" alt="Scope Management Overview" class="us18-image">
+                <div class="us18-image-caption">
+                    <i class="fas fa-image"></i> Figure 1: Scope Management Overview
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <div class="us17-image-container">
-            <img src="images/chapter5.2/US18-pic2.png" class="us17-image">
-            <div class="us17-image-caption">
-                <i class="fas fa-info-circle"></i> Figure 5.2 – Importance of Scope Management
+    <!-- What is Scope Management Section -->
+    <div class="us18-section">
+        <h2 class="us18-section-title"><i class="fas fa-diagram-project"></i> What is Scope Management</h2>
+        
+        <div class="us18-content-card">
+            <p>Scope management refers to the process of defining, controlling, and monitoring the work that must be completed in a project. It ensures that the project includes all the necessary tasks required to achieve its objectives while preventing unnecessary work from being added.</p>
+            <p>Proper scope management helps project teams stay focused on the agreed project goals and deliver the expected outcomes within the planned time and resources.</p>
+        </div>
+    </div>
+
+    <!-- Importance of Scope Management Section -->
+    <div class="us18-section">
+        <h2 class="us18-section-title"><i class="fas fa-star"></i> Importance of Scope Management</h2>
+        
+        <div class="us18-content-card">
+            <p>Effective scope management is essential for successful project delivery. It helps teams clearly understand what is included in the project and what is not. This clarity reduces misunderstandings and ensures that the team works toward the same objectives.</p>
+            <p>Scope management also plays an important role in preventing scope creep, which occurs when additional requirements or changes are introduced without proper evaluation or approval.</p>
+            
+            <div class="us18-benefits-grid">
+                <div class="us18-benefit-card">
+                    <div class="us18-benefit-number">1</div>
+                    <div class="us18-benefit-content">
+                        <h3>Clear Definition of Boundaries</h3>
+                        <p>Establishes what is included and excluded from the project</p>
+                    </div>
+                </div>
+                <div class="us18-benefit-card">
+                    <div class="us18-benefit-number">2</div>
+                    <div class="us18-benefit-content">
+                        <h3>Better Planning & Resource Allocation</h3>
+                        <p>Enables accurate estimation of time, cost, and resources</p>
+                    </div>
+                </div>
+                <div class="us18-benefit-card">
+                    <div class="us18-benefit-number">3</div>
+                    <div class="us18-benefit-content">
+                        <h3>Improved Communication</h3>
+                        <p>Aligns stakeholders on project expectations</p>
+                    </div>
+                </div>
+                <div class="us18-benefit-card">
+                    <div class="us18-benefit-number">4</div>
+                    <div class="us18-benefit-content">
+                        <h3>Prevention of Uncontrolled Changes</h3>
+                        <p>Protects against scope creep and unauthorized additions</p>
+                    </div>
+                </div>
+                <div class="us18-benefit-card">
+                    <div class="us18-benefit-number">5</div>
+                    <div class="us18-benefit-content">
+                        <h3>Increased Likelihood of Success</h3>
+                        <p>Keeps the team focused on agreed objectives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preventing Scope Creep Section -->
+    <div class="us18-section">
+        <h2 class="us18-section-title"><i class="fas fa-exclamation-triangle"></i> Preventing Scope Creep</h2>
+        
+        <div class="us18-image-container us18-image-small">
+            <img src="images/chapter5.2/US18-pic3.png" alt="Preventing Scope Creep" class="us18-image">
+            <div class="us18-image-caption">
+                <i class="fas fa-image"></i> Figure 2: Preventing Scope Creep
             </div>
         </div>
 
-        <div class="us17-content-card">
-            <p>
-                Effective scope management is essential for successful project delivery. It helps teams
-                clearly understand what is included in the project and what is not. This clarity reduces
-                misunderstandings and ensures that the team works toward the same objectives.
-            </p>
+        <div class="us18-content-card">
+            <p>Scope creep can occur when new requirements are added during the project without proper control. To prevent this, project managers and Scrum Masters should ensure that the project scope is clearly defined and documented.</p>
+            
+            <div class="us18-disadvantages-grid">
+                <div class="us18-disadvantage-card">
+                    <div class="us18-disadvantage-number">1</div>
+                    <div class="us18-disadvantage-content">
+                        <h3>Clearly Define Requirements</h3>
+                        <p>Document all requirements before development begins</p>
+                    </div>
+                </div>
+                <div class="us18-disadvantage-card">
+                    <div class="us18-disadvantage-number">2</div>
+                    <div class="us18-disadvantage-content">
+                        <h3>Maintain a Structured Backlog</h3>
+                        <p>Keep all work items organized and prioritized</p>
+                    </div>
+                </div>
+                <div class="us18-disadvantage-card">
+                    <div class="us18-disadvantage-number">3</div>
+                    <div class="us18-disadvantage-content">
+                        <h3>Review Changes Before Implementation</h3>
+                        <p>Evaluate impact of all change requests</p>
+                    </div>
+                </div>
+                <div class="us18-disadvantage-card">
+                    <div class="us18-disadvantage-number">4</div>
+                    <div class="us18-disadvantage-content">
+                        <h3>Communicate with Stakeholders</h3>
+                        <p>Keep everyone informed about scope decisions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <p>
-                Scope management also plays an important role in preventing scope creep, which occurs
-                when additional requirements or changes are introduced without proper evaluation or approval.
-            </p>
+    <!-- Comparison Summary Card -->
+    <div class="us18-comparison-summary">
+        <div class="us18-summary-header">
+            <i class="fas fa-clipboard-list"></i>
+            <h3>Scope Management Best Practices</h3>
+        </div>
+        <div class="us18-summary-content">
+            <div class="us18-summary-column">
+                <h4><i class="fas fa-check-circle" style="color: #2e7d32;"></i> Do's</h4>
+                <ul>
+                    <li>Document scope clearly</li>
+                    <li>Get stakeholder approval</li>
+                    <li>Use a change control process</li>
+                    <li>Review scope regularly</li>
+                </ul>
+            </div>
+            <div class="us18-summary-column">
+                <h4><i class="fas fa-times-circle" style="color: #d32f2f;"></i> Don'ts</h4>
+                <ul>
+                    <li>Accept vague requirements</li>
+                    <li>Add features without approval</li>
+                    <li>Ignore change requests</li>
+                    <li>Assume everyone agrees</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-            <ul class="us17-bullet-list">
-                <li>Clear definition of project boundaries</li>
-                <li>Better planning and resource allocation</li>
-                <li>Improved communication among stakeholders</li>
-                <li>Prevention of uncontrolled changes</li>
-                <li>Increased likelihood of delivering the project successfully</li>
+    <!-- ===== REFERENCES SECTION (US-18) ===== -->
+    <div class="us18-section">
+        <div class="us18-section-title">
+            <i class="fas fa-book"></i>
+            <h4>References (US-18)</h4>
+        </div>
+        <div class="us18-references-card">
+            <ul class="us18-references-list">
+                <li>
+                    <i class="fas fa-landmark"></i>
+                    <div>
+                        <a href="https://www.pmi.org/pmbok-guide-standards/foundational/pmbok" target="_blank" rel="noopener noreferrer">
+                            Project Management Institute (PMBOK Guide) – Scope Management
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-project-diagram"></i>
+                    <div>
+                        <a href="https://www.scrumguides.org/" target="_blank" rel="noopener noreferrer">
+                            Scrum Guides – The Scrum Guide (Product Backlog & Scope)
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>
+                        <a href="https://www.atlassian.com/agile/project-management/scope-creep" target="_blank" rel="noopener noreferrer">
+                            Atlassian – Preventing Scope Creep in Agile Projects
+                        </a>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
 
-    <!-- SECTION 3 -->
-    <div class="us17-section">
-        <h2 class="us17-section-title">
-            <i class="fas fa-exclamation-triangle"></i> Preventing Scope Creep
-        </h2>
-
-        <div class="us17-image-container">
-            <img src="images/chapter5.2/US18-pic3.png" class="us17-image">
-            <div class="us17-image-caption">
-                <i class="fas fa-info-circle"></i> Figure 5.3 – Preventing Scope Creep
-            </div>
-        </div>
-
-        <div class="us17-content-card">
-            <p>
-                Scope creep can occur when new requirements are added during the project without proper control.
-                To prevent this, project managers and Scrum Masters should ensure that the project scope is
-                clearly defined and documented.
-            </p>
-
-            <ul class="us17-bullet-list">
-                <li>Clearly defining project requirements</li>
-                <li>Maintaining a well-structured backlog</li>
-                <li>Reviewing and approving changes before implementation</li>
-                <li>Communicating scope changes with stakeholders</li>
-                <li>Regularly monitoring project progress</li>
-            </ul>
-
-            <p>
-                By applying these practices, teams can maintain focus on project goals and deliver value effectively.
-            </p>
-        </div>
+    <!-- Navigation -->
+    <div class="us18-navigation">
+        <a href="#" class="us18-nav-btn prev">
+            <i class="fas fa-arrow-left"></i>
+            <span>Previous: What is Project Scope? (US-17)</span>
+        </a>
+        <a href="#" class="us18-nav-btn next">
+            <span>Next: Key Scope Processes (US-19)</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
     </div>
-
-    <!-- SUMMARY -->
-    <div class="us17-summary-premium">
-        <i class="fas fa-check-circle"></i>
-        <div>
-            <strong>Key Takeaway:</strong> Scope management ensures projects stay focused,
-            avoid unnecessary work, and deliver value successfully.
-        </div>
-    </div>
-
 </div>
 </body>
 </html>

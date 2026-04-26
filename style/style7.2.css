@@ -499,3 +499,72 @@ body {
         align-self: center;
     }
 }
+/* ===== REFERENCES SECTION (US-27) - Updated ===== */
+.us27-references-card {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+}
+
+.us27-references-list {
+    list-style: none;
+}
+
+.us27-references-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #e2edf7;
+}
+
+.us27-references-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.us27-references-list li i {
+    font-size: 1.5rem;
+    color: #1b4e79;
+    margin-top: 0.2rem;
+    width: 32px;
+    text-align: center;
+}
+
+.us27-references-list li div {
+    flex: 1;
+}
+
+.us27-references-list li a {
+    color: #1d4468;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.us27-references-list li a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+.ref-desc {
+    display: block;
+    font-size: 0.75rem;
+    color: #6f8cac;
+    margin-top: 0.2rem;
+}
+
+/* Responsive References */
+@media (max-width: 768px) {
+    .us27-references-list li {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .us27-references-list li i {
+        align-self: center;
+    }
+}
