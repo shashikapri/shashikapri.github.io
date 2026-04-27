@@ -1,0 +1,522 @@
+/* style5.5.css - Implementing the Scope Management Plan (US-21) */
+@import url('./common-chapter-base.css');
+
+.us21-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    padding: 2.5rem;
+}
+
+/* ===== HERO SECTION ===== */
+.us21-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    border-radius: 2rem 2rem 1rem 1rem;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.us21-hero-content {
+    max-width: 800px;
+}
+
+.us21-chapter-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.us21-chapter-badge i {
+    margin-right: 0.5rem;
+}
+
+.us21-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.us21-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+}
+
+/* Chapter 5.5 uses `us20-title-highlight` inside the cover-title markup; ensure it matches the common underline style */
+.us20-title-highlight,
+.cover-title > .us20-title-highlight,
+.cover-title .us20-title-highlight {
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
+    display: inline-block;
+}
+
+.us21-subhead {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.us21-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.us21-code-badge {
+    background: #1e4a7a;
+    padding: 0.4rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ===== SECTION TITLES ===== */
+.us21-section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 0.8rem;
+}
+
+.us21-section-title i {
+    background: #0b2b4e;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+.us21-section-title h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.us21-section-subtitle {
+    color: #4a627a;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* ===== SECTION NUMBER ===== */
+.us21-section-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ffb347;
+    background: none;
+    padding: 0;
+    margin-right: 0.2rem;
+}
+
+/* ===== CONTENT BOXES ===== */
+.us21-content-box {
+    background: #f8fbff;
+    border: 1px solid #e2edff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.7;
+    color: #1e3a5f;
+}
+
+.us21-highlight-box {
+    background: #f1f7fe;
+    border-left: 4px solid #1d4468;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+}
+
+/* ===== GRID LAYOUTS ===== */
+.us21-grid-2col,
+.us21-management-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.us21-management-card {
+    background: #f1f7fe;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid #dce5f0;
+}
+
+.us21-management-card h4 {
+    color: #0b2b4e;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== TABLES ===== */
+.us21-table-wrapper {
+    overflow-x: auto;
+    margin: 1rem 0 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #e2edff;
+    background: white;
+}
+
+.us21-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.us21-table thead tr {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
+    color: white;
+}
+
+.us21-table th {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.us21-table td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #e2edff;
+    color: #1e3a5f;
+    vertical-align: top;
+}
+
+.us21-table tr:last-child td {
+    border-bottom: none;
+}
+
+.us21-table tr:hover td {
+    background: #fafcff;
+}
+
+/* ===== IMAGE SECTIONS ===== */
+.us21-image-section {
+    margin: 1.5rem 0 2rem;
+}
+
+.us21-image-container {
+    background: linear-gradient(145deg, #f0f5ff, #e6edf9);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    border: 2px dashed #3b7fbd;
+}
+
+.us21-image-wrapper {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.us21-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.us21-image-placeholder {
+    background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 100%);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #c5d5e8;
+}
+
+.us21-placeholder-content i {
+    font-size: 3rem;
+    color: #0a58ca;
+    margin-bottom: 1rem;
+}
+
+.us21-placeholder-content h4 {
+    font-size: 1.3rem;
+    color: #0b2b4e;
+    margin-bottom: 0.5rem;
+}
+
+.us21-placeholder-content p {
+    color: #4a627a;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.us21-placeholder-note {
+    display: inline-block;
+    background: #e3f0ff;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    color: #0a58ca;
+}
+
+.us21-placeholder-note i {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+.us21-image-caption {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #e3f0ff;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    color: #0b2b4e;
+}
+
+.us21-image-caption strong {
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+
+/* ===== REFERENCES ===== */
+.us21-references {
+    background: #f0f5ff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.6;
+}
+
+.us21-references a {
+    color: #0a58ca;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.us21-references a:hover {
+    text-decoration: underline;
+}
+
+/* ===== SUMMARY SECTION ===== */
+.us21-summary {
+    background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 100%);
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    border: 1px solid #dce5f0;
+}
+
+.us21-summary-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.us21-summary-header i {
+    font-size: 1.6rem;
+    color: #0a58ca;
+}
+
+.us21-summary-header h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0b2b4e;
+}
+
+.us21-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.8rem;
+}
+
+.us21-summary-item {
+    background: white;
+    padding: 0.7rem 1rem;
+    border-radius: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    transition: all 0.2s;
+    border: 1px solid #cbdde9;
+}
+
+.us21-summary-item:hover {
+    transform: translateX(5px);
+    border-color: #0a58ca;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.us21-summary-item i {
+    font-size: 1rem;
+    color: #0a58ca;
+    min-width: 1.3rem;
+}
+
+.us21-summary-item span {
+    font-size: 0.85rem;
+    color: #1e3a5f;
+}
+
+/* ===== VIDEO WRAPPER ===== */
+.us21-video-wrapper {
+    margin: 1.5rem 0 2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+    background: #000;
+}
+
+.us21-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.us21-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.us21-video-caption {
+    background: #1a1a2e;
+    padding: 0.6rem 1rem;
+    color: #ccc;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.us21-video-caption i {
+    color: #ff0000;
+    margin-right: 0.5rem;
+}
+
+/* ===== NAVIGATION ===== */
+.us21-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2edff;
+}
+
+.us21-nav-btn {
+    flex: 1;
+    min-width: 260px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.us21-nav-btn.prev {
+    background: #f0f5fa;
+    color: #0f3d5a;
+    border: 1px solid #d8e3ee;
+}
+
+.us21-nav-btn.next {
+    background: #0b2b4e;
+    color: #ffffff;
+    border: 1px solid #0b2b4e;
+}
+
+.us21-nav-btn.prev:hover,
+.us21-nav-btn.next:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0, 30, 60, 0.12);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .us21-container {
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .us21-hero {
+        padding: 1.5rem 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .us21-title {
+        font-size: 1.9rem;
+    }
+
+    .us21-section-title h2 {
+        font-size: 1.45rem;
+    }
+
+    .us21-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .us21-navigation {
+        flex-direction: column;
+    }
+
+    .us21-nav-btn {
+        width: 100%;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .us21-container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .us21-video-wrapper {
+        display: none;
+    }
+
+    .us21-navigation {
+        display: none;
+    }
+}
+
+/* Content-scoped override: stack chapter header inside section cards
+   so the number appears above the title and the heading is left-aligned. */
+.section-card > .chapter-header {
+    display: block;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+.section-card > .chapter-header .chapter-number {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #6f8cac;
+    font-weight: 600;
+}
+.section-card > .chapter-header h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.6rem;
+    color: #12324f;
+    font-weight: 700;
+}

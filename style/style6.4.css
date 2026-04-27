@@ -4,65 +4,68 @@
 .us25-container {
     max-width: 1200px;
     margin: 0 auto;
-    background: #ffffff;
+    background: white;
     border-radius: 2rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
     overflow: hidden;
     padding: 2.5rem;
 }
 
+/* ===== HERO SECTION ===== */
 .us25-hero {
-    background: linear-gradient(130deg, #0f304f 0%, #144e67 50%, #0f7b6c 100%);
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
     border-radius: 2rem 2rem 1rem 1rem;
     padding: 2.5rem 2rem;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: white;
 }
 
 .us25-hero-content {
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .us25-chapter-badge {
-    background: rgba(255, 255, 255, 0.16);
+    background: rgba(255,255,255,0.15);
     padding: 0.3rem 1rem;
     border-radius: 40px;
     font-size: 0.85rem;
     font-weight: 600;
     display: inline-block;
     margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
 }
 
 .us25-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .us25-title-highlight {
-    color: #ffda8f;
-    border-bottom: 3px solid #ffc05a;
+    color: #ffd966;
+    border-bottom: 3px solid #ffb347;
 }
 
 .us25-meta {
     display: flex;
-    gap: 0.8rem;
+    gap: 1rem;
     margin-bottom: 1rem;
-    flex-wrap: wrap;
 }
 
 .us25-code-badge {
-    background: rgba(10, 33, 50, 0.45);
-    padding: 0.35rem 1rem;
+    background: #1e4a7a;
+    padding: 0.3rem 1rem;
     border-radius: 30px;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .us25-hero-description {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    margin-top: 1rem;
 }
 
 .us25-story-card {

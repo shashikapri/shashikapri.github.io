@@ -103,6 +103,25 @@
     margin-left: 0.5rem;
 }
 
+/* ===== CENTER TEXT FROM PDF ===== */
+.us42-center-text {
+    text-align: center;
+    margin: 1rem 0 0.5rem;
+}
+
+.us42-center-line {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0b2b4e;
+    margin-bottom: 0.3rem;
+}
+
+.us42-center-sub {
+    font-size: 0.9rem;
+    color: #5a6e82;
+    font-style: italic;
+}
+
 /* ===== IMAGE SECTIONS ===== */
 .us42-image-section {
     margin: 1.5rem 0 2rem;
@@ -316,67 +335,6 @@
     text-decoration: underline;
 }
 
-/* ===== SUMMARY SECTION ===== */
-.us42-summary {
-    background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 100%);
-    border-radius: 1.5rem;
-    padding: 1.5rem 2rem;
-    margin: 1.5rem 0;
-    border: 1px solid #dce5f0;
-}
-
-.us42-summary-header {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 1.2rem;
-}
-
-.us42-summary-header i {
-    font-size: 1.6rem;
-    color: #0a58ca;
-}
-
-.us42-summary-header h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #0b2b4e;
-}
-
-.us42-summary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0.8rem;
-}
-
-.us42-summary-item {
-    background: white;
-    padding: 0.7rem 1rem;
-    border-radius: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    transition: all 0.2s;
-    border: 1px solid #cbdde9;
-}
-
-.us42-summary-item:hover {
-    transform: translateX(5px);
-    border-color: #0a58ca;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.us42-summary-item i {
-    font-size: 1rem;
-    color: #0a58ca;
-    min-width: 1.3rem;
-}
-
-.us42-summary-item span {
-    font-size: 0.85rem;
-    color: #1e3a5f;
-}
-
 /* ===== VIDEO WRAPPER ===== */
 .us42-video-wrapper {
     margin: 1.5rem 0 2rem;
@@ -469,10 +427,6 @@
     .us42-criteria-table td {
         padding: 0.8rem;
         font-size: 0.85rem;
-    }
-
-    .us42-summary-grid {
-        grid-template-columns: 1fr;
     }
 
     .us42-navigation {

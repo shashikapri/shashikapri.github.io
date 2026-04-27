@@ -187,6 +187,15 @@
     font-weight: 500;
 }
 
+.us13-userstory-image {
+    display: block;
+    width: min(100%, 820px);
+    height: auto;
+    margin: 1.5rem auto 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 40px -20px rgba(0, 40, 80, 0.45);
+}
+
 /* ===== VISUAL CONTAINER (Image Placeholders) ===== */
 .us13-visual-container {
     margin: 2rem 0;
