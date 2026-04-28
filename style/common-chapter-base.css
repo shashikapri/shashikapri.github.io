@@ -13,3 +13,26 @@ body {
     color: #1e293b;
     padding: 2rem 1rem;
 }
+
+/* Shared reference formatting */
+div[class*="references"] > p:not([class$="-ref-note"]),
+div[class*="references"] .reference-item > p:not([class$="-ref-note"]),
+div[class*="references"] .references-item > p:not([class$="-ref-note"]),
+div[class*="references"] .scrum-reference-item > p:not([class$="-ref-note"]),
+div[class*="references"] .us10-reference-item > p:not([class$="-ref-note"]),
+div[class*="references"] .us17-reference-item > p:not([class$="-ref-note"]),
+div[class*="references"] li {
+    margin-left: 40px !important;
+    text-indent: -40px !important;
+}
+
+div[class*="references"] ul,
+div[class*="references"] ol {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+div[class*="references"] li > p {
+    margin: 0;
+}
