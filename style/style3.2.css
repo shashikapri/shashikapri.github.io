@@ -1,31 +1,31 @@
-/* style.css - Scrum Roles, Events & Artifacts (US-7 & US-11) */
+/* style3.3.css – Create a Product Backlog (US-8) */
 
 @import url('./common-chapter-base.css');
 
-.scrum-container {
-    max-width: 1200px;
+.us8-container {
+    max-width: 1000px;
     margin: 0 auto;
     background: white;
     border-radius: 2rem;
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
     overflow: hidden;
-    padding: 2rem 2.5rem;
+    padding: 2.5rem;
 }
 
-/* Hero Section */
-.scrum-hero {
-    background: linear-gradient(135deg, #0b2b4e 0%, #1a4a7a 100%);
+/* ===== HERO SECTION ===== */
+.us8-hero {
+    background: linear-gradient(135deg, #0b2b4e 0%, #123b6e 100%);
     border-radius: 2rem 2rem 1rem 1rem;
     padding: 2.5rem 2rem;
     margin-bottom: 2rem;
     color: white;
 }
 
-.scrum-hero-content {
+.us8-hero-content {
     max-width: 800px;
 }
 
-.scrum-chapter-badge {
+.us8-chapter-badge {
     background: rgba(255,255,255,0.15);
     padding: 0.3rem 1rem;
     border-radius: 40px;
@@ -34,31 +34,29 @@
     letter-spacing: 0.3px;
     display: inline-block;
     margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
 }
 
-.scrum-chapter-badge i {
-    margin-right: 0.5rem;
-}
-
-.scrum-title {
+.us8-title {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
 }
 
-.scrum-title-highlight {
+.us8-title-highlight {
     color: #ffd966;
     border-bottom: 3px solid #ffb347;
 }
 
-.scrum-meta {
+.us8-meta {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
-.scrum-code-badge {
+.us8-code-badge {
     background: #1e4a7a;
     padding: 0.3rem 1rem;
     border-radius: 30px;
@@ -66,341 +64,715 @@
     font-weight: 500;
 }
 
-.scrum-code-badge i {
-    margin-right: 0.4rem;
+.us8-hero-description {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    margin-top: 1rem;
 }
 
-/* Section Title */
-.scrum-section-title {
+/* ===== WHY MATTERS CARD ===== */
+.us8-matter-card {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 2.5rem 0 1rem;
+    gap: 1.5rem;
+    background: #f0f9ff;
+    border-left: 6px solid #0a58ca;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 14px rgba(0,80,120,0.08);
+}
+
+.us8-matter-icon i {
+    font-size: 2.8rem;
+    color: #0a58ca;
+}
+
+.us8-matter-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
     color: #0b2b4e;
 }
 
-.scrum-section-title i {
-    background: #0b2b4e;
-    color: white;
-    padding: 0.8rem;
-    border-radius: 50%;
-    font-size: 1.5rem;
+.us8-matter-content p {
+    font-size: 1.1rem;
+    color: #1e3a5f;
 }
 
-.scrum-section-title h2 {
+/* ===== SECTION TITLES ===== */
+.us8-section-title {
     font-size: 1.8rem;
     font-weight: 600;
+    color: #0b2b4e;
+    margin: 2rem 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
-.scrum-intro-text {
-    margin-bottom: 1.5rem;
-    padding-left: 0.5rem;
+.us8-section-title i {
+    color: #1f5f99;
+    font-size: 1.8rem;
+    background: #f0f9ff;
+    padding: 0.8rem;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0,40,80,0.1);
+}
+
+/* ===== CONTENT CARDS ===== */
+.us8-content-card {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+    line-height: 1.7;
     color: #2c3e50;
-    font-size: 1.1rem;
-    border-left: 4px solid #0b5e8a;
-    padding-left: 1rem;
 }
 
-/* Roles Grid */
-.scrum-roles-grid {
+/* ===== GRID LAYOUT ===== */
+.us8-grid-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
     margin: 2rem 0;
 }
 
-.scrum-role-card {
+.us8-premium-card {
+    background: white;
+    border-radius: 1.8rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.us8-premium-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px -10px rgba(0,60,120,0.2);
+}
+
+.us8-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.us8-card-header i {
+    font-size: 2rem;
+    color: #2266a8;
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.us8-card-header h3 {
+    font-size: 1.6rem;
+    color: #124072;
+}
+
+/* ===== BULLET LIST ===== */
+.us8-bullet-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.us8-bullet-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 2rem;
+    position: relative;
+    color: #2c3e50;
+}
+
+.us8-bullet-list li::before {
+    content: "●";
+    color: #0a58ca;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    left: 0.2rem;
+    top: 0;
+}
+
+/* ===== STEPS GRID ===== */
+.us8-steps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.us8-step-premium {
     background: white;
     border-radius: 1.5rem;
-    padding: 2rem;
-    box-shadow: 0 10px 25px -8px rgba(0,0,0,0.1);
-    border: 1px solid #e2edff;
-    transition: transform 0.2s;
-    border-top: 6px solid;
+    padding: 1.8rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 15px -8px rgba(0,60,120,0.1);
+    display: flex;
+    gap: 1.2rem;
+    transition: all 0.2s;
 }
 
-.scrum-role-card:hover {
-    transform: translateY(-5px);
+.us8-step-premium:hover {
+    border-color: #b9d4f0;
+    box-shadow: 0 12px 25px -10px rgba(0,60,120,0.15);
 }
 
-.po-card { border-top-color: #f39c12; }
-.sm-card { border-top-color: #3498db; }
-.dev-card { border-top-color: #2ecc71; }
-
-.scrum-role-icon {
-    width: 4rem;
-    height: 4rem;
-    background: #f8faff;
-    border-radius: 50%;
+.us8-step-premium-number {
+    background: linear-gradient(135deg, #0b2b4e 0%, #1e4a7a 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.2rem;
+    flex-shrink: 0;
+    box-shadow: 0 6px 12px rgba(0,40,80,0.2);
 }
 
-.po-card .scrum-role-icon i { color: #f39c12; font-size: 2rem; }
-.sm-card .scrum-role-icon i { color: #3498db; font-size: 2rem; }
-.dev-card .scrum-role-icon i { color: #2ecc71; font-size: 2rem; }
+.us8-step-premium-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #123e64;
+}
 
-.scrum-role-title {
-    font-size: 1.5rem;
+.us8-step-premium-content p {
+    color: #33475b;
+    line-height: 1.6;
+}
+
+/* ===== FULL WIDTH STEP ===== */
+.us8-step-premium-full {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.us8-step-premium-number-large {
+    background: linear-gradient(135deg, #0b2b4e 0%, #1e4a7a 100%);
+    color: white;
     font-weight: 700;
+    font-size: 2.2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 15px rgba(0,40,80,0.25);
+}
+
+.us8-step-premium-content-full {
+    flex: 1;
+}
+
+.us8-step-premium-content-full h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #123e64;
+}
+
+/* ===== FORMAT BOX ===== */
+.us8-format-box {
+    background: #f0f9ff;
+    border-left: 5px solid #2a73b3;
+    padding: 1.2rem 2rem;
+    border-radius: 1.2rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    color: #04396c;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,60,120,0.08);
+}
+
+/* ===== VISUAL CONTAINER ===== */
+.us8-visual-container {
+    margin: 2rem 0;
+}
+
+.us8-visual {
+    background: linear-gradient(145deg, #f0f9ff, #e6f0fa);
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    border: 2px dashed #3f7eb0;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.us8-visual-icon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+    color: #1e4a7a;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.us8-visual-icon i {
+    background: white;
+    padding: 0.8rem;
+    border-radius: 60px;
+    box-shadow: 0 8px 18px rgba(0,40,80,0.1);
+}
+
+.us8-visual-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0f2c4e;
+    margin-bottom: 0.8rem;
+}
+
+.us8-visual-caption {
+    font-size: 1.1rem;
+    color: #2b4f73;
+    background: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 40px;
+    margin: 0.8rem 0;
+    backdrop-filter: blur(4px);
+}
+
+.us8-visual-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.us8-badge-light, .us8-badge-full {
+    padding: 0.3rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.us8-badge-light {
+    background: #cfe3ff;
+}
+
+.us8-badge-full {
+    background: #d9d2ff;
+}
+
+/* ===== SELECTION VISUAL ===== */
+.us8-selection-visual {
+    background: #0a2942;
+    color: white;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+}
+
+.us8-selection-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.us8-selection-header i {
+    font-size: 2.5rem;
+    background: #1e4a7a;
+    padding: 0.8rem;
+    border-radius: 60px;
+}
+
+.us8-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.us8-selection-item {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(4px);
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.us8-selection-icon {
+    font-size: 2.2rem;
+    min-width: 3rem;
+    text-align: center;
+}
+
+.us8-selection-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.us8-selection-content strong {
+    font-size: 1.3rem;
+}
+
+.us8-selection-content span {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* ===== TOOLS SECTION ===== */
+.us8-resources {
+    background: #ebf3fa;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2.5rem 0;
+}
+
+.us8-resources-title {
+    font-size: 1.8rem;
+    display: flex;
+    gap: 0.8rem;
     margin-bottom: 1rem;
     color: #0b2b4e;
 }
 
-.role-nickname {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #666;
-    display: block;
-    margin-top: 0.3rem;
+.us8-resources-intro {
+    margin-bottom: 1.5rem;
+    color: #1e3a5f;
 }
 
-.scrum-role-content p {
-    color: #2c3e50;
-    line-height: 1.6;
-}
-
-/* Events Table */
-.scrum-table-container {
-    overflow-x: auto;
-    margin: 2rem 0 1rem;
-    border-radius: 1.5rem;
-    border: 1px solid #cfddee;
-}
-
-.scrum-events-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-}
-
-.scrum-events-table th {
-    background: #f0f6ff;
-    color: #104079;
-    font-weight: 600;
-    padding: 1.2rem 1rem;
-    font-size: 1rem;
-    text-align: left;
-    border-bottom: 2px solid #9bb6d4;
-}
-
-.scrum-events-table td {
-    padding: 1.2rem 1rem;
-    border-bottom: 1px solid #d8e3f0;
-    vertical-align: top;
-}
-
-.scrum-events-table tr:last-child td {
-    border-bottom: none;
-}
-
-.event-name {
-    font-weight: 700;
-    color: #0b5e8a;
-}
-
-.scrum-events-table td strong {
-    color: #b6582c;
-    background: #fff0e6;
-    padding: 0.2rem 0.5rem;
-    border-radius: 2rem;
-    font-size: 0.85rem;
-}
-
-/* Highlight Note */
-.scrum-highlight-note {
-    background: #fff3cd;
-    border-left: 6px solid #ffb347;
-    border-radius: 1rem;
-    padding: 1rem 1.5rem;
-    margin: 1.5rem 0 2.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.scrum-highlight-note i {
-    font-size: 1.8rem;
-    color: #b6582c;
-}
-
-.scrum-highlight-note p {
-    font-size: 1.1rem;
-    color: #856404;
-}
-
-/* Artifacts Grid */
-.scrum-artifacts-grid {
+.us8-tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
 }
 
-.scrum-artifact-card {
-    background: linear-gradient(145deg, #f8fbff, #f0f5ff);
-    border-radius: 1.5rem;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    border: 1px solid #c9ddf5;
-    transition: all 0.2s;
-}
-
-.scrum-artifact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px -10px rgba(0,80,150,0.2);
-}
-
-.artifact-icon {
-    width: 5rem;
-    height: 5rem;
+.us8-tool-card {
     background: white;
-    border-radius: 50%;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border: 1px solid #c5dcf2;
+    box-shadow: 0 4px 10px rgba(0,40,80,0.05);
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.us8-tool-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px -10px rgba(0,60,120,0.2);
+    border-color: #2a73b3;
+}
+
+.us8-tool-card i {
+    font-size: 2.5rem;
+    color: #1f5f99;
+    margin-bottom: 0.5rem;
+}
+
+.us8-tool-card strong {
+    font-size: 1.2rem;
+    color: #0b2b4e;
+}
+
+.us8-tool-card span {
+    font-size: 0.9rem;
+    color: #4a6a85;
+}
+
+/* ===== ROLE SECTION ===== */
+.us8-role-container {
+    margin: 1.5rem 0;
+}
+
+.us8-role-content {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+.us8-framework-card {
+    border-radius: 2rem;
+    padding: 2rem;
+    border-left: 6px solid;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+}
+
+.us8-framework-header {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.us8-framework-icon i {
+    font-size: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: white;
+    border-radius: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.2rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+.us8-framework-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0b2b4e;
+}
+
+.us8-framework-subtitle {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.us8-situation {
+    display: flex;
+    gap: 1rem;
+    background: rgba(255,255,255,0.7);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin: 1.2rem 0;
+    align-items: center;
+}
+
+.us8-situation i {
+    font-size: 1.5rem;
+    color: #0a58ca;
+}
+
+.us8-practices h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #0b2b4e;
+}
+
+.us8-practice-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.us8-practice-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.us8-practice-list i {
+    width: 1.5rem;
+    color: #1f5e8e;
+}
+
+/* ===== SUMMARY PREMIUM ===== */
+.us8-summary-premium {
+    background: linear-gradient(135deg, #e2f0e8 0%, #d0e8dd 100%);
+    border-radius: 2rem;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-left: 8px solid #2e7d5e;
+    box-shadow: 0 10px 25px -10px #1b7553;
+}
+
+.us8-summary-premium i {
+    font-size: 3.5rem;
+    color: #1b7553;
+    background: white;
+    padding: 1rem;
+    border-radius: 60px;
     box-shadow: 0 8px 15px rgba(0,0,0,0.05);
 }
 
-.artifact-icon i {
-    font-size: 2.5rem;
-    color: #0b5e8a;
-}
-
-.artifact-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #0b2b4e;
-}
-
-.artifact-description {
-    color: #2c3e50;
+.us8-summary-premium div {
+    font-size: 1.2rem;
+    color: #0b3527;
     line-height: 1.6;
 }
 
-.artifact-description strong {
-    color: #b6582c;
-    background: #fff0e6;
-    padding: 0.2rem 0.5rem;
-    border-radius: 2rem;
-    font-size: 0.85rem;
-}
-
-/* Summary Card */
-.scrum-summary {
-    background: #0a2942;
-    color: white;
-    border-radius: 2rem;
-    padding: 2rem;
+/* ===== REFERENCES SECTION (FIXED WITH BULLETS) ===== */
+.us8-references-wrapper {
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
     margin: 2rem 0;
-    background-image: radial-gradient(circle at 80% 30%, #1f4b74, #082135);
+    border: 1px solid #e2edf7;
 }
 
-.scrum-summary h3 {
+.us8-ref-header {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    font-size: 1.6rem;
     margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #e2edf7;
 }
 
-.scrum-summary h3 i {
-    color: #ffb347;
+.us8-ref-header i {
+    font-size: 1.6rem;
+    color: #1b4e79;
 }
 
-.summary-grid {
+.us8-ref-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0b2b4e;
+    margin: 0;
+}
+
+.us8-ref-list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
-.summary-item {
+.us8-ref-item {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    padding: 0.8rem 1rem;
-    background: rgba(255,255,255,0.1);
-    border-radius: 3rem;
+    align-items: baseline;
+    gap: 0.8rem;
 }
 
-.summary-label {
-    font-weight: 700;
-    color: #ffb347;
-    min-width: 80px;
+.us8-ref-bullet {
+    color: #1b4e79;
+    font-size: 0.9rem;
+    font-weight: bold;
+    flex-shrink: 0;
 }
 
-/* Navigation */
-.scrum-navigation {
+.us8-ref-item a {
+    color: #1d4468;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.us8-ref-item a:hover {
+    color: #1b4e79;
+    text-decoration: underline;
+}
+
+/* ===== NAVIGATION ===== */
+.us8-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
+    border-top: 1px solid #cbd5e1;
     padding-top: 2rem;
-    border-top: 2px solid #e2edff;
 }
 
-.scrum-nav-btn {
+.us8-nav-btn {
     background: white;
-    padding: 0.8rem 1.8rem;
-    border-radius: 3rem;
+    border: 2px solid #1b4e79;
+    color: #1b4e79;
+    border-radius: 40px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
     text-decoration: none;
-    color: #0b2b4e;
-    font-weight: 500;
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
-    border: 1px solid #cbd5e1;
     transition: all 0.2s;
 }
 
-.scrum-nav-btn:hover {
-    background: #f0f9ff;
-    border-color: #0b5e8a;
+.us8-nav-btn:hover {
+    background: #1b4e79;
+    color: white;
+    transform: translateX(-2px);
+    box-shadow: 0 4px 12px rgba(27,78,121,0.3);
 }
 
-/* Responsive */
+.us8-nav-btn.next:hover {
+    transform: translateX(2px);
+}
+
+/* ===== IMAGE STYLES ===== */
+.us8-userstory-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.us8-step-premium-content-full img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .scrum-container {
+    .us8-container {
         padding: 1.5rem;
     }
     
-    .scrum-title {
-        font-size: 2rem;
+    .us8-title {
+        font-size: 2.2rem;
     }
     
-    .scrum-section-title h2 {
-        font-size: 1.4rem;
-    }
-    
-    .scrum-roles-grid {
+    .us8-grid-2,
+    .us8-steps-grid {
         grid-template-columns: 1fr;
     }
     
-    .scrum-artifacts-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .scrum-navigation {
+    .us8-step-premium-full {
         flex-direction: column;
         gap: 1rem;
     }
     
-    .summary-item {
+    .us8-matter-card {
         flex-direction: column;
-        gap: 0.3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .scrum-meta {
-        flex-direction: column;
-        gap: 0.5rem;
+        text-align: center;
     }
     
-    .scrum-title {
-        font-size: 1.8rem;
+    .us8-summary-premium {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .us8-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .us8-nav-btn {
+        justify-content: center;
+    }
+    
+    .us8-ref-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .us8-ref-item {
+        flex-wrap: wrap;
     }
 }
