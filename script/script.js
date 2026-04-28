@@ -162,9 +162,19 @@ function loadPage(pageUrl) {
             }
             return response.text();
         })
-        .then(html => {
+        .then(async html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const stylesheetHrefs = Array.from(doc.querySelectorAll('link[rel="stylesheet"]'))
+                .map(link => link.getAttribute('href'))
+                .filter(Boolean);
+
+            await Promise.all(stylesheetHrefs.map(href => ensureStylesheetLoaded(href)));
+
+            const bodyContent = doc.body ? doc.body.innerHTML : html;
+
             // Wrap the content in a section-card for consistent styling
-            dynamicBody.innerHTML = `<div class="section-card">${html}</div>`;
+            dynamicBody.innerHTML = `<div class="section-card">${bodyContent}</div>`;
             
             // Update URL hash to reflect current page
             window.location.hash = pageUrl;
@@ -193,6 +203,24 @@ function loadPage(pageUrl) {
                 </div>
             `;
         });
+}
+
+function ensureStylesheetLoaded(href) {
+    const existingLink = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+        .find(link => link.getAttribute('href') === href);
+
+    if (existingLink) {
+        return Promise.resolve();
+    }
+
+    return new Promise((resolve, reject) => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        link.onload = () => resolve();
+        link.onerror = () => reject(new Error(`Failed to load stylesheet: ${href}`));
+        document.head.appendChild(link);
+    });
 }
 
 function initializeLoadedContent() {
