@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Process | Chapter 6.3 | Identifying, Analyzing, and Mitigating Risks Systematically</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style/common-chapter-base.css">
+    <link rel="stylesheet" href="style/style6.3.css">
+</head>
+<body>
+<div class="us63-container">
+
+    <!-- Hero Section -->
+    <div class="us63-hero">
+        <div class="us63-hero-content">
+            <span class="us63-chapter-badge"><i class="fas fa-shield-alt"></i> Project Manager & Scrum Master Guide | Chapter 6.3</span>
+            <h1 class="us63-title">Risk Management Process: <span class="us63-title-highlight">Identifying, Analyzing, and Mitigating Risks Systematically</span></h1>
+            <div class="us63-meta">
+                <span class="us63-code-badge"><i class="fas fa-clipboard-list"></i> 5-Step Process</span>
+                <span class="us63-code-badge"><i class="fas fa-chart-line"></i> PMBOK & Agile</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. Introduction -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">1.</span>
+        <i class="fas fa-info-circle"></i>
+        <h2>Introduction</h2>
+    </div>
+    <div class="us63-content-box">
+        <p>Risk is uncertainty that matters. Every project—whether predictive (Waterfall) or adaptive (Agile)—faces internal and external uncertainties that can threaten scope, schedule, budget, or quality. As a Project Manager or Scrum Master, your role is not to eliminate risk entirely (which is impossible) but to manage it systematically.</p>
+        <p style="margin-top: 1rem;">This chapter provides a repeatable, five-step risk management process that integrates seamlessly into sprint-based or phase-gate projects. You will learn how to identify risks early, analyze their potential impact, plan mitigation strategies, monitor triggers, and adapt as conditions change.</p>
+        <div class="us63-quote-box">
+            <i class="fas fa-quote-left"></i>
+            <p>"Risk management is not about avoiding risk; it is about choosing which risks to take and which to mitigate." (Project Management Institute, 2021, p. 89)</p>
+        </div>
+    </div>
+
+    <!-- YouTube Resource - First Video (PMBOK Guide) -->
+    <div class="us63-video-wrapper">
+        <div class="us63-video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/VhUawtlyPGk?rel=0" 
+                title="Risk Management in 7 Minutes - PMBOK Guide" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="us63-video-caption">
+            <i class="fab fa-youtube"></i> Risk Management in 7 Minutes - PMBOK Guide (covers identification, analysis, mitigation, and monitoring for both Waterfall and Agile teams)
+        </div>
+    </div>
+
+    <!-- 2. The Five-Step Risk Management Process -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">2.</span>
+        <i class="fas fa-list-ol"></i>
+        <h2>The Five-Step Risk Management Process</h2>
+    </div>
+    <p class="us63-section-subtitle">The PMBOK® Guide and Agile practice guides converge on a five-step cycle that applies regardless of methodology. These steps are iterative—you revisit them throughout the project.</p>
+
+    <div class="us63-table-wrapper">
+        <table class="us63-steps-table">
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>Name</th>
+                    <th>Key Question</th>
+                    <th>When to Perform</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="us63-step-col">1</td>
+                    <td class="us63-name-col"><strong>Identify</strong></td>
+                    <td>What could go wrong (or right)?</td>
+                    <td>Project initiation, then weekly/per sprint</td>
+                </tr>
+                <tr>
+                    <td class="us63-step-col">2</td>
+                    <td class="us63-name-col"><strong>Analyze</strong></td>
+                    <td>How likely and how severe?</td>
+                    <td>After identification</td>
+                </tr>
+                <tr>
+                    <td class="us63-step-col">3</td>
+                    <td class="us63-name-col"><strong>Prioritize</strong></td>
+                    <td>Which risks demand action now?</td>
+                    <td>After analysis</td>
+                </tr>
+                <tr>
+                    <td class="us63-step-col">4</td>
+                    <td class="us63-name-col"><strong>Plan</strong></td>
+                    <td>What will we do for prevention or impact reduction?</td>
+                    <td>After prioritization</td>
+                </tr>
+                <tr>
+                    <td class="us63-step-col">5</td>
+                    <td class="us63-name-col"><strong>Monitor & Control</strong></td>
+                    <td>Are risks changing? Are our plans working?</td>
+                    <td>Continuously, during daily stand-ups or weekly reviews</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 3. Step 1: Identify Risks -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">3.</span>
+        <i class="fas fa-search"></i>
+        <h2>Step 1: Identify Risks</h2>
+    </div>
+    <p class="us63-section-subtitle">Risk identification is the most frequently skipped step, yet it is the most valuable. Teams that skip identification are surprised by problems; teams that identify risks regularly are prepared.</p>
+
+    <h3 class="us63-subsection-title">3.1 Identification Techniques</h3>
+    <div class="us63-table-wrapper">
+        <table class="us63-techniques-table">
+            <thead>
+                <tr>
+                    <th>Technique</th>
+                    <th>How It Works</th>
+                    <th>Best For</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="us63-tech-col"><strong>Brainstorming</strong></td>
+                    <td>Team lists all risks on sticky notes or a whiteboard</td>
+                    <td>Early project phases</td>
+                </tr>
+                <tr>
+                    <td class="us63-tech-col"><strong>Risk Breakdown Structure (RBS)</strong></td>
+                    <td>Categorize risks into hierarchies (Technical, External, Organizational, Project Management)</td>
+                    <td>Comprehensive coverage</td>
+                </tr>
+                <tr>
+                    <td class="us63-tech-col"><strong>Interviews</strong></td>
+                    <td>One-on-one sessions with stakeholders, subject matter experts</td>
+                    <td>Hidden or political risks</td>
+                </tr>
+                <tr>
+                    <td class="us63-tech-col"><strong>Assumption analysis</strong></td>
+                    <td>List every assumption (e.g., "Vendor will deliver on time") and ask: what if false?</td>
+                    <td>Uncovering blind spots</td>
+                </tr>
+                <tr>
+                    <td class="us63-tech-col"><strong>Historical review</strong></td>
+                    <td>Review lessons learned from past similar projects</td>
+                    <td>Reducing repeated failures</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="us63-subsection-title">3.2 Risk Register - The Central Artifact</h3>
+    <p class="us63-section-subtitle">Document every identified risk in a Risk Register (simple table format shown below). For Agile teams, this can be a shared spreadsheet, a Confluence page, or a dedicated "Risk" column on your Scrum board.</p>
+
+    <div class="us63-table-wrapper">
+        <table class="us63-register-table">
+            <thead>
+                <tr>
+                    <th>Risk ID</th>
+                    <th>Date Identified</th>
+                    <th>Risk Description</th>
+                    <th>Category</th>
+                    <th>Owner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>R-12</td>
+                    <td>2026-04-15</td>
+                    <td>Key API vendor may delay delivery by 2+ weeks</td>
+                    <td>External</td>
+                    <td>Sarah (PM)</td>
+                </tr>
+                <tr>
+                    <td>R-14</td>
+                    <td>2026-04-16</td>
+                    <td>Team lacks experience with React 19's new concurrent features</td>
+                    <td>Technical</td>
+                    <td>Tom (Tech Lead)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 4. Step 2: Analyze Risks (Qualitative and Quantitative) -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">4.</span>
+        <i class="fas fa-chart-pie"></i>
+        <h2>Step 2: Analyze Risks (Qualitative and Quantitative)</h2>
+    </div>
+    <p class="us63-section-subtitle">Analysis answers two questions: How likely is this risk? and How severe would the impact be?</p>
+
+    <h3 class="us63-subsection-title">4.1 Qualitative Analysis - Probability & Impact Matrix</h3>
+    <p class="us63-section-subtitle">Assign each risk a simple rating. Use a consistent scale (e.g., 1-5 or Low/Medium/High).</p>
+
+    <div class="us63-table-wrapper">
+        <table class="us63-matrix-table">
+            <thead>
+                <tr>
+                    <th>Rating</th>
+                    <th>Probability</th>
+                    <th>Impact on Cost/Schedule/Quality</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="us63-rating-col">Low (L)</td>
+                    <td>&lt; 20%</td>
+                    <td>Minor delay (&lt;1 day) or &lt; 5% overage</td>
+                </tr>
+                <tr>
+                    <td class="us63-rating-col">Medium (M)</td>
+                    <td>20% - 60%</td>
+                    <td>Noticeable delay (2-5 days) or 5-15% overage</td>
+                </tr>
+                <tr>
+                    <td class="us63-rating-col">High (H)</td>
+                    <td>&gt; 60%</td>
+                    <td>Major delay (&gt;1 week) or &gt; 15% overage</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="us63-subsection-title">4.2 Quantitative Analysis (Optional, For Large Projects)</h3>
+    <div class="us63-content-box">
+        <p>For high-stakes projects, use:</p>
+        <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+            <li><strong>Expected Monetary Value (EMV)</strong> = Probability × Impact in dollars</li>
+            <li><strong>Monte Carlo simulation</strong> (software-based) to model schedule risk</li>
+            <li><strong>Decision trees</strong> for complex choices</li>
+        </ul>
+    </div>
+
+    <div class="us63-quote-box">
+        <i class="fas fa-quote-left"></i>
+        <p>"Teams that skip qualitative risk analysis often waste time on low-impact risks while high-severity risks remain unaddressed." (McNeil et al., 2015, p. 62)</p>
+    </div>
+
+    <!-- Image: Probability x Impact Matrix -->
+    <div class="us63-image-section">
+        <div class="us63-image-container">
+            <div class="us63-image-wrapper">
+                <img src="images/chapter6.3/Matrix-Probability-x-Impact.webp" 
+                     alt="Probability x Impact Matrix - Red zone: High probability + High impact, Yellow zone: Monitor, Green zone: Accept" 
+                     class="us63-image"
+                     onerror="this.onerror=null; this.parentElement.innerHTML=this.parentElement.innerHTML + '<div class=\'us63-image-placeholder\'><div class=\'us63-placeholder-content\'><i class=\'fas fa-th\'></i><h4>Probability × Impact Matrix</h4><p><span style=\'color:#dc3545\'>Red zone</span> (High P + High I): Immediate response<br><span style=\'color:#ffc107\'>Yellow zone</span>: Monitor regularly<br><span style=\'color:#28a745\'>Green zone</span>: Accept or watch</p><span class=\'us63-placeholder-note\'><i class=\'fas fa-info-circle\'></i> Image placeholder: Insert Probability × Impact Matrix diagram here</span></div></div>'; this.style.display='none';">
+                <div class="us63-image-caption">
+                    <strong><i class="fas fa-th"></i> Probability × Impact Matrix</strong><br>
+                    Red zone (High probability + High impact): Immediate response required | Yellow zone: Monitor regularly | Green zone: Accept or watch
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Step 3: Prioritize Risks -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">5.</span>
+        <i class="fas fa-sort-amount-down"></i>
+        <h2>Step 3: Prioritize Risks</h2>
+    </div>
+    <p class="us63-section-subtitle">Using your Probability × Impact matrix, sort risks by risk score (e.g., H×H = 9, H×M = 6, M×H = 6, etc.). Maintain a Top 5 or Top 10 Risk List and review it at every stand-up or weekly status meeting.</p>
+
+    <div class="us63-table-wrapper">
+        <table class="us63-priority-table">
+            <thead>
+                <tr>
+                    <th>Priority</th>
+                    <th>Risk ID</th>
+                    <th>Risk Score</th>
+                    <th>Action Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>R-04</td>
+                    <td>9 (H×H)</td>
+                    <td>Response planned</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>R-12</td>
+                    <td>6 (H×M)</td>
+                    <td>Response planned</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>R-14</td>
+                    <td>6 (M×H)</td>
+                    <td>Monitoring</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>R-08</td>
+                    <td>4 (M×M)</td>
+                    <td>Watch list</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>R-20</td>
+                    <td>2 (L×M)</td>
+                    <td>Accept</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 6. Step 4: Plan Risk Responses -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">6.</span>
+        <i class="fas fa-clipboard-list"></i>
+        <h2>Step 4: Plan Risk Responses</h2>
+    </div>
+    <p class="us63-section-subtitle">For each prioritized risk, choose one or more response strategies. Responses can be proactive (before the risk occurs) or reactive (after).</p>
+
+    <h3 class="us63-subsection-title">6.1 Response Strategies - Negative Risks (Threats)</h3>
+    <div class="us63-table-wrapper">
+        <table class="us63-responses-table">
+            <thead>
+                <tr>
+                    <th>Strategy</th>
+                    <th>Action</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="us63-strategy-col"><strong>Avoid</strong></td>
+                    <td>Eliminate the cause</td>
+                    <td>Change vendor, remove the risky feature from scope</td>
+                </tr>
+                <tr>
+                    <td class="us63-strategy-col"><strong>Mitigate</strong></td>
+                    <td>Reduce probability or impact</td>
+                    <td>Add code reviews to reduce defect probability; build a performance buffer</td>
+                </tr>
+                <tr>
+                    <td class="us63-strategy-col"><strong>Transfer</strong></td>
+                    <td>Shift impact to third party</td>
+                    <td>Purchase insurance, fixed-price contract with penalty clauses</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="us63-subsection-title">6.2 Response Strategies - Positive Risks (Opportunities)</h3>
+    <div class="us63-table-wrapper">
+        <table class="us63-opportunities-table">
+            <thead>
+                <tr>
+                    <th>Strategy</th>
+                    <th>Action</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="us63-strategy-col"><strong>Exploit</strong></td>
+                    <td>Make it happen</td>
+                    <td>Add resources to accelerate early completion</td>
+                </tr>
+                <tr>
+                    <td class="us63-strategy-col"><strong>Enhance</strong></td>
+                    <td>Increase probability or impact</td>
+                    <td>Extend pilot testing to get more user feedback</td>
+                </tr>
+                <tr>
+                    <td class="us63-strategy-col"><strong>Share</strong></td>
+                    <td>Partner with another team</td>
+                    <td>Co-develop a feature with another department</td>
+                </tr>
+                <tr>
+                    <td class="us63-strategy-col"><strong>Accept</strong></td>
+                    <td>Capture if occurs</td>
+                    <td>Low-probability windfall (e.g., early budget approval)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 7. Step 5: Monitor and Control Risks -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">7.</span>
+        <i class="fas fa-eye"></i>
+        <h2>Step 5: Monitor and Control Risks</h2>
+    </div>
+    <p class="us63-section-subtitle">A risk plan that sits on a shelf is worthless. Monitoring ensures risks are tracked, triggers are watched, and new risks are identified.</p>
+
+    <h3 class="us63-subsection-title">7.1 Monitoring Techniques</h3>
+    <div class="us63-monitoring-list">
+        <div class="us63-monitoring-item"><i class="fas fa-check-circle"></i> Daily stand-up risk check - "Any risk probability changes?"</div>
+        <div class="us63-monitoring-item"><i class="fas fa-check-circle"></i> Weekly risk register review - Update probability/impact</div>
+        <div class="us63-monitoring-item"><i class="fas fa-check-circle"></i> Sprint retrospective risk review - What new risks emerged?</div>
+        <div class="us63-monitoring-item"><i class="fas fa-check-circle"></i> Risk burndown chart - Track total risk exposure over time</div>
+    </div>
+
+    <h3 class="us63-subsection-title">7.2 Risk Burndown Chart (Agile)</h3>
+    <div class="us63-content-box">
+        <p>Create a simple chart showing total risk score (sum of all HxM values) over time. A healthy project shows a declining trend.</p>
+        <p style="margin-top: 0.5rem;">When risk exposure increases, investigate and plan new responses immediately.</p>
+    </div>
+
+    <!-- Image: Risk Burndown Chart -->
+    <div class="us63-image-section">
+        <div class="us63-image-container">
+            <div class="us63-image-wrapper">
+                <img src="images/chapter6.3/Burndown-chart-sample-with-border-and-logo.png" 
+                     alt="Risk Burndown Chart showing total risk score decreasing over time" 
+                     class="us63-image"
+                     onerror="this.onerror=null; this.parentElement.innerHTML=this.parentElement.innerHTML + '<div class=\'us63-image-placeholder\'><div class=\'us63-placeholder-content\'><i class=\'fas fa-chart-line\'></i><h4>Risk Burndown Chart</h4><p>Shows total risk score (sum of H×M values) over time. A healthy project shows a declining trend.</p><span class=\'us63-placeholder-note\'><i class=\'fas fa-info-circle\'></i> Image placeholder: Insert Risk Burndown Chart here</span></div></div>'; this.style.display='none';">
+                <div class="us63-image-caption">
+                    <strong><i class="fas fa-chart-line"></i> Risk Burndown Chart (Agile)</strong><br>
+                    Track total risk exposure over time — a declining trend indicates healthy risk management.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. Agile-Specific Risk Practices -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">8.</span>
+        <i class="fab fa-agile"></i>
+        <h2>Agile-Specific Risk Practices for Scrum Masters</h2>
+    </div>
+    <p class="us63-section-subtitle">Traditional risk management can feel heavy for Agile teams. Adapt these lightweight practices:</p>
+
+    <div class="us63-table-wrapper">
+        <table class="us63-agile-table">
+            <thead>
+                <tr>
+                    <th>Traditional Concept</th>
+                    <th>Agile Adaptation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="us63-agile-col">Risk register</td>
+                    <td>Risk column on Scrum board; each risk is a card</td>
+                </tr>
+                <tr>
+                    <td class="us63-agile-col">Probability × Impact matrix</td>
+                    <td>Dot-voting or "Risk Poker" (similar to Planning Poker)</td>
+                </tr>
+                <tr>
+                    <td class="us63-agile-col">Contingency reserve</td>
+                    <td>Add 10–20% buffer story points per sprint for unplanned work</td>
+                </tr>
+                <tr>
+                    <td class="us63-agile-col">Weekly risk review</td>
+                    <td>5 minutes during Sprint Planning or Backlog Refinement</td>
+                </tr>
+                <tr>
+                    <td class="us63-agile-col">Risk owner</td>
+                    <td>Assign a team member to "watch" each high-priority risk card</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="us63-quote-box">
+        <i class="fas fa-quote-left"></i>
+        <p>"In Agile, risk management is not a separate ceremony; it is embedded in Backlog Refinement, Daily Stand-ups, and Retrospectives." (Mountain Goat Software, 2022)</p>
+    </div>
+
+    <!-- 9. Common Mistakes -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">9.</span>
+        <i class="fas fa-exclamation-triangle"></i>
+        <h2>Common Mistakes and How to Avoid Them</h2>
+    </div>
+
+    <div class="us63-table-wrapper">
+        <table class="us63-mistakes-table">
+            <thead>
+                <tr>
+                    <th>Mistake</th>
+                    <th>Consequence</th>
+                    <th>Fix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="us63-mistake-col">Identifying risks once at project start</td>
+                    <td>Mid-project surprises, firefighting</td>
+                    <td>Revisit risk ID at every sprint planning</td>
+                </tr>
+                <tr>
+                    <td class="us63-mistake-col">No assigned risk owners</td>
+                    <td>Nobody watches for triggers</td>
+                    <td>Every risk has a named owner</td>
+                </tr>
+                <tr>
+                    <td class="us63-mistake-col">Mitigation plans that are vague ("We'll try harder")</td>
+                    <td>No real reduction in risk</td>
+                    <td>Mitigation must be specific, measurable</td>
+                </tr>
+                <tr>
+                    <td class="us63-mistake-col">Ignoring positive risks (opportunities)</td>
+                    <td>Missed chances for early value</td>
+                    <td>Include an "Opportunities" section in risk register</td>
+                </tr>
+                <tr>
+                    <td class="us63-mistake-col">Risk register as a private document</td>
+                    <td>Team unaware, blind spots</td>
+                    <td>Make risk register visible (shared drive, wiki, board)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 10. Summary Checklist -->
+    <div class="us63-section-title">
+        <span class="us63-section-number">10.</span>
+        <i class="fas fa-clipboard-check"></i>
+        <h2>Summary Checklist for Project Managers and Scrum Masters</h2>
+    </div>
+
+    <div class="us63-checklist-box">
+        <p>Use this checklist each sprint (or each week in Waterfall):</p>
+        <ul class="us63-checklist-list">
+            <li><i class="fas fa-check"></i> <strong>Step 1 - Identify:</strong> Did the team identify at least 1-3 new risks this week?</li>
+            <li><i class="fas fa-check"></i> <strong>Step 2 - Analyze:</strong> Are probability and impact ratings still accurate?</li>
+            <li><i class="fas fa-check"></i> <strong>Step 3 - Prioritize:</strong> Is the Top 5 risk list up to date and visible?</li>
+            <li><i class="fas fa-check"></i> <strong>Step 4 - Plan Response:</strong> Does every "high" risk have a specific, assigned response?</li>
+            <li><i class="fas fa-check"></i> <strong>Step 5 - Monitor:</strong> Did we check triggers for active risks today/this week?</li>
+            <li><i class="fas fa-check"></i> <strong>Communication:</strong> Did we inform stakeholders of the top 3 risks?</li>
+        </ul>
+    </div>
+
+    <!-- Final Quote -->
+    <div class="us63-final-quote">
+        <i class="fas fa-quote-left"></i>
+        <p>"The greatest risk in any project is the illusion of certainty. Systematic risk management replaces hope with awareness." (Pritchard, 2015, p. 17)</p>
+    </div>
+
+    <!-- References Section -->
+    <div class="us63-section-title">
+        <i class="fas fa-link"></i>
+        <h2>References</h2>
+    </div>
+
+    <div class="us63-references">
+        <p><strong>1. Risk Management (Association for Project Management, n.d.)</strong> - Guide to enterprise and project risk management practices</p>
+        <p><a href="https://www.apm.org.uk/resources/find-a-resource/risk-management/" target="_blank" rel="noopener noreferrer">https://www.apm.org.uk/resources/find-a-resource/risk-management/</a></p>
+        
+        <p style="margin-top: 1.2rem;"><strong>2. What is a Risk Register? (Atlassian, n.d.)</strong> - Documentation and best practices for creating and maintaining risk registers</p>
+        <p><a href="https://www.atlassian.com/work-management/project-management/risk-register" target="_blank" rel="noopener noreferrer">https://www.atlassian.com/work-management/project-management/risk-register</a></p>
+        
+        <p style="margin-top: 1.2rem;"><strong>3. Managing Risk in Projects (Hillson, D., 2009)</strong> - Comprehensive framework for project risk management processes</p>
+        <p class="us63-ref-note">Covers identification, analysis, and response planning techniques applicable to both traditional and agile projects</p>
+        
+        <p style="margin-top: 1.2rem;"><strong>4. Risk Management: Concepts and Guidance (Pritchard, C. L., 2015)</strong> - Fifth edition guide to systematic risk management</p>
+        <p class="us63-ref-note">Emphasizes the importance of continuous risk monitoring and adaptation throughout project lifecycle</p>
+        
+        <p style="margin-top: 1.2rem;"><strong>5. A Guide to the Project Management Body of Knowledge (Project Management Institute, 2021)</strong> - PMBOK® Guide (7th ed.) risk management processes</p>
+        <p class="us63-ref-note">Includes the five-step risk management process: identify, analyze, prioritize, plan responses, and monitor & control</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="us63-navigation">
+        <a href="chapter6.2.html" class="us63-nav-btn prev">
+            <i class="fas fa-arrow-left"></i>
+            <span>Previous: Chapter 6.2</span>
+        </a>
+        <a href="chapter6.4.html" class="us63-nav-btn next">
+            <span>Next: Chapter 6.4</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+</div>
+</body>
+</html>
