@@ -454,6 +454,33 @@ body {
     transform: translateX(2px);
 }
 
+/* ===== REFERENCES ===== */
+.us35-references-card {
+    background: #f8fbfd;
+    border-radius: 1.5rem;
+    padding: 1.8rem 2rem;
+    border: 1px solid #e2edf7;
+    box-shadow: 0 8px 20px -8px rgba(0,60,120,0.1);
+}
+
+.us35-reference-list {
+    line-height: 1.8;
+}
+
+.us35-reference-list p {
+    margin-bottom: 1rem;
+    margin-left: 40px;
+    text-indent: -40px;
+}
+
+.us35-reference-list p:last-child {
+    margin-bottom: 0;
+}
+
+.us35-reference-list a {
+    color: #0a58ca;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .us35-container {
