@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.5: Working with User Stories and Scrum Boards</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style/style3.5.css">
+</head>
+<body>
+<script>
+function scrollToRef(refId) {
+    const element = document.getElementById(refId);
+    if (element) {
+        element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'center'
+        });
+        element.style.background = 'linear-gradient(90deg, #ffd966 0%, transparent 100%)';
+        element.style.padding = '1rem';
+        element.style.borderLeft = '3px solid #0a58ca';
+        element.style.borderRadius = '0.5rem';
+        element.style.transition = 'all 0.3s ease';
+        
+        setTimeout(() => {
+            element.style.background = '';
+            element.style.padding = '';
+            element.style.borderLeft = '';
+            element.style.borderRadius = '';
+        }, 3000);
+    }
+}
+</script>
+<div class="us35-container">
+    <!-- Hero Section -->
+    <div class="us35-hero">
+        <div class="us35-hero-content">
+            <span class="us35-chapter-badge">Chapter 3.5</span>
+            <h1 class="us35-title">Working with <span class="us35-title-highlight">User Stories and Scrum Boards</span></h1>
+            <div class="us35-meta">
+                <span class="us35-code-badge">US-12</span>
+                <span class="us35-code-badge">User Stories</span>
+                <span class="us35-code-badge">Scrum Boards</span>
+            </div>
+            <p class="us35-hero-description">Master the art of writing effective user stories and using Scrum boards to track sprint progress.</p>
+        </div>
+    </div>
+
+    <!-- Why This Matters Card -->
+    <div class="us35-matter-card">
+        <div class="us35-matter-icon"><i class="fas fa-users"></i></div>
+        <div class="us35-matter-content">
+            <h2>Why This Matters for Team Members</h2>
+            <p>User stories help you understand what the customer actually needs. Scrum boards help you see what everyone is working on. Together, they make sprint work clear, organized, and collaborative.</p>
+        </div>
+    </div>
+
+    <!-- Section 1: What are User Stories? -->
+    <div class="us35-section">
+        <h2 class="us35-section-title"><i class="fas fa-book-open"></i> What are User Stories?</h2>
+        <div class="us35-content-card">
+            <p>A <strong>User Story</strong> is a short, simple description of a feature written from the perspective of the person who wants it. It helps the team understand what to build and why <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>.</p>
+            
+            <div class="us35-story-format">
+                <i class="fas fa-quote-left"></i> As a [type of user], I want [some goal] so that [some reason]. <i class="fas fa-quote-right"></i>
+            </div>
+
+            <p><strong>Example:</strong> "As a project manager, I want to see all tasks in one place, so that I can track progress easily."</p>
+        </div>
+    </div>
+
+    <!-- INVEST Criteria Cards -->
+    <div class="us35-section">
+        <h2 class="us35-section-title"><i class="fas fa-check-double"></i> INVEST: Good User Stories</h2>
+        
+        <div class="us35-invest-grid">
+            <div class="us35-invest-card">
+                <div class="invest-icon"><i class="fas fa-circle-dot"></i></div>
+                <h4>I - Independent</h4>
+                <p>Can be developed in any order</p>
+            </div>
+            <div class="us35-invest-card">
+                <div class="invest-icon"><i class="fas fa-comments"></i></div>
+                <h4>N - Negotiable</h4>
+                <p>Details can be discussed</p>
+            </div>
+            <div class="us35-invest-card">
+                <div class="invest-icon"><i class="fas fa-chart-line"></i></div>
+                <h4>V - Valuable</h4>
+                <p>Provides value to user</p>
+            </div>
+            <div class="us35-invest-card">
+                <div class="invest-icon"><i class="fas fa-ruler"></i></div>
+                <h4>E - Estimable</h4>
+                <p>Size can be estimated</p>
+            </div>
+            <div class="us35-invest-card">
+                <div class="invest-icon"><i class="fas fa-box"></i></div>
+                <h4>S - Small</h4>
+                <p>Fits in one sprint</p>
+            </div>
+            <div class="us35-invest-card">
+                <div class="invest-icon"><i class="fas fa-flask"></i></div>
+                <h4>T - Testable</h4>
+                <p>Can be verified</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example User Stories Table -->
+    <div class="us35-section">
+        <h2 class="us35-section-title"><i class="fas fa-list"></i> Example User Stories</h2>
+        <div class="us35-content-card">
+            <div class="us35-table-wrapper">
+                <table class="us35-stories-table">
+                    <thead>
+                        <tr>
+                            <th>Role</th>
+                            <th>Want</th>
+                            <th>So That</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>As a user</span></td>
+                            <td>I can log in with email</span></td>
+                            <td>I can access my account</span></td>
+                        </tr>
+                        <tr>
+                            <td>As a shopper</span></td>
+                            <td>I can add items to cart</span></td>
+                            <td>I can buy multiple items at once</span></td>
+                        </tr>
+                        <tr>
+                            <td>As a team member</span></td>
+                            <td>I can see my tasks</span></td>
+                            <td>I know what to work on</span></td>
+                        </tr>
+                        <tr>
+                            <td>As a manager</span></td>
+                            <td>I can see team progress</span></td>
+                            <td>I can track sprint status</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: What are Scrum Boards? -->
+    <div class="us35-section">
+        <h2 class="us35-section-title"><i class="fas fa-columns"></i> What are Scrum Boards?</h2>
+        <div class="us35-content-card">
+            <p>A <strong>Scrum Board</strong> (or Kanban Board) is a visual tool that shows the status of all tasks in the current sprint. It helps the team see what's To Do, In Progress, and Done at a glance <sup><a href="javascript:void(0)" onclick="scrollToRef('ref2')">[2]</a></sup>.</p>
+        </div>
+    </div>
+
+    <!-- Scrum Board Visual -->
+    <div class="us35-visual-container">
+        <div class="us35-visual">
+            <div class="us35-visual-icon">
+                <i class="fas fa-chalkboard"></i>
+                <i class="fas fa-arrow-right"></i>
+                <i class="fas fa-columns"></i>
+            </div>
+            <div class="us35-visual-text">Example Scrum Board</div>
+            
+            <div class="us35-board">
+                <!-- To Do Column -->
+                <div class="us35-board-column todo">
+                    <h4><i class="fas fa-clipboard-list"></i> To Do</h4>
+                    <div class="us35-card">Write user stories</div>
+                    <div class="us35-card">Design database schema</div>
+                    <div class="us35-card">Create wireframes</div>
+                </div>
+                <!-- In Progress Column -->
+                <div class="us35-board-column progress">
+                    <h4><i class="fas fa-spinner"></i> In Progress</h4>
+                    <div class="us35-card">Build login API</div>
+                    <div class="us35-card">Write unit tests</div>
+                </div>
+                <!-- Done Column -->
+                <div class="us35-board-column done">
+                    <h4><i class="fas fa-check-circle"></i> Done</h4>
+                    <div class="us35-card">Setup project</div>
+                    <div class="us35-card">Requirements document</div>
+                    <div class="us35-card">Team onboarding</div>
+                </div>
+            </div>
+            
+            <div class="us35-visual-tags">
+                <span class="us35-badge-light">Cards move left → right</span>
+                <span class="us35-badge-full">Visual Progress Tracking</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Use Scrum Board -->
+    <div class="us35-section">
+        <h2 class="us35-section-title"><i class="fas fa-play-circle"></i> How to Use a Scrum Board</h2>
+        <div class="us35-content-card">
+            <p><strong>As a team member, you should:</strong></p>
+            <div class="us35-steps-grid-small">
+                <div class="us35-step-mini">
+                    <span class="step-mini-num">1</span>
+                    <span>Pick a task from <strong>To Do</strong> column</span>
+                </div>
+                <div class="us35-step-mini">
+                    <span class="step-mini-num">2</span>
+                    <span>Move it to <strong>In Progress</strong> when you start</span>
+                </div>
+                <div class="us35-step-mini">
+                    <span class="step-mini-num">3</span>
+                    <span>Move to <strong>Done</strong> when completed</span>
+                </div>
+                <div class="us35-step-mini">
+                    <span class="step-mini-num">4</span>
+                    <span>Update board daily during standup</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Practices -->
+    <div class="us35-section">
+        <h2 class="us35-section-title"><i class="fas fa-star"></i> Best Practices for Teams</h2>
+        
+        <div class="us35-grid-2">
+            <div class="us35-premium-card">
+                <div class="us35-card-header">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Keep stories small</h3>
+                </div>
+                <p>Each user story should be small enough to finish within 1-2 days. If a story is too large, break it down <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>.</p>
+            </div>
+            
+            <div class="us35-premium-card">
+                <div class="us35-card-header">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Add acceptance criteria</h3>
+                </div>
+                <p>Define when a story is "Done" with clear, testable acceptance criteria. This prevents confusion.</p>
+            </div>
+            
+            <div class="us35-premium-card">
+                <div class="us35-card-header">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Update board daily</h3>
+                </div>
+                <p>The board must reflect reality. Update task status throughout the day, not just during standup <sup><a href="javascript:void(0)" onclick="scrollToRef('ref2')">[2]</a></sup>.</p>
+            </div>
+            
+            <div class="us35-premium-card">
+                <div class="us35-card-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Speak up about blockers</h3>
+                </div>
+                <p>Add a sticky note or tag to tasks that are blocked. The Scrum Master will help remove impediments.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Common Challenges -->
+    <div class="us35-section">
+        <h2 class="us35-section-title"><i class="fas fa-exclamation-triangle"></i> Common Challenges & Solutions</h2>
+        
+        <div class="us35-content-card">
+            <p><strong>Challenge:</strong> User stories are too vague or technical</p>
+            <p><strong>Solution:</strong> Use the format "As a... I want... so that..." and involve the Product Owner in story writing <sup><a href="javascript:void(0)" onclick="scrollToRef('ref1')">[1]</a></sup>.</p>
+        </div>
+        
+        <div class="us35-content-card">
+            <p><strong>Challenge:</strong> Team members forget to update the board</p>
+            <p><strong>Solution:</strong> Make board updates part of the daily routine. Use digital tools that auto-save or send reminders <sup><a href="javascript:void(0)" onclick="scrollToRef('ref2')">[2]</a></sup>.</p>
+        </div>
+        
+        <div class="us35-content-card">
+            <p><strong>Challenge:</strong> Cards get stuck in "In Progress" for days</p>
+            <p><strong>Solution:</strong> Add WIP (Work in Progress) limits. If a task takes too long, break it into smaller pieces.</p>
+        </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="us35-summary-premium">
+        <i class="fas fa-check-circle"></i>
+        <div>
+            <strong>Summary:</strong> User stories help you understand WHAT to build and WHY. Scrum boards help you track HOW the work is progressing. As a team member, you contribute by writing clear stories and keeping your board updated daily.
+        </div>
+    </div>
+
+    <!-- References Section -->
+    <div class="us35-section">
+        <h2 class="us35-section-title"><i class="fas fa-book"></i> References</h2>
+        <div class="us35-content-card">
+            <div style="line-height: 1.8;">
+                <p id="ref1" style="margin-bottom: 1rem; margin-left: 40px; text-indent: -40px;">Atlassian. (n.d.). <em>User stories with examples and template</em>. Retrieved from <a href="https://www.atlassian.com/agile/project-management/user-stories" style="color: #0a58ca;">https://www.atlassian.com/agile/project-management/user-stories</a></p>
+                
+                <p id="ref2" style="margin-bottom: 1rem; margin-left: 40px; text-indent: -40px;">Atlassian. (n.d.). <em>Scrum board: A complete guide</em>. Retrieved from <a href="https://www.atlassian.com/agile/scrum/scrum-board" style="color: #0a58ca;">https://www.atlassian.com/agile/scrum/scrum-board</a></p>
+                
+                <p id="ref3" style="margin-bottom: 0; margin-left: 40px; text-indent: -40px;">Mountain Goat Software. (n.d.). <em>INVEST in good stories, and SMART tasks</em>. Retrieved from <a href="https://www.mountaingoatsoftware.com/blog/invest-in-good-stories-and-smart-tasks" style="color: #0a58ca;">https://www.mountaingoatsoftware.com/blog/invest-in-good-stories-and-smart-tasks</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="us35-navigation">
+        <a href="chapter3.4.html" class="us35-nav-btn prev">
+            <i class="fas fa-arrow-left"></i>
+            <span>Previous: Managing the Sprint Backlog (US-9)</span>
+        </a>
+        <a href="chapter3.6.html" class="us35-nav-btn next">
+            <span>Next: Overview of Other Agile Frameworks (US-10)</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+</body>
+</html>
